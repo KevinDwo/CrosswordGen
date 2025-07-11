@@ -2,7 +2,7 @@ from Crossword import Crossword
 from Utils import Utils
 
 def Main():
-    entries = Utils.load_csv("../../Questions.csv")
+    entries = Utils.load_csv("../TestQuestions.csv")
     puzzle = Crossword(entries)
     puzzle.generate()
     puzzle.print_crossword()
