@@ -1,7 +1,7 @@
 from typing import List, Tuple
 from ClueEntry import ClueEntry
 from PlaceWord import PlacedWord
-from CrosswordGrid import CrosswordGrid
+from CrosswordGrid import CrosswordGrid, Direction
 
 
 class Crossword:
@@ -9,14 +9,16 @@ class Crossword:
         self.entries = entries
         self.grid = CrosswordGrid(12, 12)
         self.clues: List[Tuple[int, str, PlacedWord]] = []  # (number, Frage, Position)
+        self.words = []
+        for word in self.entries:
+            self.words.append(word.getAnswer())
 
-    def generate(self):
-        clue_number = 1
-        for entry in self.entries:
-            placement = self.grid.try_place_word(entry.getAnswer(), clue_number)
-            if placement is not None:
-                self.clues.append((clue_number, entry.question, placement))
-                clue_number += 1
+    def solve(self) -> bool:
+        self.grid.place_word(self.words[0], 0, 0, Direction.DOWN)
+        first_pos = self.grid.find_all_positions(self.words[1])[0]
+        print(first_pos)
+        self.grid.place_word(self.words[1], 0, 5, Direction.RIGHT)
+        return True
 
     def print_crossword(self):
         self.grid.display()

@@ -1,12 +1,13 @@
 class PlacedWord:
-    def __init__(self, answer: str, row: int, col: int, direction: str, number: int, suitable: bool):
+    def __init__(self, answer, row, col, direction, number, suitable, prefix_row=None, prefix_col=None):
         self._answer = answer
         self._row = row
         self._col = col
         self._direction = direction  # 'across' or 'down'
         self._number = number
         self._suitable = suitable
-
+        self._prefix_row = prefix_row
+        self._prefix_col = prefix_col
     # Getter
     def get_answer(self) -> str:
         return self._answer
@@ -25,6 +26,9 @@ class PlacedWord:
 
     def is_suitable(self) -> bool:
         return self._suitable
+    
+    def get_prefix_pos(self):
+        return self._prefix_row, self._prefix_col
 
     # Setter
     def set_answer(self, answer: str):
