@@ -1,13 +1,15 @@
+from collections import defaultdict
 import csv
 from ClueEntry import ClueEntry
-class Utils:
-    def __init__(self):
-        pass
+from typing import List, Dict
 
+class Utils:
+    @staticmethod
     def load_csv(path: str):
-        entries = []
+        entries_by_length: Dict[int, List[ClueEntry]] = defaultdict(list)
         with open(path, newline='') as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
-                entries.append(ClueEntry(row['questions'], row['answers']))
-        return entries
+                entry = ClueEntry(row['questions'], row['answers'])
+                entries_by_length[len(entry.get_answer())].append(entry)
+        return entries_by_length

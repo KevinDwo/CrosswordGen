@@ -1,13 +1,15 @@
+from Direction import Direction
 class PlacedWord:
-    def __init__(self, answer, row, col, direction, number, suitable, prefix_row=None, prefix_col=None):
+    def __init__(self, answer: str, question: str, row: int, col: int, length: int, direction: Direction, number: int):
         self._answer = answer
+        self._question = question
         self._row = row
         self._col = col
-        self._direction = direction  # 'across' or 'down'
+        self._direction = direction
         self._number = number
-        self._suitable = suitable
-        self._prefix_row = prefix_row
-        self._prefix_col = prefix_col
+        self._length = length
+        self._occupied: bool = False
+    
     # Getter
     def get_answer(self) -> str:
         return self._answer
@@ -18,17 +20,20 @@ class PlacedWord:
     def get_col(self) -> int:
         return self._col
 
-    def get_direction(self) -> str:
+    def get_direction(self) -> Direction:
         return self._direction
 
     def get_number(self) -> int:
         return self._number
 
-    def is_suitable(self) -> bool:
-        return self._suitable
+    def get_question(self) -> str:
+        return self._question
+
+    def get_length(self) -> int:
+        return self._length
     
-    def get_prefix_pos(self):
-        return self._prefix_row, self._prefix_col
+    def is_occupied(self) -> bool:
+        return self._occupied
 
     # Setter
     def set_answer(self, answer: str):
@@ -40,11 +45,21 @@ class PlacedWord:
     def set_col(self, col: int):
         self._col = col
 
-    def set_direction(self, direction: str):
+    def set_direction(self, direction: Direction):
         self._direction = direction
 
     def set_number(self, number: int):
         self._number = number
 
-    def set_suitable(self, suitable: bool):
-        self._suitable = suitable
+    def set_question(self, question: str):
+        self._question = question
+
+    def set_length(self, length: int):
+        self._length = length
+    
+    def set_occupation(self, occupation: bool):
+        self._occupied = occupation
+
+    def revert(self):
+        self.set_answer("_" * self.get_length())
+        self.set_question("?")
