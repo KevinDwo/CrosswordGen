@@ -8,9 +8,8 @@ class Crossword:
         self.grid = CrosswordGridLayouts.load_layout(layout_number)
         
     def solve(self):
-        self.grid.set_spots_list()
         self.grid.set_entries(self.entries_by_length)
-        if self.grid.backtracking(0):
+        if self.grid.backtracking(1):
             print("Eine Lösung wurde gefunden.")
         else:
             print("Es wurde keine Lösung gefunden")
