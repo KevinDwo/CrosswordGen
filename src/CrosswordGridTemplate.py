@@ -1,24 +1,17 @@
 from PlaceWord import PlacedWord
 from Direction import Direction
-from typing import Dict, List, DefaultDict, Union
+from typing import Dict, List, DefaultDict, Optional, Union
 from collections import defaultdict
 from ClueEntry import ClueEntry
 
 class CrosswordGridTemplate:
     def __init__(self, rows: int, cols: int):
         self.grid = [[' ' for _ in range(cols)] for _ in range(rows)]
-        self.open_spots_by_length: DefaultDict[int, List[PlacedWord]] = defaultdict(list)
+        self.unocupied_spots: DefaultDict[int, List[PlacedWord]] = defaultdict(list)
         self.occupied_spots: DefaultDict[int, List[PlacedWord]] = defaultdict(list)
-        self.spots_sorted: List[PlacedWord] = []
         self.entries: Dict[int, List[ClueEntry]] 
     
-    def set_spots_list(self):
-        spots_sorted: List[PlacedWord] = []
-        for length in sorted(self.open_spots_by_length.keys(), reverse=True):
-            for spot in self.open_spots_by_length[length]:
-                spots_sorted.append(spot)
-        self.spots_sorted = spots_sorted
- 
+
     def set_entries(self, entries: Dict[int, List[ClueEntry]]):
         self.entries = entries
 
@@ -28,7 +21,7 @@ class CrosswordGridTemplate:
         if self.__can_place_word(answer, row, col, direction):
             new_PlaceWord_values: List[Union[int, Direction]] = self.__place_word(answer, row, col, direction)
             spot = PlacedWord(answer, "?", new_PlaceWord_values[0], new_PlaceWord_values[1], length, new_PlaceWord_values[2], number) # type: ignore
-            self.open_spots_by_length[length].append(spot)
+            self.unocupied_spots[length].append(spot)
             return True
         else:
             print(f"Number {number} is false!")
@@ -141,11 +134,11 @@ class CrosswordGridTemplate:
         length = spot.get_length()
         spot.set_occupation(occupation)
         if occupation:
-            self.open_spots_by_length[length].remove(spot)
+            self.unocupied_spots[length].remove(spot)
             self.occupied_spots[length].append(spot)
         else:
             self.occupied_spots[length].remove(spot)
-            self.open_spots_by_length[length].append(spot)
+            self.unocupied_spots[length].append(spot)
 
     def update_grid(self, spot: PlacedWord):
         row = spot.get_row()
@@ -158,31 +151,27 @@ class CrosswordGridTemplate:
     # Testing to get a solution
     def backtracking(self, depth: int) -> bool:
         depth = depth
-        spot = self.spots_sorted[depth]
-        length = spot.get_length()
+        if depth >= 33:
+            print(f"Current depth: {depth}")
+            self.display()
         if self.crossword_finished():
             self.display()
             return True
-        # Entries = Alle entries mit mindestens einem spot
-        entries = self.get_all_possible_entries(length)
-        if not entries:
-            print(f"Ebene {depth} hat keine möglichen entrys mehr.")
+        # Current spot
+        entries_and_spot = self.get_current_spot()
+        # Es gibt mindestens einen Spot, der 0 mögliche entrys hat
+        if entries_and_spot == None:
             return False
-
-        possible_insertions = self.get_possible_entries(entries, spot)
-
+        entries, spot = entries_and_spot[:2]
         # Über alle spots drüber iterieren und den mit höchstem score auswählen
-        for insertion in possible_insertions:
-            self.insert_answer(insertion[0], insertion[1])
-            print(f"In Ebene {depth} wurde {insertion[0].get_answer()} inserted")
+        for entry in entries:
+            self.insert_answer(entry, spot)
 
-            
             # Rekursion
             if self.backtracking(depth + 1):
                 return True
             else:
-                self.revert_spot(insertion[1])
-                print(f"In Ebene {depth} wurde die Antowrt {insertion[0].get_answer()} zu {insertion[1].get_answer()} reverted.")
+                self.revert_spot(spot)
         return False
     
     # Gibt eine Liste an entries, die an mind. einem spot passen
@@ -195,7 +184,7 @@ class CrosswordGridTemplate:
 
     # Testet einen entry, ob er in irgendeinen spot passt, sonst false
     def is_entry_possible(self, entry: ClueEntry, length: int):
-        for spot in self.open_spots_by_length[length]:
+        for spot in self.unocupied_spots[length]:
             if self.fits_entry_on_spot(entry, spot):
                 return True
         return False
@@ -207,25 +196,18 @@ class CrosswordGridTemplate:
                     return False
         return True
     
-    def get_possible_entries(self, entries: List[ClueEntry], spot: PlacedWord) -> List[tuple[ClueEntry, PlacedWord, float]]:
-        possible_insertions: List[tuple[ClueEntry, PlacedWord, float]] = []
+    # Gibt alle Entries für einen spot in Form einer Liste
+    def get_possible_entries(self, entries: List[ClueEntry], spot: PlacedWord) -> List[ClueEntry]:
+        possible_insertions: List[ClueEntry] = []
         for entry in entries:
             if self.fits_entry_on_spot(entry, spot):
-                score = self.calculate_score(entry, spot)
-                possible_insertions.append((entry, spot, score))
+                possible_insertions.append((entry))
         #Höchster score zuerst 
-        possible_insertions.sort(key=lambda x: x[2], reverse=True)
         return possible_insertions
 
-    def calculate_score(self, entry: ClueEntry, spot: PlacedWord) -> float:
-        score: float = 0.0
-        for i, char in enumerate(spot.get_answer()):
-            if char == entry.get_answer()[i]:
-                    score += 1
-        return score
     def crossword_finished(self) -> bool:
-        for lenght in list(self.open_spots_by_length.keys()):
-            for spot in self.open_spots_by_length[lenght]:
+        for lenght in list(self.unocupied_spots.keys()):
+            for spot in self.unocupied_spots[lenght]:
                 if spot.is_occupied():
                     continue
                 else:
@@ -241,8 +223,8 @@ class CrosswordGridTemplate:
                 else:
                     raise ValueError("Spot in the false list")
 
-        for lenght in list(self.open_spots_by_length.keys()):
-            for spot in self.open_spots_by_length[lenght]:
+        for lenght in list(self.unocupied_spots.keys()):
+            for spot in self.unocupied_spots[lenght]:
                 if not spot.is_occupied():
                     current_answer = ""
                     row = spot.get_row()
@@ -267,6 +249,18 @@ class CrosswordGridTemplate:
         else:
             raise ValueError("Tried to revert an unoccupied spot")
         
+    def get_current_spot(self) -> Optional[tuple[List[ClueEntry], PlacedWord, int]]:
+        numbers_of_entries: List[tuple[List[ClueEntry], PlacedWord, int]] = []
+        for length in self.unocupied_spots.keys():
+            for spot in self.unocupied_spots[length]:
+                entries_for_length = self.get_all_possible_entries(length)
+                possible_entries = self.get_possible_entries(entries_for_length, spot)
+                number_of_entries = len(possible_entries)
+                if number_of_entries == 0:
+                    return None
+                numbers_of_entries.append((possible_entries, spot, number_of_entries))
+        numbers_of_entries.sort(key=lambda x: x[2])
+        return numbers_of_entries[0]
 
     def display(self):
         for row in self.grid:
