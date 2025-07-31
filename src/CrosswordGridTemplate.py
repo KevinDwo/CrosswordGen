@@ -13,7 +13,10 @@ class CrosswordGridTemplate:
     
 
     def set_entries(self, entries: Dict[int, List[ClueEntry]]):
-        self.entries = entries
+        new_entries: Dict[int, List[ClueEntry]] = defaultdict(list)
+        for length in self.unocupied_spots:
+            new_entries[length] = entries[length]
+        self.entries = new_entries
 
     #Loading Layout
     def set_placeholder(self, row: int, col: int, length: int, direction: Direction, number: int) -> bool:
@@ -127,7 +130,7 @@ class CrosswordGridTemplate:
             #self.display()
             return True
         else:
-            print("Answer is too long/short")
+            print("Answer does not match length")
             return False
     
     def set_spot_occupation(self, spot: PlacedWord, occupation: bool):
@@ -139,7 +142,7 @@ class CrosswordGridTemplate:
         else:
             self.occupied_spots[length].remove(spot)
             self.unocupied_spots[length].append(spot)
-
+    
     def update_grid(self, spot: PlacedWord):
         row = spot.get_row()
         col = spot.get_col()
@@ -152,8 +155,8 @@ class CrosswordGridTemplate:
     def backtracking(self, depth: int) -> bool:
         depth = depth
         if depth >= 33:
-            print(f"Current depth: {depth}")
-            self.display()
+            print(f"Current depht: {depth}")
+            self.display
         if self.crossword_finished():
             self.display()
             return True
