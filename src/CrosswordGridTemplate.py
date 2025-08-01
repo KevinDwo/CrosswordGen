@@ -60,7 +60,7 @@ class CrosswordGridTemplate:
                 case _:
                     raise ValueError("Somethin in can_place went wrong")
             if r >= len(self.grid) or r < 0 or c >= len(self.grid[0]) or c < 0:
-                print("Index gets out of grid")
+                print(f"Index gets out of grid: row = {r} and col = {c}")
                 return False
             current = self.grid[r][c]
             if current != ' ' and current != char:
@@ -205,7 +205,6 @@ class CrosswordGridTemplate:
         for entry in entries:
             if self.fits_entry_on_spot(entry, spot):
                 possible_insertions.append((entry))
-        #Höchster score zuerst 
         return possible_insertions
 
     def crossword_finished(self) -> bool:
