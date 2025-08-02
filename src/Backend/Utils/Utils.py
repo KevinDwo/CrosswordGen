@@ -1,6 +1,6 @@
 from collections import defaultdict
 import csv
-from ClueEntry import ClueEntry
+from src.Backend.ClueEntry import ClueEntry
 from typing import List, Dict
 
 class Utils:
