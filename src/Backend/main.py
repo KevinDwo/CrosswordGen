@@ -1,5 +1,5 @@
 from Crossword import Crossword
-from Utils.Utils import Utils
+from src.Backend.Utils.Utils import Utils
 
 def Main():
     entries = Utils.load_csv("/mnt/e/Programmier-Aufgaben/Crossword/CrosswordGen/TestQuestions.csv")
