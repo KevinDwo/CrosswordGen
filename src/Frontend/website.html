@@ -18,6 +18,11 @@
   padding: 10px;
   font-size: 35px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
 }
 </style>
 </head>
@@ -29,152 +34,39 @@
 
 <p>Direct child element(s) of the grid container automatically becomes grid items.</p>
 
-<div class="container">
-  <div>A</div>
-  <div>2</div>
-  <div>3</div>  
-  <div>3</div>
-  <div>5</div>
-  <div>6</div>  
-  <div>7</div>
-  <div>8</div>
-  <div>9</div>
-  <div>10</div>
-  <div>11</div>
-  <div>12</div>
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>  
-  <div>3</div>
-  <div>5</div>
-  <div>6</div>  
-  <div>7</div>
-  <div>8</div>
-  <div>9</div>
-  <div>10</div>
-  <div>11</div>
-  <div>12</div>
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>  
-  <div>3</div>
-  <div>5</div>
-  <div>6</div>  
-  <div>7</div>
-  <div>8</div>
-  <div>9</div>
-  <div>10</div>
-  <div>11</div>
-  <div>12</div>
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>  
-  <div>3</div>
-  <div>5</div>
-  <div>6</div>  
-  <div>7</div>
-  <div>8</div>
-  <div>9</div>
-  <div>10</div>
-  <div>11</div>
-  <div>12</div>
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>  
-  <div>3</div>
-  <div>5</div>
-  <div>6</div>  
-  <div>7</div>
-  <div>8</div>
-  <div>9</div>
-  <div>10</div>
-  <div>11</div>
-  <div>12</div>
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>  
-  <div>3</div>
-  <div>5</div>
-  <div>6</div>  
-  <div>7</div>
-  <div>8</div>
-  <div>9</div>
-  <div>10</div>
-  <div>11</div>
-  <div>12</div>
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>  
-  <div>3</div>
-  <div>5</div>
-  <div>6</div>  
-  <div>7</div>
-  <div>8</div>
-  <div>9</div>
-  <div>10</div>
-  <div>11</div>
-  <div>12</div>
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>  
-  <div>3</div>
-  <div>5</div>
-  <div>6</div>  
-  <div>7</div>
-  <div>8</div>
-  <div>9</div>
-  <div>10</div>
-  <div>11</div>
-  <div>12</div>
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>  
-  <div>3</div>
-  <div>5</div>
-  <div>6</div>  
-  <div>7</div>
-  <div>8</div>
-  <div>9</div>
-  <div>10</div>
-  <div>11</div>
-  <div>12</div>
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>  
-  <div>3</div>
-  <div>5</div>
-  <div>6</div>  
-  <div>7</div>
-  <div>8</div>
-  <div>9</div>
-  <div>10</div>
-  <div>11</div>
-  <div>12</div>
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>  
-  <div>3</div>
-  <div>5</div>
-  <div>6</div>  
-  <div>7</div>
-  <div>8</div>
-  <div>9</div>
-  <div>10</div>
-  <div>11</div>
-  <div>12</div>
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>  
-  <div>3</div>
-  <div>5</div>
-  <div>6</div>  
-  <div>7</div>
-  <div>8</div>
-  <div>9</div>
-  <div>10</div>
-  <div>11</div>
-  <div>12</div>
-</div>
+<div class="container"></div>
+
+<script>
+  const container = document.querySelector('.container');
+  for(let i = 0; i < 144; i++) {
+    const div = document.createElement('div');
+    container.appendChild(div);
+  }
+</script>
+
+
+<script>
+   const regex = /^[a-zA-Z]?$/;
+  document.querySelectorAll('.container > div').forEach(div => {
+    let oldText
+
+    div.setAttribute('contenteditable', 'true');
+    
+    div.addEventListener('beforeinput', (event) => {
+      oldText = div.innerText;
+    });
+
+    div.addEventListener('input', () => {
+      let text = div.innerText.replace(/\s/g, '');
+
+      if (regex.test(text)){
+        div.innerText = text.toUpperCase()
+      }else
+      div.innerText = oldText
+    });
+  });
+</script>
+
 
 </body>
 </html>
