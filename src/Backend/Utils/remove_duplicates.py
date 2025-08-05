@@ -12,11 +12,23 @@ with open(input_file, "r", encoding="utf-8") as csvfile:
     reader = csv.reader(csvfile)
     header = next(reader)
     cleaned_rows.append(header)
-
+    word_numbers = 0
     for row in reader:
-        answer_lower = row[1].lower()
-        if answer_lower not in unique_entries:
-            unique_entries.add(answer_lower)
+        word_numbers += 1
+        if word_numbers == 10000:
+            break
+        if len(row) > 1:
+            answer_lower = row[1].lower()
+            if len(answer_lower) > 9:
+                continue
+            if answer_lower not in unique_entries:
+                unique_entries.add(answer_lower)
+                cleaned_rows.append(row)
+        else:
+            answer = row[0]
+            row.append(answer)
+            row[0] = "?"
+            unique_entries.add(row[1])
             cleaned_rows.append(row)
 
 # Write new file
