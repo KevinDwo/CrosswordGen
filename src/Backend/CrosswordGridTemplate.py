@@ -4,6 +4,7 @@ from typing import Dict, List, DefaultDict, Optional, Union
 from collections import defaultdict
 from ClueEntry import ClueEntry
 
+
 class CrosswordGridTemplate:
     def __init__(self, rows: int, cols: int):
         self.grid = [[' ' for _ in range(cols)] for _ in range(rows)]

@@ -1,7 +1,8 @@
 from collections import defaultdict
 import csv
-from src.Backend.ClueEntry import ClueEntry
+from ClueEntry import ClueEntry
 from typing import List, Dict
+import flask
 
 class Utils:
 
