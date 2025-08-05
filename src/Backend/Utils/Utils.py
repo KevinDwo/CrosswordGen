@@ -2,7 +2,6 @@ from collections import defaultdict
 import csv
 from ClueEntry import ClueEntry
 from typing import List, Dict
-import flask
 
 class Utils:
 

@@ -3,6 +3,7 @@ from Direction import Direction
 from typing import Dict, List, DefaultDict, Optional, Union
 from collections import defaultdict
 from ClueEntry import ClueEntry
+import random
 
 
 class CrosswordGridTemplate:
@@ -155,7 +156,7 @@ class CrosswordGridTemplate:
     # Testing to get a solution
     def backtracking(self, depth: int) -> bool:
         depth = depth
-        if depth >= 33:
+        if depth >= 37:
             print(f"Current depht: {depth}")
             self.display
         if self.crossword_finished():
@@ -258,6 +259,7 @@ class CrosswordGridTemplate:
             for spot in self.unocupied_spots[length]:
                 entries_for_length = self.get_all_possible_entries(length)
                 possible_entries = self.get_possible_entries(entries_for_length, spot)
+                random.shuffle(possible_entries)
                 number_of_entries = len(possible_entries)
                 if number_of_entries == 0:
                     return None
