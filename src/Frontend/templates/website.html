@@ -4,12 +4,12 @@
 <style>
 .container {
   display: grid;
-  grid-template-columns: repeat(12, 1.6cm);
-  grid-template-rows: repeat(12, 1.6cm);
+  grid-template-columns: repeat(12, 1.4cm);
+  grid-template-rows: repeat(12, 1.4cm);
   background-color: black;
   margin: 0 auto;
   width: fit-content;
-  border: 2px solid black; /* dicker Außenrahmen */
+  border: 2px solid black;
 }
 
 .container > div {
@@ -24,15 +24,17 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 </style>
 </head>
 <body>
 
-<h1>Grid Layout</h1>
+<h1>Kreuzworträtsel</h1>
 
-<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
-
-<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
 
 <div class="container"></div>
 
@@ -42,6 +44,18 @@
     const div = document.createElement('div');
     container.appendChild(div);
   }
+
+  // Holt die Daten vom Python-Server
+  fetch('http://127.0.0.1:5000/api/data')
+    .then(response => response.json())
+    .then(data => {
+      const divs = document.querySelectorAll('.container > div');
+      for (let key in data) {
+        if (divs[key]) {
+          divs[key].innerText = data[key];
+        }
+      }
+    });
 </script>
 
 
@@ -66,7 +80,5 @@
     });
   });
 </script>
-
-
 </body>
 </html>
