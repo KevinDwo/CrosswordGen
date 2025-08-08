@@ -1,0 +1,74 @@
+[
+  {
+    "question": "?",
+    "answer": "DK",
+    "row": 7,
+    "col": 3,
+    "direction": "vertical",
+    "number": 23
+  },
+  {
+    "question": "Echtgeld Währung (krzw.)",
+    "answer": "RP",
+    "row": 10,
+    "col": 3,
+    "direction": "vertical",
+    "number": 34
+  },
+  {
+    "question": "?",
+    "answer": "OP",
+    "row": 10,
+    "col": 1,
+    "direction": "vertical",
+    "number": 33
+  },
+  {
+    "question": "?",
+    "answer": "BILD",
+    "row": 7,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 21
+  },
+  {
+    "question": "?",
+    "answer": "LINUS",
+    "row": 7,
+    "col": 2,
+    "direction": "vertical",
+    "number": 22
+  },
+  {
+    "question": "?",
+    "answer": "MIKROFON",
+    "row": 8,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 29
+  },
+  {
+    "question": "?",
+    "answer": "ADELSHEIM",
+    "row": 0,
+    "col": 1,
+    "direction": "vertical",
+    "number": 1
+  },
+  {
+    "question": "?",
+    "answer": "PSP",
+    "row": 11,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 37
+  },
+  {
+    "question": "?",
+    "answer": "COURAGE",
+    "row": 10,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 32
+  }
+]
