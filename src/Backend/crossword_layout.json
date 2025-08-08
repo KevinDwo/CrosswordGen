@@ -1,0 +1,268 @@
+[
+  {
+    "col": 0,
+    "row": 0,
+    "direction": "downleft",
+    "length": 9,
+    "number": 1
+  },
+  {
+    "col": 2,
+    "row": 0,
+    "direction": "downleft",
+    "length": 6,
+    "number": 2
+  },
+  {
+    "col": 4,
+    "row": 0,
+    "direction": "downabove",
+    "length": 6,
+    "number": 3
+  },
+  {
+    "col": 5,
+    "row": 0,
+    "direction": "downabove",
+    "length": 4,
+    "number": 4
+  },
+  {
+    "col": 6,
+    "row": 0,
+    "direction": "downabove",
+    "length": 5,
+    "number": 5
+  },
+  {
+    "col": 7,
+    "row": 0,
+    "direction": "downleft",
+    "length": 4,
+    "number": 6
+  },
+  {
+    "col": 9,
+    "row": 0,
+    "direction": "downabove",
+    "length": 5,
+    "number": 7
+  },
+  {
+    "col": 11,
+    "row": 0,
+    "direction": "downright",
+    "length": 8,
+    "number": 8
+  },
+  {
+    "col": 0,
+    "row": 1,
+    "direction": "rightleft",
+    "length": 6,
+    "number": 9
+  },
+  {
+    "col": 7,
+    "row": 1,
+    "direction": "rightleft",
+    "length": 3,
+    "number": 10
+  },
+  {
+    "col": 11,
+    "row": 1,
+    "direction": "downabove",
+    "length": 3,
+    "number": 11
+  },
+  {
+    "col": 0,
+    "row": 2,
+    "direction": "rightabove",
+    "length": 7,
+    "number": 12
+  },
+  {
+    "col": 2,
+    "row": 2,
+    "direction": "rightleft",
+    "length": 9,
+    "number": 13
+  },
+  {
+    "col": 7,
+    "row": 3,
+    "direction": "rightleft",
+    "length": 4,
+    "number": 14
+  },
+  {
+    "col": 0,
+    "row": 4,
+    "direction": "rightabove",
+    "length": 5,
+    "number": 15
+  },
+  {
+    "col": 2,
+    "row": 4,
+    "direction": "rightleft",
+    "length": 4,
+    "number": 16
+  },
+  {
+    "col": 7,
+    "row": 4,
+    "direction": "downabove",
+    "length": 5,
+    "number": 17
+  },
+  {
+    "col": 8,
+    "row": 4,
+    "direction": "rightleft",
+    "length": 3,
+    "number": 18
+  },
+  {
+    "col": 5,
+    "row": 5,
+    "direction": "rightleft",
+    "length": 5,
+    "number": 19
+  },
+  {
+    "col": 11,
+    "row": 5,
+    "direction": "downabove",
+    "length": 6,
+    "number": 20
+  },
+  {
+    "col": 0,
+    "row": 6,
+    "direction": "rightabove",
+    "length": 4,
+    "number": 21
+  },
+  {
+    "col": 2,
+    "row": 6,
+    "direction": "downabove",
+    "length": 5,
+    "number": 22
+  },
+  {
+    "col": 3,
+    "row": 6,
+    "direction": "downabove",
+    "length": 2,
+    "number": 23
+  },
+  {
+    "col": 5,
+    "row": 6,
+    "direction": "downabove",
+    "length": 5,
+    "number": 24
+  },
+  {
+    "col": 6,
+    "row": 6,
+    "direction": "downabove",
+    "length": 5,
+    "number": 25
+  },
+  {
+    "col": 8,
+    "row": 6,
+    "direction": "downabove",
+    "length": 5,
+    "number": 26
+  },
+  {
+    "col": 9,
+    "row": 6,
+    "direction": "rightleft",
+    "length": 2,
+    "number": 27
+  },
+  {
+    "col": 4,
+    "row": 7,
+    "direction": "rightleft",
+    "length": 7,
+    "number": 28
+  },
+  {
+    "col": 0,
+    "row": 8,
+    "direction": "rightleft",
+    "length": 8,
+    "number": 29
+  },
+  {
+    "col": 9,
+    "row": 8,
+    "direction": "downabove",
+    "length": 3,
+    "number": 30
+  },
+  {
+    "col": 10,
+    "row": 8,
+    "direction": "downabove",
+    "length": 3,
+    "number": 31
+  },
+  {
+    "col": 0,
+    "row": 9,
+    "direction": "rightabove",
+    "length": 7,
+    "number": 32
+  },
+  {
+    "col": 1,
+    "row": 9,
+    "direction": "downabove",
+    "length": 2,
+    "number": 33
+  },
+  {
+    "col": 3,
+    "row": 9,
+    "direction": "downabove",
+    "length": 2,
+    "number": 34
+  },
+  {
+    "col": 4,
+    "row": 9,
+    "direction": "rightleft",
+    "length": 7,
+    "number": 35
+  },
+  {
+    "col": 7,
+    "row": 10,
+    "direction": "rightleft",
+    "length": 4,
+    "number": 36
+  },
+  {
+    "col": 0,
+    "row": 11,
+    "direction": "rightleft",
+    "length": 3,
+    "number": 37
+  },
+  {
+    "col": 4,
+    "row": 11,
+    "direction": "rightleft",
+    "length": 7,
+    "number": 38
+  }
+]
