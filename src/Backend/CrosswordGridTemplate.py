@@ -3,6 +3,7 @@ from Direction import Direction
 from typing import Dict, List, DefaultDict, Optional, Union
 from collections import defaultdict
 from ClueEntry import ClueEntry
+from Utils.Utils import Spot
 import random
 
 
@@ -12,8 +13,14 @@ class CrosswordGridTemplate:
         self.unocupied_spots: DefaultDict[int, List[PlacedWord]] = defaultdict(list)
         self.occupied_spots: DefaultDict[int, List[PlacedWord]] = defaultdict(list)
         self.entries: Dict[int, List[ClueEntry]] 
+        self.layout: List[Spot] = []
     
+    def get_spots(self) -> DefaultDict[int, List[PlacedWord]]:
+        return self.occupied_spots
 
+    def get_layout(self) -> List[Spot]:
+        return self.layout
+    
     def set_entries(self, entries: Dict[int, List[ClueEntry]]):
         new_entries: Dict[int, List[ClueEntry]] = defaultdict(list)
         for length in self.unocupied_spots:
@@ -22,6 +29,7 @@ class CrosswordGridTemplate:
 
     #Loading Layout
     def set_placeholder(self, row: int, col: int, length: int, direction: Direction, number: int) -> bool:
+        self.set_layout_spot(row, col, length, direction, number)
         answer = "_" * length
         if self.__can_place_word(answer, row, col, direction):
             new_PlaceWord_values: List[Union[int, Direction]] = self.__place_word(answer, row, col, direction)
@@ -32,6 +40,15 @@ class CrosswordGridTemplate:
             print(f"Number {number} is false!")
             return False
 
+    def set_layout_spot(self, row: int, col: int, length: int, direction: Direction, number: int):
+        spot: Spot = {
+            "col": col,
+            "row": row,
+            "direction": direction.value,
+            "length": length,
+            "number": number
+        }
+        self.layout.append(spot)
 
     def __can_place_word(self, word: str, row: int, col: int, direction: Direction) -> bool:
         if ' ' != self.grid[row][col]:
@@ -156,9 +173,10 @@ class CrosswordGridTemplate:
     # Testing to get a solution
     def backtracking(self, depth: int) -> bool:
         depth = depth
-        if depth >= 37:
+        if depth >= 10:
             print(f"Current depht: {depth}")
             self.display
+            return True
         if self.crossword_finished():
             self.display()
             return True
