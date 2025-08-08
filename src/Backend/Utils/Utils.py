@@ -1,7 +1,7 @@
 from collections import defaultdict
 import csv
 from ClueEntry import ClueEntry
-from typing import List, Dict
+from typing import List, Dict, TypedDict
 
 class Utils:
 
@@ -30,3 +30,18 @@ class Utils:
     def get_words_by_length(entries: Dict[int, List[ClueEntry]], length: int):
         for word in entries[length]:
             print(word.get_answer())
+
+class Spot(TypedDict):
+    row: int
+    col: int
+    direction: str
+    length: int
+    number: int
+
+class Entry(TypedDict):
+    question: str
+    answer: str
+    row: int
+    col: int
+    direction: str
+    number: int

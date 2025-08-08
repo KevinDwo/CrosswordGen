@@ -1,23 +1,26 @@
 from flask import Flask, jsonify, render_template
 from flask_cors import CORS
+import json
 
 app = Flask(__name__, template_folder='../Frontend/templates')
 CORS(app)
 
-data = {
-    "0": "H",
-    "1": "A",
-    "2": "L",
-    "3": "L",
-    "4": "O"
-}
+with open("crossword_entries.json", "r", encoding="utf-8") as f:
+    entries = json.load(f)
+
+with open("crossword_layout.json", "r", encoding="utf-8") as f:
+    layout = json.load(f)
 
 @app.route('/')
 def index():
     return render_template('website.html')
 
-@app.route('/api/data')
-def get_data():
-    return jsonify(data)
+@app.route('/api/entries')
+def get_entries():
+    return jsonify(entries)
+
+@app.route('/api/layout')
+def get_layout():
+    return jsonify(layout)
 
 app.run(debug=True)
