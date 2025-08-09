@@ -1,5 +1,5 @@
 from Crossword import Crossword
-from Utils.Utils import Utils
+from utils.Utils import Utils
 import argparse
 
 def Main():
@@ -10,7 +10,7 @@ def Main():
     entries = Utils.load_csv(args.csv_path)
     Utils.print_number_of_words(entries)
     #Utils.get_words_by_length(entries, 2)
-    crossword = Crossword(entries, 2)
+    crossword = Crossword(entries, 3)
     crossword.solve()
 
 if __name__ == "__main__":

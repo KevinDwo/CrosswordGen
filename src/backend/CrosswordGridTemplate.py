@@ -3,7 +3,7 @@ from Direction import Direction
 from typing import Dict, List, DefaultDict, Optional, Union
 from collections import defaultdict
 from ClueEntry import ClueEntry
-from Utils.Utils import Spot
+from utils.Utils import Spot
 import random
 
 
