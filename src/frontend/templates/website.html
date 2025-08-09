@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kreuzworträtsel</title>
+    <title>Europäisches Kreuzworträtsel</title>
     <style>
         /* Grundlegende Stildefinitionen für den Body */
         body {
@@ -214,7 +214,8 @@
         }
 
         function handleClick(event) {
-            const cell = event.target.closest('.cell');
+            const target = event.target;
+            const cell = target.closest('.cell');
             if (!cell) return;
 
             if (cell.classList.contains('hint-cell')) {
@@ -234,7 +235,7 @@
                 return;
             }
 
-            if (event.target.matches('input')) {
+            if (target.matches('input')) {
                 const clickedIndex = parseInt(cell.dataset.index);
                 const associatedSolutions = cellToSolutionsMap.get(clickedIndex);
 
@@ -259,6 +260,8 @@
                 
                 highlightWord(solutionToHighlight, clickedIndex);
                 currentSelection = { solution: solutionToHighlight, index: clickedIndex };
+                
+                setTimeout(() => target.select(), 0);
             }
         }
         
@@ -335,27 +338,43 @@
             if (!cell) return;
 
             const cellIndex = parseInt(cell.dataset.index);
-            const solutionsToCheck = cellToSolutionsMap.get(cellIndex);
 
+            // Zuerst validieren und Wert setzen
+            if (!regex.test(inputField.value)) {
+                inputField.value = '';
+                return; // Beenden, wenn die Eingabe ungültig ist
+            }
+            inputField.value = inputField.value.toUpperCase();
+
+            // Dann die Lösung prüfen
+            const solutionsToCheck = cellToSolutionsMap.get(cellIndex);
             if (solutionsToCheck) {
                 solutionsToCheck.forEach(checkSolution);
             }
             
-            if (regex.test(inputField.value)) {
-                inputField.value = inputField.value.toUpperCase();
-                
-                if (currentSelection && inputField.value.length > 0) {
-                    const wordCells = getWordCells(currentSelection.solution);
-                    const currentCellInWordIndex = wordCells.findIndex(c => parseInt(c.dataset.index) === cellIndex);
-                    if (currentCellInWordIndex > -1 && currentCellInWordIndex < wordCells.length - 1) {
-                        const nextCell = wordCells[currentCellInWordIndex + 1];
-                        nextCell.querySelector('input').focus();
-                        highlightWord(currentSelection.solution, parseInt(nextCell.dataset.index));
-                        currentSelection.index = parseInt(nextCell.dataset.index);
-                    }
+            // --- BEHOBENE LOGIK FÜR AUTO-NAVIGATION ---
+
+            // Wenn keine Auswahl besteht, aber getippt wird, automatisch eine Auswahl treffen
+            if (!currentSelection && inputField.value.length > 0) {
+                const associatedSolutions = cellToSolutionsMap.get(cellIndex);
+                if (associatedSolutions && associatedSolutions.length > 0) {
+                    const solutionToHighlight = associatedSolutions.find(s => s.direction === 'horizontal') || associatedSolutions[0];
+                    highlightWord(solutionToHighlight, cellIndex);
+                    currentSelection = { solution: solutionToHighlight, index: cellIndex };
                 }
-            } else {
-                inputField.value = '';
+                return; // Beim ersten Buchstaben nicht weiterspringen
+            }
+            
+            // Wenn eine Auswahl besteht, zum nächsten Feld springen
+            if (currentSelection && inputField.value.length > 0) {
+                const wordCells = getWordCells(currentSelection.solution);
+                const currentCellInWordIndex = wordCells.findIndex(c => parseInt(c.dataset.index) === cellIndex);
+                if (currentCellInWordIndex > -1 && currentCellInWordIndex < wordCells.length - 1) {
+                    const nextCell = wordCells[currentCellInWordIndex + 1];
+                    nextCell.querySelector('input').focus();
+                    highlightWord(currentSelection.solution, parseInt(nextCell.dataset.index));
+                    currentSelection.index = parseInt(nextCell.dataset.index);
+                }
             }
         }
 
