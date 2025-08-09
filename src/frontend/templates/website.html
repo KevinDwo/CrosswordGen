@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Europäisches Kreuzworträtsel</title>
+    <title>Kreuzworträtsel</title>
     <style>
         /* Grundlegende Stildefinitionen für den Body */
         body {
@@ -29,16 +29,16 @@
         /* Stil für den Container, der das 12x12 Raster bildet */
         .container {
             display: grid;
-            grid-template-columns: repeat(12, 40px);
-            grid-template-rows: repeat(12, 40px);
+            grid-template-columns: repeat(12, 44px);
+            grid-template-rows: repeat(12, 44px);
             border: 2px solid #000;
         }
 
         /* Stil für jede einzelne Zelle im Raster */
         .cell {
             position: relative;
-            width: 40px;
-            height: 40px;
+            width: 44px;
+            height: 44px;
             box-sizing: border-box;
             background-color: #fff;
             border-top: 1px solid #000;
@@ -54,31 +54,27 @@
             height: 100%;
             border: none;
             text-align: center;
-            font-size: 1.5rem;
+            font-size: 1.4rem; /* Geändert: Etwas verkleinert */
             text-transform: uppercase;
             background: transparent;
             outline: none;
             color: #1a202c;
             padding: 0;
             cursor: pointer;
-            caret-color: transparent; /* Macht den blinkenden Cursor unsichtbar */
+            caret-color: transparent;
         }
         
-        /* Macht die Text-Markierung (blau) unsichtbar */
         .cell input::selection {
             background-color: transparent;
         }
 
-        /* Stil für die Hinweiszellen (hellblau) mit Unicode-Pfeilen */
+        /* Stil für die Hinweiszellen */
         .hint-cell {
             background-color: #cce7f5;
+            cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
-            line-height: 1;
-            color: #1a202c;
-            user-select: none;
         }
         
         /* Animation für das Blinken */
@@ -88,25 +84,47 @@
             50% { background-color: #d4edda; }
         }
 
-        /* Klasse, die die Animation auslöst */
         .blinking input {
             animation: blink-correct 1.5s ease-in-out;
         }
         
         /* Stile für die Wort-Markierung */
         .selected input {
-            background-color: #ffedd5; /* Orange */
+            background-color: #ffedd5;
         }
         .highlighted input {
-            background-color: #e5e7eb; /* Grau */
+            background-color: #e5e7eb;
         }
 
-        /* NEU: Finale Animation für das gelöste Rätsel */
+        /* Finale Animation für das gelöste Rätsel */
         .puzzle-solved .cell input,
         .puzzle-solved .hint-cell {
             animation: blink-correct 2s infinite;
         }
 
+        /* --- STILE FÜR DIE SVG-PFEILE AUF DEN RÄNDERN --- */
+        .arrow-container {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            pointer-events: none; /* Sorgt dafür, dass der Pfeil nicht klickbar ist */
+        }
+        .arrow-container svg {
+            width: 100%;
+            height: 100%;
+            overflow: visible; /* Wichtig, damit die Linien nicht abgeschnitten werden */
+        }
+        
+        /* Positionen der Pfeile (angepasst) */
+        /* Normale Pfeile */
+        .pos-rl { left: -8px; top: 50%; transform: translateY(-50%); } /* RIGHTLEFT */
+        .pos-da { top: -8px; left: 50%; transform: translateX(-50%); } /* DOWNABOVE */
+
+        /* Eckpfeile (angepasst) */
+        .pos-ra { top: -3px; left: 25%; transform: translateX(-50%); } /* RIGHTABOVE */
+        .pos-rd { bottom: -3px; left: 25%; transform: translateX(-50%); } /* RIGHTDOWN */
+        .pos-dl { left: -3px; top: 25%; transform: translateY(-50%); } /* DOWNLEFT */
+        .pos-dr { right: -3px; top: 25%; transform: translateY(-50%); } /* DOWNRIGHT */
 
     </style>
 </head>
@@ -135,65 +153,23 @@
             allCells.push(cell);
         }
 
+        // --- SVG-DEFINITIONEN MIT LÄNGEREM VORDERTEIL ---
+        const SVG_ARROWS = {
+            RIGHTLEFT:  `<svg viewBox="0 0 20 20" fill="none" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10 H18 M12 5 L18 10 L12 15"/></svg>`,
+            RIGHTABOVE: `<svg viewBox="0 0 20 20" fill="none" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2 V10 H22 M16 5 L22 10 L16 15"/></svg>`,
+            RIGHTDOWN:  `<svg viewBox="0 0 20 20" fill="none" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 18 V10 H22 M16 5 L22 10 L16 15"/></svg>`,
+            DOWNLEFT:   `<svg viewBox="0 0 20 20" fill="none" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10 H10 V22 M5 16 L10 22 L15 16"/></svg>`,
+            DOWNABOVE:  `<svg viewBox="0 0 20 20" fill="none" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2 V18 M5 12 L10 18 L15 12"/></svg>`,
+            DOWNRIGHT:  `<svg viewBox="0 0 20 20" fill="none" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10 H10 V22 M5 16 L10 22 L15 16"/></svg>`,
+        };
+
+
         // --- TEIL 2: LÖSUNG LADEN UND SPIEL-LOGIK ---
         const apiUrl = 'http://127.0.0.1:5000';
         let solutions = [];
-        const solvedSolutions = new Set(); // NEU: Set zum Speichern der gelösten Wörter
+        const solvedSolutions = new Set();
         const cellToSolutionsMap = new Map();
-        let currentSelection = null; // Speichert das aktuell ausgewählte Wort
-
-        // Funktion zum Abrufen und Anzeigen des Layouts
-        function fetchLayout() {
-            return fetch(`${apiUrl}/api/layout`)
-                .then(response => response.json())
-                .then(spots => {
-                    spots.forEach(spot => {
-                        const hintIndex = spot.row * gridWidth + spot.col;
-                        if (allCells[hintIndex]) {
-                            const hintCell = allCells[hintIndex];
-                            hintCell.classList.add('hint-cell');
-                            let arrowChar = '';
-                            switch (spot.direction.toUpperCase()) {
-                                case 'RIGHTLEFT': arrowChar = '→'; break;
-                                case 'RIGHTABOVE': arrowChar = '↳'; break;
-                                case 'RIGHTDOWN': arrowChar = '↱'; break;
-                                case 'DOWNLEFT': arrowChar = '⬎'; break;
-                                case 'DOWNABOVE': arrowChar = '↓'; break;
-                                case 'DOWNRIGHT': arrowChar = '⬐'; break;
-                            }
-                            hintCell.innerHTML = arrowChar;
-                        }
-                    });
-                });
-        }
-
-        // Funktion zum Abrufen und Speichern der Lösungen
-        function fetchAndStoreSolutions() {
-            return fetch(`${apiUrl}/api/entries`)
-                .then(response => response.json())
-                .then(entries => {
-                    solutions = entries;
-                    buildCellToSolutionMap();
-                });
-        }
-
-        // Erstellt eine Map, die jede Zelle ihren zugehörigen Lösungen zuordnet
-        function buildCellToSolutionMap() {
-            solutions.forEach(solution => {
-                for (let i = 0; i < solution.answer.length; i++) {
-                    let cellIndex;
-                    if (solution.direction === 'horizontal') {
-                        cellIndex = solution.row * gridWidth + (solution.col + i);
-                    } else { // vertical
-                        cellIndex = (solution.row + i) * gridWidth + solution.col;
-                    }
-                    if (!cellToSolutionsMap.has(cellIndex)) {
-                        cellToSolutionsMap.set(cellIndex, []);
-                    }
-                    cellToSolutionsMap.get(cellIndex).push(solution);
-                }
-            });
-        }
+        let currentSelection = null;
 
         // Hilfsfunktion, um alle Zellen eines Wortes zu erhalten
         function getWordCells(solution) {
@@ -211,14 +187,14 @@
             }
             return cells;
         }
-
+        
         // --- FUNKTIONEN FÜR DIE MARKIERUNG UND NAVIGATION ---
 
         function clearHighlights() {
             allCells.forEach(cell => {
                 cell.classList.remove('selected', 'highlighted');
             });
-            currentSelection = null; // Wichtig: Auswahl zurücksetzen
+            currentSelection = null;
         }
 
         function highlightWord(solution, activeIndex) {
@@ -238,34 +214,52 @@
         }
 
         function handleClick(event) {
-            const target = event.target;
-            if (!target.matches('input')) return;
+            const cell = event.target.closest('.cell');
+            if (!cell) return;
 
-            const cell = target.closest('.cell');
-            const clickedIndex = parseInt(cell.dataset.index);
-            const associatedSolutions = cellToSolutionsMap.get(clickedIndex);
-
-            if (!associatedSolutions || associatedSolutions.length === 0) {
-                clearHighlights();
+            if (cell.classList.contains('hint-cell')) {
+                const number = parseInt(cell.dataset.number);
+                if (!isNaN(number)) {
+                    const targetSolution = solutions.find(s => s.number === number);
+                    if (targetSolution) {
+                        const firstLetterCellIndex = targetSolution.row * gridWidth + targetSolution.col;
+                        const firstLetterCell = allCells[firstLetterCellIndex];
+                        if (firstLetterCell) {
+                            firstLetterCell.querySelector('input').focus();
+                            highlightWord(targetSolution, firstLetterCellIndex);
+                            currentSelection = { solution: targetSolution, index: firstLetterCellIndex };
+                        }
+                    }
+                }
                 return;
             }
-            
-            let solutionToHighlight;
 
-            if (associatedSolutions.length === 1) {
-                solutionToHighlight = associatedSolutions[0];
-            } else {
-                const horizontal = associatedSolutions.find(s => s.direction === 'horizontal');
-                const vertical = associatedSolutions.find(s => s.direction === 'vertical');
-                if (currentSelection && currentSelection.index === clickedIndex) {
-                    solutionToHighlight = (currentSelection.solution.direction === 'horizontal') ? vertical : horizontal;
-                } else {
-                    solutionToHighlight = horizontal;
+            if (event.target.matches('input')) {
+                const clickedIndex = parseInt(cell.dataset.index);
+                const associatedSolutions = cellToSolutionsMap.get(clickedIndex);
+
+                if (!associatedSolutions || associatedSolutions.length === 0) {
+                    clearHighlights();
+                    return;
                 }
+                
+                let solutionToHighlight;
+
+                if (associatedSolutions.length === 1) {
+                    solutionToHighlight = associatedSolutions[0];
+                } else {
+                    const horizontal = associatedSolutions.find(s => s.direction === 'horizontal');
+                    const vertical = associatedSolutions.find(s => s.direction === 'vertical');
+                    if (currentSelection && currentSelection.index === clickedIndex) {
+                        solutionToHighlight = (currentSelection.solution.direction === 'horizontal') ? vertical : horizontal;
+                    } else {
+                        solutionToHighlight = horizontal;
+                    }
+                }
+                
+                highlightWord(solutionToHighlight, clickedIndex);
+                currentSelection = { solution: solutionToHighlight, index: clickedIndex };
             }
-            
-            highlightWord(solutionToHighlight, clickedIndex);
-            currentSelection = { solution: solutionToHighlight, index: clickedIndex };
         }
         
         function handleKeyDown(event) {
@@ -274,26 +268,18 @@
             const cell = inputField.closest('.cell');
             const currentIndex = parseInt(cell.dataset.index);
 
-            // Navigation mit Pfeiltasten
             if (key.startsWith('Arrow')) {
                 event.preventDefault();
                 let nextIndex = currentIndex;
                 let nextCell = null;
 
                 while (true) {
-                    if (key === 'ArrowUp') {
-                        nextIndex -= gridWidth;
-                    } else if (key === 'ArrowDown') {
-                        nextIndex += gridWidth;
-                    } else if (key === 'ArrowLeft') {
-                        nextIndex -= 1;
-                    } else if (key === 'ArrowRight') {
-                        nextIndex += 1;
-                    }
+                    if (key === 'ArrowUp') nextIndex -= gridWidth;
+                    else if (key === 'ArrowDown') nextIndex += gridWidth;
+                    else if (key === 'ArrowLeft') nextIndex -= 1;
+                    else if (key === 'ArrowRight') nextIndex += 1;
 
-                    if (nextIndex < 0 || nextIndex >= 144 || (key === 'ArrowLeft' && nextIndex % gridWidth === gridWidth - 1) || (key === 'ArrowRight' && nextIndex % gridWidth === 0)) {
-                        break;
-                    }
+                    if (nextIndex < 0 || nextIndex >= 144 || (key === 'ArrowLeft' && nextIndex % gridWidth === gridWidth - 1) || (key === 'ArrowRight' && nextIndex % gridWidth === 0)) break;
 
                     const tempNextCell = allCells[nextIndex];
                     if (tempNextCell && !tempNextCell.classList.contains('hint-cell')) {
@@ -329,7 +315,6 @@
                 return;
             }
 
-            // Navigation mit Rücktaste
             if (key === 'Backspace' && inputField.value.length === 0 && currentSelection) {
                 event.preventDefault();
                 const wordCells = getWordCells(currentSelection.solution);
@@ -343,8 +328,6 @@
                 }
             }
         }
-
-        // --- FUNKTIONEN ZUR EINGABEVERARBEITUNG ---
 
         function handleInput(event) {
             const inputField = event.target;
@@ -387,36 +370,53 @@
             });
 
             if (userInput.toUpperCase() === solution.answer.toUpperCase()) {
-                if (!wordCells[0].classList.contains('is-solved')) {
+                if (!solvedSolutions.has(solution)) {
                     wordCells.forEach(cell => {
                         cell.classList.add('blinking');
-                        cell.classList.add('is-solved');
                     });
                     
-                    solvedSolutions.add(solution); // NEU: Füge die Lösung zum Set hinzu
+                    solvedSolutions.add(solution);
 
                     setTimeout(() => {
                         wordCells.forEach(cell => cell.classList.remove('blinking'));
                     }, 1500);
 
-                    // NEU: Überprüfe, ob das gesamte Rätsel gelöst ist
                     if (solvedSolutions.size === solutions.length) {
                         container.classList.add('puzzle-solved');
                     }
                 }
             } else {
-                 wordCells.forEach(cell => cell.classList.remove('is-solved'));
-                 solvedSolutions.delete(solution); // NEU: Entferne die Lösung, falls ein Fehler gemacht wurde
-                 container.classList.remove('puzzle-solved'); // NEU: Entferne die finale Animation
+                 if(solvedSolutions.has(solution)){
+                    solvedSolutions.delete(solution);
+                    container.classList.remove('puzzle-solved');
+                 }
             }
         }
         
+        // --- SETUP UND INITIALISIERUNG ---
+
+        function buildCellToSolutionMap() {
+            solutions.forEach(solution => {
+                for (let i = 0; i < solution.answer.length; i++) {
+                    let cellIndex;
+                    if (solution.direction === 'horizontal') {
+                        cellIndex = solution.row * gridWidth + (solution.col + i);
+                    } else {
+                        cellIndex = (solution.row + i) * gridWidth + solution.col;
+                    }
+                    if (!cellToSolutionsMap.has(cellIndex)) {
+                        cellToSolutionsMap.set(cellIndex, []);
+                    }
+                    cellToSolutionsMap.get(cellIndex).push(solution);
+                }
+            });
+        }
+
         // Event-Listener hinzufügen
         container.addEventListener('input', handleInput);
         container.addEventListener('click', handleClick);
         container.addEventListener('keydown', handleKeyDown);
 
-        // Wähle den Inhalt aus, wenn ein Feld fokussiert wird, um das Überschreiben zu erleichtern
         container.addEventListener('focusin', (event) => {
             if (event.target.matches('input')) {
                 setTimeout(() => {
@@ -426,16 +426,65 @@
         });
 
         // Führe die Funktionen nacheinander aus
-        fetchLayout()
-            .then(fetchAndStoreSolutions)
-            .catch(error => {
-                console.error('Fehler beim Laden des Rätsels:', error);
-                const errorDiv = document.createElement('div');
-                errorDiv.style.color = 'red';
-                errorDiv.style.marginTop = '1rem';
-                errorDiv.textContent = 'Das Rätsel konnte nicht geladen werden. Bitte stelle sicher, dass der Server läuft.';
-                document.body.appendChild(errorDiv);
+        Promise.all([
+            fetch(`${apiUrl}/api/layout`).then(res => res.json()),
+            fetch(`${apiUrl}/api/entries`).then(res => res.json())
+        ])
+        .then(([spots, entries]) => {
+            solutions = entries;
+            
+            // 1. Hinweiszellen stylen
+            spots.forEach(spot => {
+                const hintIndex = spot.row * gridWidth + spot.col;
+                if (allCells[hintIndex]) {
+                    const hintCell = allCells[hintIndex];
+                    hintCell.classList.add('hint-cell');
+                    hintCell.dataset.number = spot.number;
+                    hintCell.innerHTML = ''; // Leere die Zelle für die Frage
+                }
             });
+
+            // 2. Map für die Lösungsprüfung erstellen
+            buildCellToSolutionMap();
+
+            // 3. Pfeile auf den Rändern der Antwortzellen hinzufügen
+            spots.forEach(spot => {
+                const solution = entries.find(e => e.number === spot.number);
+                if (!solution) return;
+
+                const firstLetterCellIndex = solution.row * gridWidth + solution.col;
+                const firstLetterCell = allCells[firstLetterCellIndex];
+                if (!firstLetterCell) return;
+
+                const arrowContainer = document.createElement('div');
+                arrowContainer.classList.add('arrow-container');
+
+                const direction = spot.direction.toUpperCase();
+                const arrowSVG = SVG_ARROWS[direction];
+                
+                if (arrowSVG) {
+                    arrowContainer.innerHTML = arrowSVG;
+                    // Setze die Position basierend auf der Richtung
+                    switch (direction) {
+                        case 'RIGHTLEFT':   arrowContainer.classList.add('pos-rl'); break;
+                        case 'RIGHTABOVE':  arrowContainer.classList.add('pos-ra'); break;
+                        case 'RIGHTDOWN':   arrowContainer.classList.add('pos-rd'); break;
+                        case 'DOWNLEFT':    arrowContainer.classList.add('pos-dl'); break;
+                        case 'DOWNABOVE':   arrowContainer.classList.add('pos-da'); break;
+                        case 'DOWNRIGHT':   arrowContainer.classList.add('pos-dr'); break;
+                    }
+                    firstLetterCell.appendChild(arrowContainer);
+                }
+            });
+        })
+        .catch(error => {
+            console.error('Fehler beim Laden des Rätsels:', error);
+            const errorDiv = document.createElement('div');
+            errorDiv.style.color = 'red';
+            errorDiv.style.marginTop = '1rem';
+            errorDiv.textContent = 'Das Rätsel konnte nicht geladen werden. Bitte stelle sicher, dass der Server läuft.';
+            document.body.appendChild(errorDiv);
+        });
     </script>
 </body>
 </html>
