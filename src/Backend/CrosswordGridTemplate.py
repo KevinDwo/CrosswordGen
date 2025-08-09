@@ -235,7 +235,7 @@ class CrosswordGridTemplate:
                     return False
         return True
     
-    # Updates all spots answers to match the current grid
+    # Updates all spots to match the current grid
     def update_all_spots(self):
         for lenght in list(self.occupied_spots.keys()):
             for spot in self.occupied_spots[lenght]:
