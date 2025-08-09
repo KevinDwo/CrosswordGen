@@ -3,7 +3,7 @@ from PlaceWord import PlacedWord
 from CrosswordGridLayouts import CrosswordGridLayouts
 from typing import DefaultDict, Dict, List
 from ClueEntry import ClueEntry
-from Utils.Utils import Entry
+from utils.Utils import Entry
 
 class Crossword:
     def __init__(self, entries_by_length: Dict[int, List[ClueEntry]], layout_number: int):

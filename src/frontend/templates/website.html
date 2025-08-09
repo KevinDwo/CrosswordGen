@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Europäisches Kreuzworträtsel</title>
+    <style>
+        /* Grundlegende Stildefinitionen für den Body */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Stil für den Haupttitel */
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #1a202c;
+            font-size: 2.5rem;
+        }
+
+        /* Stil für den Container, der das 12x12 Raster bildet */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 40px);
+            grid-template-rows: repeat(12, 40px);
+            border: 2px solid #000;
+        }
+
+        /* Stil für jede einzelne Zelle im Raster */
+        .cell {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            box-sizing: border-box;
+            background-color: #fff;
+            border-top: 1px solid #000;
+            border-left: 1px solid #000;
+        }
+        
+        .cell:nth-child(12n + 1) { border-left: none; }
+        .cell:nth-child(-n + 12) { border-top: none; }
+
+        /* Stil für das Eingabefeld in jeder Zelle */
+        .cell input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            text-align: center;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            background: transparent;
+            outline: none;
+            color: #1a202c;
+            padding: 0;
+            cursor: pointer;
+            caret-color: transparent; /* Macht den blinkenden Cursor unsichtbar */
+        }
+        
+        /* Macht die Text-Markierung (blau) unsichtbar */
+        .cell input::selection {
+            background-color: transparent;
+        }
+
+        /* Stil für die Hinweiszellen (hellblau) mit Unicode-Pfeilen */
+        .hint-cell {
+            background-color: #cce7f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            line-height: 1;
+            color: #1a202c;
+            user-select: none;
+        }
+        
+        /* Animation für das Blinken */
+        @keyframes blink-correct {
+            0%, 100% { background-color: #d4edda; }
+            25%, 75% { background-color: white; }
+            50% { background-color: #d4edda; }
+        }
+
+        /* Klasse, die die Animation auslöst */
+        .blinking input {
+            animation: blink-correct 1.5s ease-in-out;
+        }
+        
+        /* Stile für die Wort-Markierung */
+        .selected input {
+            background-color: #ffedd5; /* Orange */
+        }
+        .highlighted input {
+            background-color: #e5e7eb; /* Grau */
+        }
+
+        /* NEU: Finale Animation für das gelöste Rätsel */
+        .puzzle-solved .cell input,
+        .puzzle-solved .hint-cell {
+            animation: blink-correct 2s infinite;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Kreuzworträtsel</h1>
+
+    <div class="container"></div>
+
+    <script>
+        // --- TEIL 1: GRUNDGERÜST ERSTELLEN ---
+        const container = document.querySelector('.container');
+        const allCells = [];
+        const gridWidth = 12;
+        const regex = /^[a-zA-Z]?$/;
+
+        for(let i = 0; i < 144; i++) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.dataset.index = i;
+
+            const input = document.createElement('input');
+            input.setAttribute('maxlength', '1');
+            cell.appendChild(input);
+            container.appendChild(cell);
+            allCells.push(cell);
+        }
+
+        // --- TEIL 2: LÖSUNG LADEN UND SPIEL-LOGIK ---
+        const apiUrl = 'http://127.0.0.1:5000';
+        let solutions = [];
+        const solvedSolutions = new Set(); // NEU: Set zum Speichern der gelösten Wörter
+        const cellToSolutionsMap = new Map();
+        let currentSelection = null; // Speichert das aktuell ausgewählte Wort
+
+        // Funktion zum Abrufen und Anzeigen des Layouts
+        function fetchLayout() {
+            return fetch(`${apiUrl}/api/layout`)
+                .then(response => response.json())
+                .then(spots => {
+                    spots.forEach(spot => {
+                        const hintIndex = spot.row * gridWidth + spot.col;
+                        if (allCells[hintIndex]) {
+                            const hintCell = allCells[hintIndex];
+                            hintCell.classList.add('hint-cell');
+                            let arrowChar = '';
+                            switch (spot.direction.toUpperCase()) {
+                                case 'RIGHTLEFT': arrowChar = '→'; break;
+                                case 'RIGHTABOVE': arrowChar = '↳'; break;
+                                case 'RIGHTDOWN': arrowChar = '↱'; break;
+                                case 'DOWNLEFT': arrowChar = '⬎'; break;
+                                case 'DOWNABOVE': arrowChar = '↓'; break;
+                                case 'DOWNRIGHT': arrowChar = '⬐'; break;
+                            }
+                            hintCell.innerHTML = arrowChar;
+                        }
+                    });
+                });
+        }
+
+        // Funktion zum Abrufen und Speichern der Lösungen
+        function fetchAndStoreSolutions() {
+            return fetch(`${apiUrl}/api/entries`)
+                .then(response => response.json())
+                .then(entries => {
+                    solutions = entries;
+                    buildCellToSolutionMap();
+                });
+        }
+
+        // Erstellt eine Map, die jede Zelle ihren zugehörigen Lösungen zuordnet
+        function buildCellToSolutionMap() {
+            solutions.forEach(solution => {
+                for (let i = 0; i < solution.answer.length; i++) {
+                    let cellIndex;
+                    if (solution.direction === 'horizontal') {
+                        cellIndex = solution.row * gridWidth + (solution.col + i);
+                    } else { // vertical
+                        cellIndex = (solution.row + i) * gridWidth + solution.col;
+                    }
+                    if (!cellToSolutionsMap.has(cellIndex)) {
+                        cellToSolutionsMap.set(cellIndex, []);
+                    }
+                    cellToSolutionsMap.get(cellIndex).push(solution);
+                }
+            });
+        }
+
+        // Hilfsfunktion, um alle Zellen eines Wortes zu erhalten
+        function getWordCells(solution) {
+            const cells = [];
+            for (let i = 0; i < solution.answer.length; i++) {
+                let cellIndex;
+                if (solution.direction === 'horizontal') {
+                    cellIndex = solution.row * gridWidth + (solution.col + i);
+                } else { // vertical
+                    cellIndex = (solution.row + i) * gridWidth + solution.col;
+                }
+                if (allCells[cellIndex]) {
+                    cells.push(allCells[cellIndex]);
+                }
+            }
+            return cells;
+        }
+
+        // --- FUNKTIONEN FÜR DIE MARKIERUNG UND NAVIGATION ---
+
+        function clearHighlights() {
+            allCells.forEach(cell => {
+                cell.classList.remove('selected', 'highlighted');
+            });
+            currentSelection = null; // Wichtig: Auswahl zurücksetzen
+        }
+
+        function highlightWord(solution, activeIndex) {
+            allCells.forEach(cell => {
+                cell.classList.remove('selected', 'highlighted');
+            });
+            
+            const wordCells = getWordCells(solution);
+            wordCells.forEach(cell => {
+                const cellIndex = parseInt(cell.dataset.index);
+                if (cellIndex === activeIndex) {
+                    cell.classList.add('selected');
+                } else {
+                    cell.classList.add('highlighted');
+                }
+            });
+        }
+
+        function handleClick(event) {
+            const target = event.target;
+            if (!target.matches('input')) return;
+
+            const cell = target.closest('.cell');
+            const clickedIndex = parseInt(cell.dataset.index);
+            const associatedSolutions = cellToSolutionsMap.get(clickedIndex);
+
+            if (!associatedSolutions || associatedSolutions.length === 0) {
+                clearHighlights();
+                return;
+            }
+            
+            let solutionToHighlight;
+
+            if (associatedSolutions.length === 1) {
+                solutionToHighlight = associatedSolutions[0];
+            } else {
+                const horizontal = associatedSolutions.find(s => s.direction === 'horizontal');
+                const vertical = associatedSolutions.find(s => s.direction === 'vertical');
+                if (currentSelection && currentSelection.index === clickedIndex) {
+                    solutionToHighlight = (currentSelection.solution.direction === 'horizontal') ? vertical : horizontal;
+                } else {
+                    solutionToHighlight = horizontal;
+                }
+            }
+            
+            highlightWord(solutionToHighlight, clickedIndex);
+            currentSelection = { solution: solutionToHighlight, index: clickedIndex };
+        }
+        
+        function handleKeyDown(event) {
+            const { key } = event;
+            const inputField = event.target;
+            const cell = inputField.closest('.cell');
+            const currentIndex = parseInt(cell.dataset.index);
+
+            // Navigation mit Pfeiltasten
+            if (key.startsWith('Arrow')) {
+                event.preventDefault();
+                let nextIndex = currentIndex;
+                let nextCell = null;
+
+                while (true) {
+                    if (key === 'ArrowUp') {
+                        nextIndex -= gridWidth;
+                    } else if (key === 'ArrowDown') {
+                        nextIndex += gridWidth;
+                    } else if (key === 'ArrowLeft') {
+                        nextIndex -= 1;
+                    } else if (key === 'ArrowRight') {
+                        nextIndex += 1;
+                    }
+
+                    if (nextIndex < 0 || nextIndex >= 144 || (key === 'ArrowLeft' && nextIndex % gridWidth === gridWidth - 1) || (key === 'ArrowRight' && nextIndex % gridWidth === 0)) {
+                        break;
+                    }
+
+                    const tempNextCell = allCells[nextIndex];
+                    if (tempNextCell && !tempNextCell.classList.contains('hint-cell')) {
+                        nextCell = tempNextCell;
+                        break;
+                    }
+                }
+
+                if (nextCell) {
+                    nextCell.querySelector('input').focus();
+                    const newIndex = parseInt(nextCell.dataset.index);
+                    const associatedSolutions = cellToSolutionsMap.get(newIndex);
+                    
+                    if (associatedSolutions && associatedSolutions.length > 0) {
+                        let solutionToHighlight;
+                        if (associatedSolutions.length > 1) {
+                            const horizontal = associatedSolutions.find(s => s.direction === 'horizontal');
+                            const vertical = associatedSolutions.find(s => s.direction === 'vertical');
+                            if (key === 'ArrowLeft' || key === 'ArrowRight') {
+                                solutionToHighlight = horizontal || vertical;
+                            } else {
+                                solutionToHighlight = vertical || horizontal;
+                            }
+                        } else {
+                            solutionToHighlight = associatedSolutions[0];
+                        }
+                        highlightWord(solutionToHighlight, newIndex);
+                        currentSelection = { solution: solutionToHighlight, index: newIndex };
+                    } else {
+                        clearHighlights();
+                    }
+                }
+                return;
+            }
+
+            // Navigation mit Rücktaste
+            if (key === 'Backspace' && inputField.value.length === 0 && currentSelection) {
+                event.preventDefault();
+                const wordCells = getWordCells(currentSelection.solution);
+                const currentCellInWordIndex = wordCells.findIndex(c => parseInt(c.dataset.index) === currentIndex);
+
+                if (currentCellInWordIndex > 0) {
+                    const prevCell = wordCells[currentCellInWordIndex - 1];
+                    prevCell.querySelector('input').focus();
+                    highlightWord(currentSelection.solution, parseInt(prevCell.dataset.index));
+                    currentSelection.index = parseInt(prevCell.dataset.index);
+                }
+            }
+        }
+
+        // --- FUNKTIONEN ZUR EINGABEVERARBEITUNG ---
+
+        function handleInput(event) {
+            const inputField = event.target;
+            const cell = inputField.closest('.cell');
+            if (!cell) return;
+
+            const cellIndex = parseInt(cell.dataset.index);
+            const solutionsToCheck = cellToSolutionsMap.get(cellIndex);
+
+            if (solutionsToCheck) {
+                solutionsToCheck.forEach(checkSolution);
+            }
+            
+            if (regex.test(inputField.value)) {
+                inputField.value = inputField.value.toUpperCase();
+                
+                if (currentSelection && inputField.value.length > 0) {
+                    const wordCells = getWordCells(currentSelection.solution);
+                    const currentCellInWordIndex = wordCells.findIndex(c => parseInt(c.dataset.index) === cellIndex);
+                    if (currentCellInWordIndex > -1 && currentCellInWordIndex < wordCells.length - 1) {
+                        const nextCell = wordCells[currentCellInWordIndex + 1];
+                        nextCell.querySelector('input').focus();
+                        highlightWord(currentSelection.solution, parseInt(nextCell.dataset.index));
+                        currentSelection.index = parseInt(nextCell.dataset.index);
+                    }
+                }
+            } else {
+                inputField.value = '';
+            }
+        }
+
+        function checkSolution(solution) {
+            let userInput = '';
+            const wordCells = getWordCells(solution);
+            wordCells.forEach(cell => {
+                const input = cell.querySelector('input');
+                if (input) {
+                    userInput += input.value || ' ';
+                }
+            });
+
+            if (userInput.toUpperCase() === solution.answer.toUpperCase()) {
+                if (!wordCells[0].classList.contains('is-solved')) {
+                    wordCells.forEach(cell => {
+                        cell.classList.add('blinking');
+                        cell.classList.add('is-solved');
+                    });
+                    
+                    solvedSolutions.add(solution); // NEU: Füge die Lösung zum Set hinzu
+
+                    setTimeout(() => {
+                        wordCells.forEach(cell => cell.classList.remove('blinking'));
+                    }, 1500);
+
+                    // NEU: Überprüfe, ob das gesamte Rätsel gelöst ist
+                    if (solvedSolutions.size === solutions.length) {
+                        container.classList.add('puzzle-solved');
+                    }
+                }
+            } else {
+                 wordCells.forEach(cell => cell.classList.remove('is-solved'));
+                 solvedSolutions.delete(solution); // NEU: Entferne die Lösung, falls ein Fehler gemacht wurde
+                 container.classList.remove('puzzle-solved'); // NEU: Entferne die finale Animation
+            }
+        }
+        
+        // Event-Listener hinzufügen
+        container.addEventListener('input', handleInput);
+        container.addEventListener('click', handleClick);
+        container.addEventListener('keydown', handleKeyDown);
+
+        // Wähle den Inhalt aus, wenn ein Feld fokussiert wird, um das Überschreiben zu erleichtern
+        container.addEventListener('focusin', (event) => {
+            if (event.target.matches('input')) {
+                setTimeout(() => {
+                    event.target.select();
+                }, 0);
+            }
+        });
+
+        // Führe die Funktionen nacheinander aus
+        fetchLayout()
+            .then(fetchAndStoreSolutions)
+            .catch(error => {
+                console.error('Fehler beim Laden des Rätsels:', error);
+                const errorDiv = document.createElement('div');
+                errorDiv.style.color = 'red';
+                errorDiv.style.marginTop = '1rem';
+                errorDiv.textContent = 'Das Rätsel konnte nicht geladen werden. Bitte stelle sicher, dass der Server läuft.';
+                document.body.appendChild(errorDiv);
+            });
+    </script>
+</body>
+</html>
