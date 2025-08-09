@@ -56,7 +56,7 @@ G.O.A.T,Faker
 ?,Shaco
 ?,Udyr
 ?,Nidalee
-?,Poppy
+mc block,Poppy
 ?,Gragas
 ?,Pantheon
 ?,Ezreal
@@ -162,7 +162,7 @@ G.O.A.T,Faker
 ?,Viego
 ?,Gwen
 ?,Akshan
-?,Vex
+mc mob,Vex
 ?,Zeri
 ?,vNilah
 ?,Milio
@@ -275,7 +275,6 @@ physischer und magischer Schaden,Hybrid
 ?,Skin
 ?,Cosmetic
 ?,Emblem
-?,Banner
 ?,Ping
 ?,Lag
 ?,RNG
@@ -355,7 +354,7 @@ physischer und magischer Schaden,Hybrid
 ?,warzone
 ?,destiny
 ?,eldenring
-?,dark
+mc biome (deep),dark
 ?,ps
 ?,psp
 ?,ds
@@ -423,6 +422,9 @@ physischer und magischer Schaden,Hybrid
 ?,mission
 ?,mmorpg
 ?,keyboard
+?,chache
+?,blockchain
+?,camper
 ?,mouse
 ?,aimbot
 ?,engine
@@ -630,6 +632,560 @@ physischer und magischer Schaden,Hybrid
 ?,unboxing
 ?,clutch
 ?,cut
+?,hackathon
+?,raytracing
+?,ultra
+?,ragequit
+?,spiderman
+?,thor
+?,loki
+?,ironman
+?,maggy
+?,judas
+?,trading
+?,brewing
+?,brauen
+?,enchanten
+?,enchanting
+?,verzaubern
+?,mobs
+?,biomes
+?,ocean
+type of ocean (gibt auch deep/frozen),warm
+type of ocean,lukewarm
+type of ocean,cold
+mc biome,mushroomFields
+?,meadow
+...peaks,stony
+?,jagged
+mc block,cherry
+?,grove
+?,forest
+?,swamp
+?,beach
+?,plains
+?,desert
+?,savanna
+?,badlands
+cave,dipstone
+deep,dark
+cave,lush
+nether,wastes
+soul sand,valley
+nether forest,crimson
+nether forest,warped
+basalt/mc block,deltas
+the,end
+end,midlands
+end,highlands
+end,barrens
+?,berghain
+?,ebene
+?,wald
+?,blumenwald
+?,birkenwald
+?,sumpf
+?,mangrovensumpf
+?,strand
+?,pilzland
+?,alm
+?,kirschenberghain
+?,tafelberge
+?,ozean
+?,fluss
+?,ende
+?,sellensandtal
+?,karmesin
+?,wirrwald
+?,basaltdeltas
+?,novice
+?,apprentice
+?,Journeyman
+?,expert
+?,master
+?,nitwit
+?,Unemployed
+?,armorer
+?,butcher
+?,Cartographer
+?,cleric
+?,farmer
+?,fisherman
+?,fletcher
+?,Leatherworker
+?,Librarian
+?,mason
+?,Shepherd
+?,toolsmith
+?,weaponsmith
+trader,wandering
+aqua,affinity
+bane of,Arthropods
+?,bane
+?,channeling
+curse of,binding
+curse of,vanishing
+?,density
+?,Efficiency
+feather,falling
+?,flame
+?,fortune
+?,impaling
+?,infinity
+?,looting
+?,loyalty
+?,lure
+?,mending
+?,multishot
+?,piercing
+?,power
+?,protection
+?,punch
+?,Respiration
+?,sharpness
+?,thorns
+?,unbreaking
+?,cleaving
+?,allay
+?,armadillo
+?,axolotl
+?,bat
+?,camel
+?,chicken
+?,cod
+?,cow
+?,donkey
+?,frog
+?,horse
+?,mooshroom
+?,mule
+?,ocleot
+?,parrot
+?,pig
+?,pufferfish
+?,rabbit
+?,salmon
+?,sheep
+?,sniffer
+?,squid
+?,strider
+?,tadpole
+?,turtle
+?,villager
+?,bee
+?,cave
+?,dolphin
+?,enderman
+?,fox
+?,goat
+iron,golem
+?,llama
+?,panda
+head of mobs,piglin
+?,spider
+?,wolf
+?,blaze
+?,bogged
+?,creaking
+head of mobs,creeper
+head of mobs,skeleton
+?,endermite
+?,evoker
+?,ghast
+?,hoglin
+?,husk
+magma,cube
+cube,magma
+?,pillager
+?,ravager
+?,shulker
+?,silverfish
+?,skleton
+?,slime
+?,stray
+?,vindicator
+?,witch
+?,zoglin
+head of mobs,zombie
+?,illusioner
+head of mobs,player
+?,acacia
+?,button
+?,door
+?,fence
+?,leaves
+?,log
+?,planks
+?,sapling
+?,shelf
+?,sign
+?,slab
+?,stairs
+?,trapdoor
+?,wood
+?,rail
+?,Allium
+?,Amethyst
+?,debris
+?,andesite
+?,wall
+?,anvil
+?,Azalea
+?,bamboo
+?,mosaic
+?,beacon
+?,bedrock
+?,beehive
+?,beetroots
+?,bell
+?,birch
+?,banner
+?,bed
+?,candle
+?,carpet
+?,concrete
+?,wool
+?,blackstone
+?,copper
+?,lapis
+?,netherite
+?,quartz
+?,redstone
+?,resin
+?,blue
+?,black
+?,bookshelf
+?,coral
+?,bricks
+?,brown
+?,terracotta
+?,mushroom
+?,glass
+?,cactus
+?,cake
+?,calcite
+?,campfire
+?,carrots
+?,carrot
+?,pumpkin
+?,cauldron
+?,chain
+?,chest
+anvil,chipped
+?,chiseled
+?,clay
+?,cobblestone
+?,cobweb
+?,cocoa
+block,command
+?,block
+?,composter
+?,conduit
+?,bulb
+?,lantern
+?,cornflower
+?,cracked
+?,crafter
+crafting,table
+?,cyan
+?,dandelion
+?,deepslate
+?,ore
+?,dirt
+?,dispenser
+?,dripstone
+?,dropper
+?,fern
+table,fletching
+?,furnance
+?,glowstone
+?,granite
+?,grass
+?,gray
+?,green
+?,grindstone
+?,hay
+?,honey
+?,hopper
+?,bars
+?,jukebox
+?,kelp
+?,ladder
+?,lava
+?,lectern
+?,lever
+?,lime
+?,magenta
+?,mangrove
+?,melon
+?,mossy
+?,mud
+?,mycelium
+?,oak
+?,obisidian
+?,orange
+?,pale
+?,pink
+?,piston
+?,podzol
+?,polished
+?,tuff
+?,potatoes
+?,potatoe
+?,prismarine
+?,purple
+?,red
+?,tulip
+?,torch
+?,sand
+?,sandstone
+?,scaffolding
+?,sculk
+?,seagrass
+?,shroomligh
+?,snow
+?,sponge
+?,spruce
+?,sticky
+?,stone
+?,sunflower
+?,target
+?,tnt
+?,torchflower
+?,tripwire
+?,vines
+?,water
+?,white
+?,wildflowers
+?,yellow
+?,bow
+?,egg
+?,lead
+?,minecart
+?,string
+?,trident
+?,apple
+?,beetroot
+?,book
+?,bowl
+?,bread
+?,brush
+?,bundle 
+?,charcoal
+?,coal
+?,compass
+?,cooked
+?,cookie
+?,cookies
+?,axe
+?,boots
+?,chestplate
+?,helmet
+?,hoe
+?,leggings
+?,spitzhacke
+?,shovel
+?,schaufel
+?,sword
+?,schwert
+?,elytra
+?,GAP
+?,horn
+?,ingot
+?,nugget
+?,mace
+?,potion
+?,pie
+?,dye
+?,saddle
+?,shears
+?,slimeball
+?,spyglass
+?,steak
+?,sugar
+?,wheat
+?,wooden
+?,clock
+?,flint
+?,feather
+?,gunpowder
+?,leather
+?,paper
+?,raw
+?,stick
+?,slowness
+?,strength
+?,nausea
+?,regeneration
+?,resistance
+?,invisibility
+?,blindness
+?,hunger
+?,weakness
+?,absorption
+?,saturation
+?,levitation
+?,darkness
+?,weaving
+?,oozing
+?,infested
+?,glowing
+?,luck
+?,recipe
+?,recipes
+?,mineshaft
+?,stronghold
+?,igloo
+?,vilage
+?,shipwreck
+?,fossil
+?,Bisasam
+?,Bisaknosp
+?,Bisaflor
+?,Glumanda
+?,Glutexo
+?,Glurak
+?,Schiggy
+?,Schillok
+?,Turtok
+?,Raupy
+?,Safcon
+?,Smettbo
+?,Hornliu
+?,Kokuna
+?,Bibor
+?,Taubsi
+?,Tauboga
+?,Tauboss
+?,Rattfratz
+?,Rattikarl
+?,Habitak
+?,Ibitak
+?,Sandan
+?,Sandamer
+?,Nidoran♀
+?,Nidorina
+?,Nidoqueen
+?,Nidoran♂
+?,Nidorino
+?,Nidoking
+?,Piepi
+?,Pixi
+?,Vulpix
+?,Ninetales
+?,Pummeluff
+?,Knuddeluff
+?,Zubat
+?,Golbat
+?,Myrapla
+?,Duflor
+?,Giflor
+?,Paras
+?,Parasek
+?,Bluzuk
+?,Omot
+?,Digda
+?,Digdri
+?,Mauzi
+?,Snobilikat
+?,Enton
+?,Entoron
+?,Menki
+?,Rasaff
+?,Fukano
+?,Arkani
+?,Quapsel
+?,Quaputzi
+?,Quappo
+?,Abra
+?,Kadabra
+?,Simsala
+?,Machollo
+?,Maschock
+?,Machomei
+?,Knofensa
+?,Ultrigaria
+?,Sarzenia
+?,Tentacha
+?,Tentoxa
+?,Kleinstein
+?,Georok
+?,Geowaz
+?,Ponita
+?,Gallopa
+?,Flegmon
+?,Lahmus
+?,Magnetilo
+?,Magneton
+?,Porenta
+?,Dodu
+?,Dodri
+?,Jurob
+?,Jugong
+?,Sleima
+?,Sleimok
+?,Muschas
+?,Austos
+?,Nebulak
+?,Alpollo
+?,Gengar
+?,Onix
+?,Traumato
+?,Hypno
+?,Krabby
+?,Kingler
+?,Voltobal
+?,Lektrobal
+?,Owei
+?,Kokowei
+?,Tragosso
+?,Knogga
+?,Kicklee
+?,Nockchan
+?,Schlurp
+?,Smogon
+?,Smogmog
+?,Rihorn
+?,Rizeros
+?,Chaneira
+?,Tangela
+?,Kangama
+?,Seeper
+?,Seemon
+?,Goldini
+?,Golking
+?,Sterndu
+?,Starmie
+?,Pantimos
+?,Sichlor
+?,Rossana
+?,Elektek
+?,Magmar
+?,Pinsir
+?,Tauros
+?,Karpador
+?,Garados
+?,Lapras
+?,Ditto
+?,Evoli
+?,Aquana
+?,Blitza
+?,Flamara
+?,Porygon
+?,Amonitas
+?,Amoroso
+?,Kabuto
+?,Kabutops
+?,Aerodactyl
+?,Relaxo
+?,Arktos
+?,Zapdos
+?,Lavados
+?,Dratini
+?,Dragonir
+?,Dragoran
+?,Mewtu
+?,Mew
 ?,schnitt
 ?,editing
 ?,aufnahme
@@ -648,20 +1204,16 @@ physischer und magischer Schaden,Hybrid
 ?,storytime
 ?,clickbait
 ?,glocke
-?,redstone
-?,piston
 ?,repeater
 ?,hebel
 ?,schalter
 ?,fackel
-?,block
 ?,bauwerk
 ?,burg
 ?,festung
 ?,mine
 ?,mining
 ?,pickaxe
-?,schaufel
 ?,axt
 ?,werkbank
 ?,ofen
@@ -683,20 +1235,13 @@ physischer und magischer Schaden,Hybrid
 ?,schwein
 ?,pferd
 ?,reittier
-?,zombie
 ?,skelett
-?,creeper
 ?,spinne
-?,enderman
 ?,hexer
-?,witch
-?,blaze
-?,ghast
 ?,nether
 ?,quarz
 ?,endportal
 ?,end
-?,elytra
 ?,fliegen
 ?,rakete
 ?,bauernhof
@@ -707,14 +1252,12 @@ physischer und magischer Schaden,Hybrid
 ?,falltuer
 ?,leiter
 ?,wasser
-?,lava
 ?,eimer
 ?,eis
 ?,schnee
 ?,biom
 ?,wueste
 ?,dschungel
-?,taiga
 ?,gebirge
 ?,hoehle
 ?,abenteuer
@@ -730,7 +1273,6 @@ physischer und magischer Schaden,Hybrid
 ?,bestreben
 ?,merkmale
 ?,emotionen
-?,hunger
 ?,energie
 ?,hygiene
 ?,spaß
@@ -861,7 +1403,7 @@ physischer und magischer Schaden,Hybrid
 ?,toplane
 ?,midlane
 ?,botlane
-?,jungle
+auch mc biome,jungle
 ?,laner
 ?,lane
 ?,lanes
@@ -876,8 +1418,8 @@ physischer und magischer Schaden,Hybrid
 ?,stuns
 ?,spells
 ?,cooldowns
-?,river
-?,bush
+auch mc biom,river
+mc block,bush
 ?,tribrush
 ?,pixelbush
 ?,bushes
@@ -914,18 +1456,18 @@ physischer und magischer Schaden,Hybrid
 ?,flash
 lol world song,ignite
 ?,heal
-?,barrier
+mc block,barrier
 ?,exhaust
 ?,ghost
 ?,cleanse
-?,smite
+auch mc effect,smite
 ?,redsmite
 ?,objective
 ?,baron
 ?,barons
 ?,drake
 ?,drakes
-?,dragon
+ender (head mc),dragon
 ?,dragons
 ?,rift
 ?,herald
@@ -1017,7 +1559,7 @@ lol world song,ignite
 ?,void
 ?,leere
 ?,champion
-?,aspect
+auch mc effect (fire),aspect
 ?,aspects
 ?,magie
 ?,magier
@@ -1113,7 +1655,7 @@ lol world song,ignite
 ?,bronze
 ?,silber
 ?,platin
-?,diamond
+mc,diamond
 ?,ascendant
 ?,peek
 ?,crosshair
@@ -1137,7 +1679,7 @@ lol world song,ignite
 ?,recon
 ?,wallbang
 ?,vandal
-?,phantom
+mc mob,phantom
 ?,operator
 ?,judge
 ?,bucky
@@ -1148,7 +1690,7 @@ valorant waffe + caitlyn titel,sheriff
 ?,ares
 ?,odin
 ?,bulldog
-?,guardian
+mc mob,guardian
 ?,marshal
 ?,shorty
 ?,frenzy
@@ -1160,7 +1702,7 @@ valorant waffe + caitlyn titel,sheriff
 ?,haven
 ?,split
 ?,icebox
-?,breeze
+mc mob,breeze
 ?,fracture
 ?,pearl
 ?,lotus
@@ -1188,7 +1730,7 @@ lol world song + valorant charkter,phoenix
 ?,brimstone
 ?,cypher
 ?,raze
-?,breach
+mc effect,breach
 ?,omen
 ?,killjoy
 ?,reyna
@@ -1216,7 +1758,7 @@ lol world song + valorant charkter,phoenix
 ?,round
 ?,entry
 ?,lurker
-?,smoker
+mc block,smoker
 ?,flashbang
 ?,utility
 ?,cover
@@ -1232,13 +1774,13 @@ lol world song + valorant charkter,phoenix
 ?,plantspot
 ?,callout
 ?,trap
-?,wall
+mc block,wall
 ?,dash
 ?,blink
-?,shield
+mc item,shield
 ?,scan
 ?,slowfield
-?,poison
+mc effect,poison
 ?,decoy
 ?,blast
 ?,explosion
@@ -1283,7 +1825,7 @@ lol world song + valorant charkter,phoenix
 ?,penetrate
 ?,resurrect
 ?,energy
-?,knockback
+auch mc effect,knockback
 ?,targeted
 ?,skillshot
 ?,casttime
@@ -1309,11 +1851,6 @@ lol world song + valorant charkter,phoenix
 ?,blitz
 ?,schrift
 ?,lernen
-?,liebe
-?,freude
-?,olive
-?,zitrone
-?,orange
 ?,apfelsine
 ?,mandarine
 ?,kirsche
@@ -1447,7 +1984,6 @@ lol world song + valorant charkter,phoenix
 ?,hillbilly
 ?,shape
 ?,hag
-?,pig
 ?,clown
 ?,spirit
 ?,legion
@@ -1708,12 +2244,13 @@ Bruder von Mel,kino
 ?,ray
 ?,altec
 ?,rush
-?,arrow
+mc item,arrow
 ?,crown
 ?,fly
 ?,bdd
 ?,life
 ?,rascal
+?,API
 ?,clid
 ?,haru
 supp blg,on
@@ -1778,7 +2315,7 @@ pro player,comp
 ?,league
 ?,of
 ?,legends
-?,speed
+auch mc effect,speed
 ?,missle
 ?,schach
 ?,chess
@@ -1855,8 +2392,8 @@ pro player,comp
 ?,Meditate
 ?,Rebuttal
 ?,Strut
-?,Wither
-?,Riptide
+mc mob/effect,Wither
+auch mc effect,Riptide
 ?,Prowl
 ?,Bushwhack
 ?,Paranoia
@@ -1865,7 +2402,7 @@ pro player,comp
 ?,Ragnarok
 ?,Audacity
 ?,Harrier
-?,Vault
+mc block,Vault
 ?,Skystrike
 ?,Powerball
 ?,Burrow
@@ -1931,7 +2468,7 @@ pro player,comp
 ?,binding
 ?,Ardent
 ?,Culling
-?,ice
+mc block,ice
 ?,frozen
 ?,tomb
 ?,curtain
@@ -1943,7 +2480,7 @@ pro player,comp
 ?,infernal
 ?,chains
 ?,world
-?,ender
+dragon,ender
 ?,poros
 ?,follower
 ?,lor
@@ -1975,7 +2512,6 @@ pro player,comp
 ?,immobile
 ?,battle
 ?,battles
-?,fox
 ?,foxes
 ?,fire
 ?,perfect
@@ -1989,7 +2525,7 @@ stay behind...,me
 ?,gaze
 ?,gatling
 ?,spinning
-?,axe
+mc item,axe
 ?,last
 ?,caress
 ?,essence
@@ -2019,11 +2555,11 @@ press the attack,pta
 ?,Conqueror
 Presence of ,Mind
 Legend: ,Alacrity
-Legend: ,Haste
+Legend: /mc effect,Haste
 Legend: ,Bloodline
 Coup de ,Grace
 ?,Down
-?,Stand
+brewing (mc),Stand
 ?,Harvest
 Hail of ,Blades
 ?,Cheap
@@ -2051,7 +2587,7 @@ Hail of ,Blades
 ?,Demolish
 ?,Bash
 ?,Second
-?,Bone
+mc,bone
 ?,Plating
 ?,Unsealed
 ?,Spellbook
@@ -2079,7 +2615,7 @@ river,pilt
 ?,Blessing
 ?,Starfire
 ?,Solar
-?,Golden
+mc items,Golden
 ?,Reaping
 ?,Slash
 ?,Shadow
@@ -2120,7 +2656,7 @@ river,pilt
 ?,Jubilant
 ?,Veil
 ?,Umbra
-?,Snowball
+mc item,Snowball
 ?,epic
 ?,rare
 ?,common
@@ -2133,7 +2669,6 @@ river,pilt
 ?,Serylda
 ?,spatula
 ?,ruination
-?,armadillo
 ?,meeps
 ?,meep
 lol lore,semchul
@@ -2189,7 +2724,7 @@ bodyguard of jarvan iii,tianna
 ?,tolkin
 ?,vedius
 ?,skjoz
-?,barrel
+mc item/proplayer/Gangplank,barrel
 ?,pikachu
 ?,bisasam
 ?,bisa
@@ -2233,7 +2768,7 @@ missfortuen pistols,ave
 ?,tobias
 ?,cinder
 ?,silver
-?,emerald
+mc,emerald
 ?,noobs
 ?,eisen
 ?,diamant
@@ -2259,7 +2794,7 @@ missfortuen pistols,ave
 ?,leaver
 ?,pew
 ?,shop
-?,boots
+mc item,boots
 ?,steelcaps
 ?,plated
 ?,king
@@ -2288,7 +2823,6 @@ missfortuen pistols,ave
 ?,pentakill
 ?,penta
 ?,quadra
-?,stone
 ?,season
 ?,yordle
 ?,troll
@@ -2304,10 +2838,9 @@ missfortuen pistols,ave
 ?,malik
 ?,raven
 ?,vesani
-?,warden
+auch mc mob,warden
 ?,enforcer
 ?,exalted
-?,chest
 ?,peaker
 ?,elohell
 ?,lowelo
@@ -2348,7 +2881,7 @@ missfortuen pistols,ave
 ?,steal
 ?,huge
 ?,lost
-?,observer
+mc block,observer
 ?,watchers
 ?,watcher
 ?,garrison
@@ -7545,7 +8078,6 @@ möwe span.,gaviotas
 ?,affines
 ?,Affing
 ?,Affinger
-?,Affinität
 ?,Äffinnen
 ?,Affix
 ?,Affixe
@@ -8639,7 +9171,6 @@ möwe span.,gaviotas
 ?,Allisons
 ?,Allister
 ?,Allisters
-?,Allium
 ?,Allklasse
 ?,Allmacht
 ?,Allmende
@@ -8706,7 +9237,6 @@ möwe span.,gaviotas
 ?,allzu
 ?,allzumal
 ?,Allzweck
-?,Alm
 ?,Alma
 ?,Almagest
 ?,Almanach
@@ -9600,7 +10130,6 @@ möwe span.,gaviotas
 ?,Americium
 ?,Amerika
 ?,Amerikas
-?,Amethyst
 ?,Amethyste
 ?,Amethysts
 ?,Ametropie
