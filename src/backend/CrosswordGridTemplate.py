@@ -173,9 +173,9 @@ class CrosswordGridTemplate:
     # Testing to get a solution
     def backtracking(self, depth: int) -> bool:
         depth = depth
-        if depth >= 35:
+        if depth >= 32:
             print(f"Current depht: {depth}")
-            self.display
+            self.display()
         if self.crossword_finished():
             self.display()
             return True

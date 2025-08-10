@@ -75,9 +75,16 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            /* Stile für den Fragetext */
+            font-size: 9px;
+            padding: 3px;
+            text-align: center;
+            overflow: hidden;
+            line-height: 1.1;
+            word-break: break-word;
         }
         
-        /* Animation für das Blinken */
+        /* Animation für das Blinken eines einzelnen Wortes */
         @keyframes blink-correct {
             0%, 100% { background-color: #d4edda; }
             25%, 75% { background-color: white; }
@@ -96,17 +103,29 @@
             background-color: #e5e7eb;
         }
 
-        /* Finale Animation für das gelöste Rätsel */
-        .puzzle-solved .cell input,
+        /* --- NEUE FINALE ANIMATION --- */
+        @keyframes blink-final-light {
+            0%, 50%, 100% { background-color: #d4edda; } /* Hellgrün */
+            25%, 75% { background-color: white; }
+        }
+
+        @keyframes blink-final-dark {
+            0%, 50%, 100% { background-color: #9fcfab; } /* Dunkleres Grün */
+            25%, 75% { background-color: #cce7f5; } /* Originale Hinweis-Farbe */
+        }
+
+        .puzzle-solved .cell input {
+            animation: blink-final-light 0.7s 3; /* Spielt die Animation 3 Mal ab */
+        }
         .puzzle-solved .hint-cell {
-            animation: blink-correct 2s infinite;
+            animation: blink-final-dark 0.7s 3; /* Spielt die Animation 3 Mal ab */
         }
 
         /* --- STILE FÜR DIE SVG-PFEILE AUF DEN RÄNDERN --- */
         .arrow-container {
             position: absolute;
-            width: 16px;
-            height: 16px;
+            width: 15px;
+            height: 15px;
             pointer-events: none; /* Sorgt dafür, dass der Pfeil nicht klickbar ist */
         }
         .arrow-container svg {
@@ -117,14 +136,14 @@
         
         /* Positionen der Pfeile (angepasst) */
         /* Normale Pfeile */
-        .pos-rl { left: -8px; top: 50%; transform: translateY(-50%); } /* RIGHTLEFT */
-        .pos-da { top: -8px; left: 50%; transform: translateX(-50%); } /* DOWNABOVE */
+        .pos-rl { left: -3px; top: 50%; transform: translateY(-50%); } /* RIGHTLEFT */
+        .pos-da { top: -3px; left: 50%; transform: translateX(-50%); } /* DOWNABOVE */
 
         /* Eckpfeile (angepasst) */
-        .pos-ra { top: -3px; left: 25%; transform: translateX(-50%); } /* RIGHTABOVE */
-        .pos-rd { bottom: -3px; left: 25%; transform: translateX(-50%); } /* RIGHTDOWN */
-        .pos-dl { left: -3px; top: 25%; transform: translateY(-50%); } /* DOWNLEFT */
-        .pos-dr { right: -3px; top: 25%; transform: translateY(-50%); } /* DOWNRIGHT */
+        .pos-ra { top: -1px; left: 25%; transform: translateX(-100%); } /* RIGHTABOVE */
+        .pos-rd { bottom: -1px; left: 25%; transform: translateX(-100%); } /* RIGHTDOWN */
+        .pos-dl { left: -1px; top: 25%; transform: translateY(-100%); } /* DOWNLEFT */
+        .pos-dr { right: -1px; top: 25%; transform: translateY(-100%); } /* DOWNRIGHT */
 
     </style>
 </head>
@@ -190,13 +209,6 @@
         
         // --- FUNKTIONEN FÜR DIE MARKIERUNG UND NAVIGATION ---
 
-        function clearHighlights() {
-            allCells.forEach(cell => {
-                cell.classList.remove('selected', 'highlighted');
-            });
-            currentSelection = null;
-        }
-
         function highlightWord(solution, activeIndex) {
             allCells.forEach(cell => {
                 cell.classList.remove('selected', 'highlighted');
@@ -213,6 +225,41 @@
             });
         }
 
+        // ZENTRALE FUNKTION ZUM FOKUSSIEREN UND MARKIEREN
+        function focusAndSelectCell(cellIndex, preferredDirection = 'horizontal') {
+            const cell = allCells[cellIndex];
+            if (!cell) return;
+
+            const inputField = cell.querySelector('input');
+            if (!inputField) return;
+
+            inputField.focus();
+            
+            const associatedSolutions = cellToSolutionsMap.get(cellIndex);
+            if (associatedSolutions && associatedSolutions.length > 0) {
+                let solutionToHighlight;
+                if (associatedSolutions.length > 1) { // Kreuzung
+                    const horizontal = associatedSolutions.find(s => s.direction === 'horizontal');
+                    const vertical = associatedSolutions.find(s => s.direction === 'vertical');
+                    if (preferredDirection === 'vertical') {
+                        solutionToHighlight = vertical || horizontal;
+                    } else { // default to horizontal
+                        solutionToHighlight = horizontal || vertical;
+                    }
+                } else {
+                    solutionToHighlight = associatedSolutions[0];
+                }
+                highlightWord(solutionToHighlight, cellIndex);
+                currentSelection = { solution: solutionToHighlight, index: cellIndex };
+            } else {
+                currentSelection = null;
+                allCells.forEach(c => c.classList.remove('selected', 'highlighted'));
+            }
+            
+            setTimeout(() => inputField.select(), 0);
+        }
+
+
         function handleClick(event) {
             const target = event.target;
             const cell = target.closest('.cell');
@@ -224,12 +271,7 @@
                     const targetSolution = solutions.find(s => s.number === number);
                     if (targetSolution) {
                         const firstLetterCellIndex = targetSolution.row * gridWidth + targetSolution.col;
-                        const firstLetterCell = allCells[firstLetterCellIndex];
-                        if (firstLetterCell) {
-                            firstLetterCell.querySelector('input').focus();
-                            highlightWord(targetSolution, firstLetterCellIndex);
-                            currentSelection = { solution: targetSolution, index: firstLetterCellIndex };
-                        }
+                        focusAndSelectCell(firstLetterCellIndex, targetSolution.direction);
                     }
                 }
                 return;
@@ -240,28 +282,17 @@
                 const associatedSolutions = cellToSolutionsMap.get(clickedIndex);
 
                 if (!associatedSolutions || associatedSolutions.length === 0) {
-                    clearHighlights();
+                    currentSelection = null;
+                    allCells.forEach(c => c.classList.remove('selected', 'highlighted'));
                     return;
                 }
                 
-                let solutionToHighlight;
-
-                if (associatedSolutions.length === 1) {
-                    solutionToHighlight = associatedSolutions[0];
-                } else {
-                    const horizontal = associatedSolutions.find(s => s.direction === 'horizontal');
-                    const vertical = associatedSolutions.find(s => s.direction === 'vertical');
-                    if (currentSelection && currentSelection.index === clickedIndex) {
-                        solutionToHighlight = (currentSelection.solution.direction === 'horizontal') ? vertical : horizontal;
-                    } else {
-                        solutionToHighlight = horizontal;
-                    }
+                let preferredDirection = 'horizontal';
+                if (associatedSolutions.length > 1 && currentSelection && currentSelection.index === clickedIndex) {
+                    preferredDirection = (currentSelection.solution.direction === 'horizontal') ? 'vertical' : 'horizontal';
                 }
                 
-                highlightWord(solutionToHighlight, clickedIndex);
-                currentSelection = { solution: solutionToHighlight, index: clickedIndex };
-                
-                setTimeout(() => target.select(), 0);
+                focusAndSelectCell(clickedIndex, preferredDirection);
             }
         }
         
@@ -292,28 +323,9 @@
                 }
 
                 if (nextCell) {
-                    nextCell.querySelector('input').focus();
                     const newIndex = parseInt(nextCell.dataset.index);
-                    const associatedSolutions = cellToSolutionsMap.get(newIndex);
-                    
-                    if (associatedSolutions && associatedSolutions.length > 0) {
-                        let solutionToHighlight;
-                        if (associatedSolutions.length > 1) {
-                            const horizontal = associatedSolutions.find(s => s.direction === 'horizontal');
-                            const vertical = associatedSolutions.find(s => s.direction === 'vertical');
-                            if (key === 'ArrowLeft' || key === 'ArrowRight') {
-                                solutionToHighlight = horizontal || vertical;
-                            } else {
-                                solutionToHighlight = vertical || horizontal;
-                            }
-                        } else {
-                            solutionToHighlight = associatedSolutions[0];
-                        }
-                        highlightWord(solutionToHighlight, newIndex);
-                        currentSelection = { solution: solutionToHighlight, index: newIndex };
-                    } else {
-                        clearHighlights();
-                    }
+                    const preferredDirection = (key === 'ArrowUp' || key === 'ArrowDown') ? 'vertical' : 'horizontal';
+                    focusAndSelectCell(newIndex, preferredDirection);
                 }
                 return;
             }
@@ -325,9 +337,7 @@
 
                 if (currentCellInWordIndex > 0) {
                     const prevCell = wordCells[currentCellInWordIndex - 1];
-                    prevCell.querySelector('input').focus();
-                    highlightWord(currentSelection.solution, parseInt(prevCell.dataset.index));
-                    currentSelection.index = parseInt(prevCell.dataset.index);
+                    focusAndSelectCell(parseInt(prevCell.dataset.index), currentSelection.solution.direction);
                 }
             }
         }
@@ -339,41 +349,23 @@
 
             const cellIndex = parseInt(cell.dataset.index);
 
-            // Zuerst validieren und Wert setzen
             if (!regex.test(inputField.value)) {
                 inputField.value = '';
-                return; // Beenden, wenn die Eingabe ungültig ist
+                return;
             }
             inputField.value = inputField.value.toUpperCase();
 
-            // Dann die Lösung prüfen
             const solutionsToCheck = cellToSolutionsMap.get(cellIndex);
             if (solutionsToCheck) {
                 solutionsToCheck.forEach(checkSolution);
             }
             
-            // --- BEHOBENE LOGIK FÜR AUTO-NAVIGATION ---
-
-            // Wenn keine Auswahl besteht, aber getippt wird, automatisch eine Auswahl treffen
-            if (!currentSelection && inputField.value.length > 0) {
-                const associatedSolutions = cellToSolutionsMap.get(cellIndex);
-                if (associatedSolutions && associatedSolutions.length > 0) {
-                    const solutionToHighlight = associatedSolutions.find(s => s.direction === 'horizontal') || associatedSolutions[0];
-                    highlightWord(solutionToHighlight, cellIndex);
-                    currentSelection = { solution: solutionToHighlight, index: cellIndex };
-                }
-                return; // Beim ersten Buchstaben nicht weiterspringen
-            }
-            
-            // Wenn eine Auswahl besteht, zum nächsten Feld springen
             if (currentSelection && inputField.value.length > 0) {
                 const wordCells = getWordCells(currentSelection.solution);
                 const currentCellInWordIndex = wordCells.findIndex(c => parseInt(c.dataset.index) === cellIndex);
                 if (currentCellInWordIndex > -1 && currentCellInWordIndex < wordCells.length - 1) {
                     const nextCell = wordCells[currentCellInWordIndex + 1];
-                    nextCell.querySelector('input').focus();
-                    highlightWord(currentSelection.solution, parseInt(nextCell.dataset.index));
-                    currentSelection.index = parseInt(nextCell.dataset.index);
+                    focusAndSelectCell(parseInt(nextCell.dataset.index), currentSelection.solution.direction);
                 }
             }
         }
@@ -436,14 +428,6 @@
         container.addEventListener('click', handleClick);
         container.addEventListener('keydown', handleKeyDown);
 
-        container.addEventListener('focusin', (event) => {
-            if (event.target.matches('input')) {
-                setTimeout(() => {
-                    event.target.select();
-                }, 0);
-            }
-        });
-
         // Führe die Funktionen nacheinander aus
         Promise.all([
             fetch(`${apiUrl}/api/layout`).then(res => res.json()),
@@ -452,14 +436,20 @@
         .then(([spots, entries]) => {
             solutions = entries;
             
-            // 1. Hinweiszellen stylen
+            // 1. Hinweiszellen stylen und Fragen einfügen
             spots.forEach(spot => {
                 const hintIndex = spot.row * gridWidth + spot.col;
                 if (allCells[hintIndex]) {
                     const hintCell = allCells[hintIndex];
                     hintCell.classList.add('hint-cell');
                     hintCell.dataset.number = spot.number;
-                    hintCell.innerHTML = ''; // Leere die Zelle für die Frage
+                    
+                    const correspondingEntry = entries.find(entry => entry.number === spot.number);
+                    if (correspondingEntry && correspondingEntry.question) {
+                        hintCell.innerHTML = correspondingEntry.question;
+                    } else {
+                        hintCell.innerHTML = '';
+                    }
                 }
             });
 
@@ -483,7 +473,6 @@
                 
                 if (arrowSVG) {
                     arrowContainer.innerHTML = arrowSVG;
-                    // Setze die Position basierend auf der Richtung
                     switch (direction) {
                         case 'RIGHTLEFT':   arrowContainer.classList.add('pos-rl'); break;
                         case 'RIGHTABOVE':  arrowContainer.classList.add('pos-ra'); break;

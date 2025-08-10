@@ -1,338 +1,314 @@
 [
   {
-    "question": "?",
-    "answer": "UG",
-    "row": 5,
-    "col": 5,
-    "direction": "horizontal",
-    "number": 23
-  },
-  {
-    "question": "?",
-    "answer": "SOUND",
-    "row": 3,
-    "col": 5,
+    "question": "Abk.: Erdgeschoss",
+    "answer": "EG",
+    "row": 10,
+    "col": 11,
     "direction": "vertical",
-    "number": 13
+    "number": 35
   },
   {
-    "question": "?",
-    "answer": "ORBIT",
+    "question": "Online-Tagebuch",
+    "answer": "BLOG",
+    "row": 11,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 39
+  },
+  {
+    "question": "Vornehmtuer",
+    "answer": "SNOB",
+    "row": 8,
+    "col": 8,
+    "direction": "vertical",
+    "number": 30
+  },
+  {
+    "question": "Präfix: Trillionstel",
+    "answer": "ATTO",
+    "row": 8,
+    "col": 10,
+    "direction": "vertical",
+    "number": 31
+  },
+  {
+    "question": "Umdrehung",
+    "answer": "TOUR",
     "row": 7,
-    "col": 6,
+    "col": 7,
     "direction": "vertical",
     "number": 26
   },
   {
-    "question": "?",
-    "answer": "RESET",
-    "row": 8,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 35
-  },
-  {
-    "question": "?",
-    "answer": "ROMEO",
-    "row": 1,
+    "question": "leise!",
+    "answer": "PSST",
+    "row": 5,
     "col": 8,
-    "direction": "vertical",
-    "number": 7
-  },
-  {
-    "question": "?",
-    "answer": "RAMBO",
-    "row": 1,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 1
-  },
-  {
-    "question": "?",
-    "answer": "BESEN",
-    "row": 6,
-    "col": 1,
     "direction": "horizontal",
     "number": 25
   },
   {
-    "question": "?",
-    "answer": "DOS",
-    "row": 7,
-    "col": 5,
-    "direction": "horizontal",
-    "number": 31
-  },
-  {
-    "question": "?",
-    "answer": "SEA",
-    "row": 7,
-    "col": 7,
-    "direction": "vertical",
-    "number": 27
-  },
-  {
-    "question": "?",
-    "answer": "IWO",
-    "row": 9,
-    "col": 11,
-    "direction": "vertical",
-    "number": 36
-  },
-  {
-    "question": "?",
-    "answer": "INH",
-    "row": 6,
-    "col": 9,
-    "direction": "horizontal",
-    "number": 28
-  },
-  {
-    "question": "?",
-    "answer": "RHO",
+    "question": "poet.: Nadelwald",
+    "answer": "TANN",
     "row": 5,
     "col": 11,
     "direction": "vertical",
     "number": 19
   },
   {
-    "question": "?",
-    "answer": "NEO",
-    "row": 1,
-    "col": 9,
-    "direction": "vertical",
-    "number": 8
-  },
-  {
-    "question": "?",
-    "answer": "NDR",
-    "row": 1,
-    "col": 11,
-    "direction": "vertical",
-    "number": 10
-  },
-  {
-    "question": "?",
-    "answer": "END",
-    "row": 9,
-    "col": 4,
-    "direction": "vertical",
-    "number": 34
-  },
-  {
-    "question": "?",
-    "answer": "BASTEI",
-    "row": 9,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 38
-  },
-  {
-    "question": "?",
-    "answer": "TORERO",
+    "question": "altes Schneidermaß",
+    "answer": "ELLE",
     "row": 11,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 38
-  },
-  {
-    "question": "?",
-    "answer": "ALLTAG",
-    "row": 0,
-    "col": 6,
-    "direction": "vertical",
-    "number": 6
-  },
-  {
-    "question": "?",
-    "answer": "LERNEN",
-    "row": 1,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 11
-  },
-  {
-    "question": "?",
-    "answer": "ECHSEN",
-    "row": 1,
-    "col": 10,
-    "direction": "vertical",
-    "number": 9
-  },
-  {
-    "question": "?",
-    "answer": "UNLUST",
-    "row": 3,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 15
-  },
-  {
-    "question": "?",
-    "answer": "MINUTE",
-    "row": 1,
-    "col": 2,
-    "direction": "vertical",
-    "number": 3
-  },
-  {
-    "question": "?",
-    "answer": "EVENKI",
-    "row": 10,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 38
-  },
-  {
-    "question": "?",
-    "answer": "BOOMEN",
-    "row": 6,
-    "col": 1,
-    "direction": "vertical",
-    "number": 21
-  },
-  {
-    "question": "?",
-    "answer": "SUMMER",
-    "row": 6,
     "col": 3,
-    "direction": "vertical",
-    "number": 22
-  },
-  {
-    "question": "?",
-    "answer": "SSSR",
-    "row": 8,
-    "col": 8,
-    "direction": "vertical",
-    "number": 32
-  },
-  {
-    "question": "?",
-    "answer": "TEER",
-    "row": 8,
-    "col": 10,
-    "direction": "vertical",
-    "number": 33
-  },
-  {
-    "question": "?",
-    "answer": "STEW",
-    "row": 10,
-    "col": 8,
     "direction": "horizontal",
     "number": 38
   },
   {
-    "question": "?",
-    "answer": "ODER",
-    "row": 5,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 24
-  },
-  {
-    "question": "?",
-    "answer": "OASE",
+    "question": "Zelle mit Energie",
+    "answer": "AKKU",
     "row": 4,
     "col": 5,
     "direction": "horizontal",
     "number": 17
   },
   {
-    "question": "?",
-    "answer": "OECD",
+    "question": "Besinnungslosigkeit",
+    "answer": "KOMA",
     "row": 2,
     "col": 8,
     "direction": "horizontal",
     "number": 14
   },
   {
-    "question": "?",
-    "answer": "MOHR",
+    "question": "von der Schule weisen",
+    "answer": "EXEN",
     "row": 3,
     "col": 8,
     "direction": "horizontal",
     "number": 16
   },
   {
-    "question": "?",
-    "answer": "BOLU",
-    "row": 0,
-    "col": 4,
-    "direction": "vertical",
-    "number": 5
-  },
-  {
-    "question": "?",
-    "answer": "AZUR",
-    "row": 1,
-    "col": 1,
-    "direction": "vertical",
-    "number": 2
-  },
-  {
-    "question": "?",
-    "answer": "ZIEL",
+    "question": "grünliche Farbe",
+    "answer": "OLIV",
     "row": 2,
     "col": 1,
     "direction": "horizontal",
     "number": 12
   },
   {
-    "question": "?",
-    "answer": "BELT",
+    "question": "Zelt",
+    "answer": "TIPI",
     "row": 1,
     "col": 3,
     "direction": "vertical",
-    "number": 4
+    "number": 3
   },
   {
-    "question": "?",
-    "answer": "BRUT",
+    "question": "Teilbetrag",
+    "answer": "RATE",
+    "row": 1,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 10
+  },
+  {
+    "question": "Schneemensch",
+    "answer": "YETI",
     "row": 4,
     "col": 0,
     "direction": "horizontal",
     "number": 20
   },
   {
-    "question": "?",
-    "answer": "LIVE",
+    "question": "Lärminstrument",
+    "answer": "TROETE",
+    "row": 10,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 36
+  },
+  {
+    "question": "Mineral",
+    "answer": "NOSEAN",
     "row": 8,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 32
+  },
+  {
+    "question": "Satzzeichen (Mz.)",
+    "answer": "PUNKTE",
+    "row": 6,
+    "col": 6,
+    "direction": "vertical",
+    "number": 24
+  },
+  {
+    "question": "Schminke",
+    "answer": "MAKEUP",
+    "row": 0,
+    "col": 8,
+    "direction": "vertical",
+    "number": 6
+  },
+  {
+    "question": "ugs.: erschöpft",
+    "answer": "KNUELL",
+    "row": 6,
+    "col": 4,
+    "direction": "vertical",
+    "number": 23
+  },
+  {
+    "question": "schweiz. ugs.: Kiefer",
+    "answer": "DAEHLE",
+    "row": 6,
+    "col": 3,
+    "direction": "vertical",
+    "number": 22
+  },
+  {
+    "question": "in Auftrag geben",
+    "answer": "ORDERN",
+    "row": 6,
+    "col": 1,
+    "direction": "vertical",
+    "number": 21
+  },
+  {
+    "question": "fleißiges Insekt",
+    "answer": "AMEISE",
+    "row": 1,
+    "col": 10,
+    "direction": "vertical",
+    "number": 8
+  },
+  {
+    "question": "Spongebobs Haus",
+    "answer": "ANANAS",
+    "row": 1,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 11
+  },
+  {
+    "question": "bayr.: Geliebter",
+    "answer": "GSPUSI",
+    "row": 3,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 15
+  },
+  {
+    "question": "Fluss durch Hamburg",
+    "answer": "ALSTER",
+    "row": 1,
     "col": 2,
     "direction": "vertical",
-    "number": 30
+    "number": 2
   },
   {
-    "question": "?",
-    "answer": "NERD",
-    "row": 11,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 38
-  },
-  {
-    "question": "?",
-    "answer": "MIME",
+    "question": "Ursprung",
+    "answer": "HERKUNFT",
     "row": 9,
-    "col": 1,
+    "col": 3,
     "direction": "horizontal",
-    "number": 37
+    "number": 34
   },
   {
-    "question": "?",
-    "answer": "HOLM",
-    "row": 8,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 29
-  },
-  {
-    "question": "?",
-    "answer": "DINETTE",
+    "question": "hoher Schuh",
+    "answer": "STIEFEL",
     "row": 5,
     "col": 9,
     "direction": "vertical",
     "number": 18
+  },
+  {
+    "question": "norweg. Landspitze",
+    "answer": "NORDKAP",
+    "row": 6,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 28
+  },
+  {
+    "question": "engl.: Tee",
+    "answer": "TEA",
+    "row": 6,
+    "col": 9,
+    "direction": "horizontal",
+    "number": 27
+  },
+  {
+    "question": "Stickstoffoxide",
+    "answer": "NOX",
+    "row": 1,
+    "col": 9,
+    "direction": "vertical",
+    "number": 7
+  },
+  {
+    "question": "ital.: heilig",
+    "answer": "SAN",
+    "row": 1,
+    "col": 11,
+    "direction": "vertical",
+    "number": 9
+  },
+  {
+    "question": "Stromlieferant",
+    "answer": "EVU",
+    "row": 1,
+    "col": 4,
+    "direction": "vertical",
+    "number": 4
+  },
+  {
+    "question": "Liebreiz",
+    "answer": "ANMUT",
+    "row": 7,
+    "col": 3,
+    "direction": "horizontal",
+    "number": 29
+  },
+  {
+    "question": "franz.: Lebewohl",
+    "answer": "ADIEU",
+    "row": 8,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 33
+  },
+  {
+    "question": "stramm",
+    "answer": "DRALL",
+    "row": 10,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 37
+  },
+  {
+    "question": "arab. Grußwort",
+    "answer": "SALAM",
+    "row": 3,
+    "col": 5,
+    "direction": "vertical",
+    "number": 13
+  },
+  {
+    "question": "Textilfärbeart",
+    "answer": "BATIK",
+    "row": 0,
+    "col": 6,
+    "direction": "vertical",
+    "number": 5
+  },
+  {
+    "question": "Rauschgift",
+    "answer": "DROGE",
+    "row": 0,
+    "col": 1,
+    "direction": "vertical",
+    "number": 1
   }
 ]
