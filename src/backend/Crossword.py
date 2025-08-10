@@ -41,9 +41,9 @@ class Crossword:
 
     def save_entries_json(self, placedwords: DefaultDict[int, List[PlacedWord]]):
         entries = self.convert_to_json(placedwords)
-        with open("crossword_entries.json", "w", encoding="utf-8") as f:
+        with open("assets/crossword_entries.json", "w", encoding="utf-8") as f:
             json.dump(entries, f, ensure_ascii=False, indent=2)
 
     def save_layout_json(self):
-        with open("crossword_layout.json", "w", encoding="utf-8") as f:
+        with open("assets/crossword_layout.json", "w", encoding="utf-8") as f:
             json.dump(self.layout, f, ensure_ascii=False, indent=2)

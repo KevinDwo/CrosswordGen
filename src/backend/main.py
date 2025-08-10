@@ -9,8 +9,7 @@ def Main():
 
     entries = Utils.load_csv(args.csv_path)
     Utils.print_number_of_words(entries)
-    #Utils.get_words_by_length(entries, 2)
-    crossword = Crossword(entries, 3)
+    crossword = Crossword(entries, 4)
     crossword.solve()
 
 if __name__ == "__main__":

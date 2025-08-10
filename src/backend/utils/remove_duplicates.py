@@ -1,8 +1,8 @@
 import csv
 from typing import List
 
-input_file = "/mnt/e/Programmier-Aufgaben/Crossword/CrosswordGen/TestQuestions.csv"
-output_file = "/mnt/e/Programmier-Aufgaben/Crossword/CrosswordGen/TestQuestions.csv"
+input_file = "/home/dworkevin/Crossword/CrosswordGen/TestQuestions.csv"
+output_file = "/home/dworkevin/Crossword/CrosswordGen/TestQuestions.csv"
 
 unique_entries: set[str] = set()
 cleaned_rows: List[List[str]] = []
