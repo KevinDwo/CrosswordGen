@@ -43,6 +43,7 @@
             background-color: #fff;
             border-top: 1px solid #000;
             border-left: 1px solid #000;
+            transition: background-color 0.4s ease-in-out; /* Übergang für Wellen-Animation */
         }
         
         .cell:nth-child(12n + 1) { border-left: none; }
@@ -54,7 +55,7 @@
             height: 100%;
             border: none;
             text-align: center;
-            font-size: 1.4rem; /* Geändert: Etwas verkleinert */
+            font-size: 1.4rem;
             text-transform: uppercase;
             background: transparent;
             outline: none;
@@ -62,6 +63,7 @@
             padding: 0;
             cursor: pointer;
             caret-color: transparent;
+            transition: background-color 0.3s ease;
         }
         
         .cell input::selection {
@@ -75,7 +77,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            /* Stile für den Fragetext */
             font-size: 9px;
             padding: 3px;
             text-align: center;
@@ -86,13 +87,12 @@
         
         /* Animation für das Blinken eines einzelnen Wortes */
         @keyframes blink-correct {
-            0%, 100% { background-color: #d4edda; }
-            25%, 75% { background-color: white; }
+            0%, 100% { background-color: white; }
             50% { background-color: #d4edda; }
         }
 
         .blinking input {
-            animation: blink-correct 1.5s ease-in-out;
+            animation: blink-correct 0.5s ease-in-out 2;
         }
         
         /* Stile für die Wort-Markierung */
@@ -103,47 +103,36 @@
             background-color: #e5e7eb;
         }
 
-        /* --- NEUE FINALE ANIMATION --- */
-        @keyframes blink-final-light {
-            0%, 50%, 100% { background-color: #d4edda; } /* Hellgrün */
-            25%, 75% { background-color: white; }
+        /* --- NEUE KLASSE FÜR DIE FINALE "Wellen"-Animation --- */
+        .wave-green, .wave-green input {
+            background-color: #28a745 !important; /* Sattes Grün */
+            color: white !important;
+        }
+        .wave-green.hint-cell {
+             color: white !important;
         }
 
-        @keyframes blink-final-dark {
-            0%, 50%, 100% { background-color: #9fcfab; } /* Dunkleres Grün */
-            25%, 75% { background-color: #cce7f5; } /* Originale Hinweis-Farbe */
-        }
-
-        .puzzle-solved .cell input {
-            animation: blink-final-light 0.7s 3; /* Spielt die Animation 3 Mal ab */
-        }
-        .puzzle-solved .hint-cell {
-            animation: blink-final-dark 0.7s 3; /* Spielt die Animation 3 Mal ab */
-        }
 
         /* --- STILE FÜR DIE SVG-PFEILE AUF DEN RÄNDERN --- */
         .arrow-container {
             position: absolute;
             width: 15px;
             height: 15px;
-            pointer-events: none; /* Sorgt dafür, dass der Pfeil nicht klickbar ist */
+            pointer-events: none;
         }
         .arrow-container svg {
             width: 100%;
             height: 100%;
-            overflow: visible; /* Wichtig, damit die Linien nicht abgeschnitten werden */
+            overflow: visible;
         }
         
-        /* Positionen der Pfeile (angepasst) */
-        /* Normale Pfeile */
-        .pos-rl { left: -3px; top: 50%; transform: translateY(-50%); } /* RIGHTLEFT */
-        .pos-da { top: -3px; left: 50%; transform: translateX(-50%); } /* DOWNABOVE */
-
-        /* Eckpfeile (angepasst) */
-        .pos-ra { top: -1px; left: 25%; transform: translateX(-100%); } /* RIGHTABOVE */
-        .pos-rd { bottom: -1px; left: 25%; transform: translateX(-100%); } /* RIGHTDOWN */
-        .pos-dl { left: -1px; top: 25%; transform: translateY(-100%); } /* DOWNLEFT */
-        .pos-dr { right: -1px; top: 25%; transform: translateY(-100%); } /* DOWNRIGHT */
+        /* Positionen der Pfeile */
+        .pos-rl { left: -3px; top: 50%; transform: translateY(-50%); }
+        .pos-da { top: -3px; left: 50%; transform: translateX(-50%); }
+        .pos-ra { top: -1px; left: 25%; transform: translateX(-100%); }
+        .pos-rd { bottom: -1px; left: 25%; transform: translateX(-100%); }
+        .pos-dl { left: -1px; top: 25%; transform: translateY(-100%); }
+        .pos-dr { right: -1px; top: 25%; transform: translateY(-100%); }
 
     </style>
 </head>
@@ -172,7 +161,7 @@
             allCells.push(cell);
         }
 
-        // --- SVG-DEFINITIONEN MIT LÄNGEREM VORDERTEIL ---
+        // --- SVG-DEFINITIONEN ---
         const SVG_ARROWS = {
             RIGHTLEFT:  `<svg viewBox="0 0 20 20" fill="none" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10 H18 M12 5 L18 10 L12 15"/></svg>`,
             RIGHTABOVE: `<svg viewBox="0 0 20 20" fill="none" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2 V10 H22 M16 5 L22 10 L16 15"/></svg>`,
@@ -355,8 +344,17 @@
             }
             inputField.value = inputField.value.toUpperCase();
 
+            if (!currentSelection) {
+                const associatedSolutions = cellToSolutionsMap.get(cellIndex);
+                if (associatedSolutions && associatedSolutions.length > 0) {
+                    const solutionToHighlight = associatedSolutions.find(s => s.direction === 'horizontal') || associatedSolutions[0];
+                    highlightWord(solutionToHighlight, cellIndex);
+                    currentSelection = { solution: solutionToHighlight, index: cellIndex };
+                }
+            }
+
             const solutionsToCheck = cellToSolutionsMap.get(cellIndex);
-            if (solutionsToCheck) {
+            if (Array.isArray(solutionsToCheck)) {
                 solutionsToCheck.forEach(checkSolution);
             }
             
@@ -370,42 +368,72 @@
             }
         }
 
+        // --- NEUE ANIMATIONS-LOGIK ---
+        function triggerFinalAnimation() {
+            document.querySelectorAll('.container input').forEach(input => input.disabled = true);
+            allCells.forEach(c => c.classList.remove('selected', 'highlighted'));
+            currentSelection = null;
+
+            const cellDelay = 50;
+            const whiteWaveOffset = 600;
+            const secondWaveStart = 1500;
+
+            const runWave = (className, startDelay, addOrRemove) => {
+                allCells.forEach((cell, index) => {
+                    const row = Math.floor(index / gridWidth);
+                    const col = index % gridWidth;
+                    const diagonalDelay = (row + col) * cellDelay;
+                    setTimeout(() => {
+                        if (addOrRemove === 'add') cell.classList.add(className);
+                        else cell.classList.remove(className);
+                    }, startDelay + diagonalDelay);
+                });
+            };
+
+            // Welle 1
+            runWave('wave-green', 0, 'add');
+            runWave('wave-green', whiteWaveOffset, 'remove');
+
+            // Welle 2
+            runWave('wave-green', secondWaveStart, 'add');
+            runWave('wave-green', secondWaveStart + whiteWaveOffset, 'remove');
+
+            // Animation zurücksetzen und Felder freigeben
+            const totalTime = secondWaveStart + whiteWaveOffset + (gridWidth * 2) * cellDelay + 500;
+            setTimeout(resetFinalAnimation, totalTime);
+        }
+
+        function resetFinalAnimation() {
+            document.querySelectorAll('.container input').forEach(input => input.disabled = false);
+            allCells.forEach(cell => cell.classList.remove('wave-green'));
+        }
+
         function checkSolution(solution) {
             let userInput = '';
             const wordCells = getWordCells(solution);
             wordCells.forEach(cell => {
                 const input = cell.querySelector('input');
-                if (input) {
-                    userInput += input.value || ' ';
-                }
+                if (input) userInput += input.value || ' ';
             });
 
             if (userInput.toUpperCase() === solution.answer.toUpperCase()) {
                 if (!solvedSolutions.has(solution)) {
-                    wordCells.forEach(cell => {
-                        cell.classList.add('blinking');
-                    });
-                    
+                    wordCells.forEach(cell => cell.classList.add('blinking'));
                     solvedSolutions.add(solution);
-
-                    setTimeout(() => {
-                        wordCells.forEach(cell => cell.classList.remove('blinking'));
-                    }, 1500);
-
+                    setTimeout(() => wordCells.forEach(cell => cell.classList.remove('blinking')), 1000);
                     if (solvedSolutions.size === solutions.length) {
-                        container.classList.add('puzzle-solved');
+                        triggerFinalAnimation();
                     }
                 }
             } else {
                  if(solvedSolutions.has(solution)){
                     solvedSolutions.delete(solution);
-                    container.classList.remove('puzzle-solved');
+                    resetFinalAnimation();
                  }
             }
         }
         
         // --- SETUP UND INITIALISIERUNG ---
-
         function buildCellToSolutionMap() {
             solutions.forEach(solution => {
                 for (let i = 0; i < solution.answer.length; i++) {
@@ -436,14 +464,12 @@
         .then(([spots, entries]) => {
             solutions = entries;
             
-            // 1. Hinweiszellen stylen und Fragen einfügen
             spots.forEach(spot => {
                 const hintIndex = spot.row * gridWidth + spot.col;
                 if (allCells[hintIndex]) {
                     const hintCell = allCells[hintIndex];
                     hintCell.classList.add('hint-cell');
                     hintCell.dataset.number = spot.number;
-                    
                     const correspondingEntry = entries.find(entry => entry.number === spot.number);
                     if (correspondingEntry && correspondingEntry.question) {
                         hintCell.innerHTML = correspondingEntry.question;
@@ -453,24 +479,18 @@
                 }
             });
 
-            // 2. Map für die Lösungsprüfung erstellen
             buildCellToSolutionMap();
 
-            // 3. Pfeile auf den Rändern der Antwortzellen hinzufügen
             spots.forEach(spot => {
                 const solution = entries.find(e => e.number === spot.number);
                 if (!solution) return;
-
                 const firstLetterCellIndex = solution.row * gridWidth + solution.col;
                 const firstLetterCell = allCells[firstLetterCellIndex];
                 if (!firstLetterCell) return;
-
                 const arrowContainer = document.createElement('div');
                 arrowContainer.classList.add('arrow-container');
-
                 const direction = spot.direction.toUpperCase();
                 const arrowSVG = SVG_ARROWS[direction];
-                
                 if (arrowSVG) {
                     arrowContainer.innerHTML = arrowSVG;
                     switch (direction) {

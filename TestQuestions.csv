@@ -775,7 +775,7 @@ iron,golem
 head of mobs,piglin
 ?,spider
 ?,wolf
-?,blaze
+phoenix character,blaze
 ?,bogged
 ?,creaking
 head of mobs,creeper
@@ -1389,7 +1389,7 @@ mc block,bush
 ?,fog
 ?,tower
 ?,towers
-?,turret
+signature killjoy,turret
 ?,turrets
 ?,inhibitor
 ?,nexus
@@ -1416,7 +1416,7 @@ mc block,bush
 ?,recall
 ?,teleport
 ?,teleports
-?,flash
+valorant begriff,flash
 lol world song,ignite
 ?,heal
 mc block,barrier
@@ -1526,7 +1526,6 @@ auch mc effect (fire),aspect
 ?,aspects
 ?,magie
 ?,magier
-?,rifle
 ?,witches
 ?,magic
 ?,hextech
@@ -1656,7 +1655,7 @@ valorant waffe + caitlyn titel,sheriff
 mc mob,guardian
 ?,marshal
 ?,shorty
-?,frenzy
+lol Briar,frenzy
 ?,knife
 ?,vp
 ?,kingdom
@@ -1700,11 +1699,10 @@ mc effect,breach
 ?,skye
 ?,astra
 ?,yoru
-?,neon
+Valorants Zeri,neon
 ?,chamber
 ?,fade
 ?,harbor
-?,kayo
 ?,weapon
 ?,gun
 ?,assault
@@ -1792,7 +1790,7 @@ auch mc effect,knockback
 ?,skillshot
 ?,casttime
 ?,range
-?,sustain
+valo ability modification,sustain
 ?,armorpen
 ?,magicpen
 ?,lifesteal
@@ -2128,7 +2126,7 @@ Bruder von Mel,kino
 ?,keria
 ?,peanut
 ?,zeka
-?,viper
+valorant character,viper
 ?,delight
 ?,kiin
 ?,canyon
@@ -2356,7 +2354,7 @@ mc mob/effect,Wither
 auch mc effect,Riptide
 ?,Prowl
 ?,Bushwhack
-?,Paranoia
+omen ability,Paranoia
 ?,Consume
 ?,Undertow
 ?,Ragnarok
@@ -2395,7 +2393,7 @@ mc block,Vault
 ?,Nevermove
 ?,Abscond
 ?,Hijack
-?,Devour
+reyna ability,Devour
 ?,Rake
 ?,Bravado
 ?,Bastion
@@ -2526,6 +2524,7 @@ Hail of ,Blades
 ?,Grisly
 ?,Mementos
 ... Hunter,Treasure
+... Hunter,relentless
 ?,aery
 ?,comet
 ?,phase
@@ -2759,7 +2758,7 @@ mc,emerald
 ?,aids
 ?,cancer
 ?,aram
-?,abyss
+valo map,abyss
 ?,canon
 ?,canons
 ?,leg
@@ -3059,3 +3058,96 @@ möwe span.,gaviotas
 ?,java
 ?,html
 ?,oracle
+?,dead
+?,deadlock
+?,gekko
+?,awp
+?,kampfmesser
+?,nebula
+?,dissipate
+?,cripple
+?,displacement
+?,concuss
+lol rune,aftershock
+?,flashpoint
+?,incendiary
+?,trademark
+?,headhunter
+?,deterrent
+?,empowerment
+?,molotov
+?,Autonomous
+?,deployable
+?,equip
+?,equipment
+?,clove
+?,iso
+?,tejo
+?,vyse
+?,waylay
+?,meddle
+?,cage
+?,cyber
+?,cyperpunk
+?,tether
+?,prowler
+?,seize
+?,nearsight
+?,wingman
+?,cascade
+?,cove
+?,Contingency
+?,undercut
+?,limiter
+?,cloudburst
+?,updraft
+?,nanoswarm
+?,alarmbot
+?,leer
+?,regrowth
+?,trailblazer
+?,Razorvine
+?,shear
+?,saturate
+?,lightspeed
+?,fakeout
+?,blindside
+?,Rendezvous
+?,ruse
+?,spycam
+?,gravnet
+?,haunt
+?,dizzy
+?,curveball
+?,dismiss
+?,refract
+?,gatecrash
+?,Annihilation
+?,nightfall
+?,thrash
+?,reckoning
+?,lockdown
+ähnlich zu sett ult,showstopper
+?,empress
+?,resurrection
+?,seekers
+?,armageddon
+?,outlaw
+?,controllers
+?,controller
+?,duelists
+?,initiators
+?,sentinels
+?,sidearms
+?,sidearm
+?,SMG
+?,smgs
+?,shotgun
+?,shotguns
+?,rifles
+?,rifle
+?,corrode
+?,golf
+?,friends
+?,with
+?,your

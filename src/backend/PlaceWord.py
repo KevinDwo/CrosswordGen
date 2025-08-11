@@ -9,6 +9,7 @@ class PlacedWord:
         self._number = number
         self._length = length
         self._occupied: bool = False
+        self._cross: bool = False
     
     # Getter
     def get_answer(self) -> str:
@@ -35,6 +36,8 @@ class PlacedWord:
     def is_occupied(self) -> bool:
         return self._occupied
 
+    def is_crossed(self) -> bool:
+        return self._cross
     # Setter
     def set_answer(self, answer: str):
         self._answer = answer
@@ -60,6 +63,10 @@ class PlacedWord:
     def set_occupation(self, occupation: bool):
         self._occupied = occupation
 
+    def set_crossed(self, crossed: bool):
+        self._cross = crossed
+
     def revert(self):
         self.set_answer("_" * self.get_length())
         self.set_question("?")
+        self.set_crossed(False)

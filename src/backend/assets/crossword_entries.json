@@ -1,314 +1,338 @@
 [
   {
-    "question": "Abk.: Erdgeschoss",
-    "answer": "EG",
-    "row": 10,
-    "col": 11,
-    "direction": "vertical",
-    "number": 35
-  },
-  {
-    "question": "Online-Tagebuch",
-    "answer": "BLOG",
-    "row": 11,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 39
-  },
-  {
-    "question": "Vornehmtuer",
-    "answer": "SNOB",
-    "row": 8,
-    "col": 8,
-    "direction": "vertical",
-    "number": 30
-  },
-  {
-    "question": "Präfix: Trillionstel",
-    "answer": "ATTO",
-    "row": 8,
-    "col": 10,
-    "direction": "vertical",
-    "number": 31
-  },
-  {
-    "question": "Umdrehung",
-    "answer": "TOUR",
-    "row": 7,
-    "col": 7,
-    "direction": "vertical",
-    "number": 26
-  },
-  {
-    "question": "leise!",
-    "answer": "PSST",
+    "question": "?",
+    "answer": "SS",
     "row": 5,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 25
-  },
-  {
-    "question": "poet.: Nadelwald",
-    "answer": "TANN",
-    "row": 5,
-    "col": 11,
-    "direction": "vertical",
-    "number": 19
-  },
-  {
-    "question": "altes Schneidermaß",
-    "answer": "ELLE",
-    "row": 11,
-    "col": 3,
-    "direction": "horizontal",
-    "number": 38
-  },
-  {
-    "question": "Zelle mit Energie",
-    "answer": "AKKU",
-    "row": 4,
     "col": 5,
     "direction": "horizontal",
-    "number": 17
-  },
-  {
-    "question": "Besinnungslosigkeit",
-    "answer": "KOMA",
-    "row": 2,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 14
-  },
-  {
-    "question": "von der Schule weisen",
-    "answer": "EXEN",
-    "row": 3,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 16
-  },
-  {
-    "question": "grünliche Farbe",
-    "answer": "OLIV",
-    "row": 2,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 12
-  },
-  {
-    "question": "Zelt",
-    "answer": "TIPI",
-    "row": 1,
-    "col": 3,
-    "direction": "vertical",
-    "number": 3
-  },
-  {
-    "question": "Teilbetrag",
-    "answer": "RATE",
-    "row": 1,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 10
-  },
-  {
-    "question": "Schneemensch",
-    "answer": "YETI",
-    "row": 4,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 20
-  },
-  {
-    "question": "Lärminstrument",
-    "answer": "TROETE",
-    "row": 10,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 36
-  },
-  {
-    "question": "Mineral",
-    "answer": "NOSEAN",
-    "row": 8,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 32
-  },
-  {
-    "question": "Satzzeichen (Mz.)",
-    "answer": "PUNKTE",
-    "row": 6,
-    "col": 6,
-    "direction": "vertical",
-    "number": 24
-  },
-  {
-    "question": "Schminke",
-    "answer": "MAKEUP",
-    "row": 0,
-    "col": 8,
-    "direction": "vertical",
-    "number": 6
-  },
-  {
-    "question": "ugs.: erschöpft",
-    "answer": "KNUELL",
-    "row": 6,
-    "col": 4,
-    "direction": "vertical",
     "number": 23
   },
   {
-    "question": "schweiz. ugs.: Kiefer",
-    "answer": "DAEHLE",
-    "row": 6,
-    "col": 3,
-    "direction": "vertical",
-    "number": 22
-  },
-  {
-    "question": "in Auftrag geben",
-    "answer": "ORDERN",
-    "row": 6,
-    "col": 1,
-    "direction": "vertical",
-    "number": 21
-  },
-  {
-    "question": "fleißiges Insekt",
-    "answer": "AMEISE",
-    "row": 1,
-    "col": 10,
-    "direction": "vertical",
-    "number": 8
-  },
-  {
-    "question": "Spongebobs Haus",
-    "answer": "ANANAS",
-    "row": 1,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 11
-  },
-  {
-    "question": "bayr.: Geliebter",
-    "answer": "GSPUSI",
-    "row": 3,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 15
-  },
-  {
-    "question": "Fluss durch Hamburg",
-    "answer": "ALSTER",
-    "row": 1,
-    "col": 2,
-    "direction": "vertical",
-    "number": 2
-  },
-  {
-    "question": "Ursprung",
-    "answer": "HERKUNFT",
-    "row": 9,
-    "col": 3,
-    "direction": "horizontal",
-    "number": 34
-  },
-  {
-    "question": "hoher Schuh",
-    "answer": "STIEFEL",
-    "row": 5,
-    "col": 9,
-    "direction": "vertical",
-    "number": 18
-  },
-  {
-    "question": "norweg. Landspitze",
-    "answer": "NORDKAP",
-    "row": 6,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 28
-  },
-  {
-    "question": "engl.: Tee",
-    "answer": "TEA",
-    "row": 6,
-    "col": 9,
-    "direction": "horizontal",
-    "number": 27
-  },
-  {
-    "question": "Stickstoffoxide",
-    "answer": "NOX",
-    "row": 1,
-    "col": 9,
-    "direction": "vertical",
-    "number": 7
-  },
-  {
-    "question": "ital.: heilig",
-    "answer": "SAN",
-    "row": 1,
-    "col": 11,
-    "direction": "vertical",
-    "number": 9
-  },
-  {
-    "question": "Stromlieferant",
-    "answer": "EVU",
-    "row": 1,
-    "col": 4,
-    "direction": "vertical",
-    "number": 4
-  },
-  {
-    "question": "Liebreiz",
-    "answer": "ANMUT",
-    "row": 7,
-    "col": 3,
-    "direction": "horizontal",
-    "number": 29
-  },
-  {
-    "question": "franz.: Lebewohl",
-    "answer": "ADIEU",
-    "row": 8,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 33
-  },
-  {
-    "question": "stramm",
-    "answer": "DRALL",
-    "row": 10,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 37
-  },
-  {
-    "question": "arab. Grußwort",
-    "answer": "SALAM",
+    "question": "?",
+    "answer": "UPSET",
     "row": 3,
     "col": 5,
     "direction": "vertical",
     "number": 13
   },
   {
-    "question": "Textilfärbeart",
-    "answer": "BATIK",
+    "question": "?",
+    "answer": "ALUNE",
+    "row": 7,
+    "col": 6,
+    "direction": "vertical",
+    "number": 26
+  },
+  {
+    "question": "?",
+    "answer": "LEONA",
+    "row": 8,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 35
+  },
+  {
+    "question": "?",
+    "answer": "CHOMP",
+    "row": 1,
+    "col": 8,
+    "direction": "vertical",
+    "number": 7
+  },
+  {
+    "question": "?",
+    "answer": "LAMPE",
+    "row": 1,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 1
+  },
+  {
+    "question": "?",
+    "answer": "LEERE",
+    "row": 6,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 25
+  },
+  {
+    "question": "?",
+    "answer": "TAG",
+    "row": 7,
+    "col": 5,
+    "direction": "horizontal",
+    "number": 31
+  },
+  {
+    "question": "?",
+    "answer": "GUN",
+    "row": 7,
+    "col": 7,
+    "direction": "vertical",
+    "number": 27
+  },
+  {
+    "question": "?",
+    "answer": "NON",
+    "row": 9,
+    "col": 11,
+    "direction": "vertical",
+    "number": 36
+  },
+  {
+    "question": "?",
+    "answer": "NET",
+    "row": 5,
+    "col": 11,
+    "direction": "vertical",
+    "number": 19
+  },
+  {
+    "question": "?",
+    "answer": "HLE",
+    "row": 6,
+    "col": 9,
+    "direction": "horizontal",
+    "number": 28
+  },
+  {
+    "question": "?",
+    "answer": "GUN",
+    "row": 1,
+    "col": 11,
+    "direction": "vertical",
+    "number": 10
+  },
+  {
+    "question": "?",
+    "answer": "MAD",
+    "row": 1,
+    "col": 9,
+    "direction": "vertical",
+    "number": 8
+  },
+  {
+    "question": "?",
+    "answer": "PVE",
+    "row": 9,
+    "col": 4,
+    "direction": "vertical",
+    "number": 34
+  },
+  {
+    "question": "?",
+    "answer": "UNSEEN",
+    "row": 9,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 38
+  },
+  {
+    "question": "?",
+    "answer": "EVELYN",
+    "row": 11,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 42
+  },
+  {
+    "question": "?",
+    "answer": "PRIMAL",
+    "row": 1,
+    "col": 10,
+    "direction": "vertical",
+    "number": 9
+  },
+  {
+    "question": "?",
+    "answer": "MMORPG",
+    "row": 1,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 11
+  },
+  {
+    "question": "?",
+    "answer": "UMBRAL",
     "row": 0,
     "col": 6,
+    "direction": "vertical",
+    "number": 6
+  },
+  {
+    "question": "?",
+    "answer": "ELBMUR",
+    "row": 3,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 15
+  },
+  {
+    "question": "?",
+    "answer": "MELONE",
+    "row": 1,
+    "col": 2,
+    "direction": "vertical",
+    "number": 3
+  },
+  {
+    "question": "?",
+    "answer": "ELYTRA",
+    "row": 6,
+    "col": 3,
+    "direction": "vertical",
+    "number": 22
+  },
+  {
+    "question": "?",
+    "answer": "NERVEN",
+    "row": 10,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 39
+  },
+  {
+    "question": "?",
+    "answer": "THORNS",
+    "row": 6,
+    "col": 1,
+    "direction": "vertical",
+    "number": 21
+  },
+  {
+    "question": "?",
+    "answer": "AERY",
+    "row": 8,
+    "col": 10,
+    "direction": "vertical",
+    "number": 33
+  },
+  {
+    "question": "?",
+    "answer": "ZERO",
+    "row": 10,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 40
+  },
+  {
+    "question": "?",
+    "answer": "OOZE",
+    "row": 8,
+    "col": 8,
+    "direction": "vertical",
+    "number": 32
+  },
+  {
+    "question": "?",
+    "answer": "SCAN",
+    "row": 5,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 24
+  },
+  {
+    "question": "?",
+    "answer": "HARU",
+    "row": 2,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 14
+  },
+  {
+    "question": "?",
+    "answer": "ODIN",
+    "row": 3,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 16
+  },
+  {
+    "question": "?",
+    "answer": "FARM",
+    "row": 4,
+    "col": 5,
+    "direction": "horizontal",
+    "number": 17
+  },
+  {
+    "question": "?",
+    "answer": "MOBS",
+    "row": 1,
+    "col": 3,
+    "direction": "vertical",
+    "number": 4
+  },
+  {
+    "question": "?",
+    "answer": "HELM",
+    "row": 0,
+    "col": 4,
     "direction": "vertical",
     "number": 5
   },
   {
-    "question": "Rauschgift",
-    "answer": "DROGE",
-    "row": 0,
+    "question": "?",
+    "answer": "HEAL",
+    "row": 2,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 12
+  },
+  {
+    "question": "?",
+    "answer": "AHRI",
+    "row": 1,
     "col": 1,
     "direction": "vertical",
-    "number": 1
+    "number": 2
+  },
+  {
+    "question": "?",
+    "answer": "BIOS",
+    "row": 4,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 20
+  },
+  {
+    "question": "?",
+    "answer": "ONLY",
+    "row": 8,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 29
+  },
+  {
+    "question": "?",
+    "answer": "REAP",
+    "row": 9,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 37
+  },
+  {
+    "question": "?",
+    "answer": "SKYE",
+    "row": 11,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 41
+  },
+  {
+    "question": "?",
+    "answer": "PEEK",
+    "row": 8,
+    "col": 2,
+    "direction": "vertical",
+    "number": 30
+  },
+  {
+    "question": "?",
+    "answer": "CHANNEL",
+    "row": 5,
+    "col": 9,
+    "direction": "vertical",
+    "number": 18
   }
 ]

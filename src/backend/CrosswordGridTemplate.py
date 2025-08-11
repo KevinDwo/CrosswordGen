@@ -144,9 +144,7 @@ class CrosswordGridTemplate:
             spot.set_answer(entry.get_answer())
             spot.set_question(entry.get_question())
             self.set_spot_occupation(spot, True)
-            self.update_grid(spot)
             self.update_all_spots()
-            #self.display()
             return True
         else:
             print("Answer does not match length")
@@ -171,11 +169,10 @@ class CrosswordGridTemplate:
             self.grid[r][c] = char
     
     # Testing to get a solution
-    def backtracking(self, depth: int) -> bool:
-        depth = depth
-        if depth >= 32:
-            print(f"Current depht: {depth}")
-            self.display()
+    def backtracking(self, words_tried: int) -> bool:
+        first_try = False
+        if words_tried == 0:
+            first_try = True
         if self.crossword_finished():
             self.display()
             return True
@@ -188,9 +185,15 @@ class CrosswordGridTemplate:
         # Über alle spots drüber iterieren und den mit höchstem score auswählen
         for entry in entries:
             self.insert_answer(entry, spot)
-
+            if words_tried % 40 == 1:
+                print("-----")
+                self.display()
+            if first_try:
+                total_count = len(entries)
+                print(f"{words_tried/total_count * 100:.1f}% done. {total_count - words_tried} trys are still needed. Right now {entry.get_answer()} is tested.")
+                words_tried += 1
             # Rekursion
-            if self.backtracking(depth + 1):
+            if self.backtracking(words_tried):
                 return True
             else:
                 self.revert_spot(spot)
@@ -242,7 +245,7 @@ class CrosswordGridTemplate:
                 if spot.is_occupied():
                     self.update_grid(spot)
                 else:
-                    raise ValueError("Spot in the false list")
+                    raise ValueError("Spot in the wrong list")
 
         for lenght in list(self.unocupied_spots.keys()):
             for spot in self.unocupied_spots[lenght]:
@@ -254,9 +257,11 @@ class CrosswordGridTemplate:
                         r = row + i if spot.get_direction() == Direction.VERTICAL else row
                         c = col + i if spot.get_direction() == Direction.HORIZONTAL else col
                         current_answer = current_answer + self.grid[r][c]
+                    if not spot.get_answer == current_answer:
+                        spot.set_crossed(True)
                     spot.set_answer(current_answer)
                 else:
-                    raise ValueError("Spot in the fals list")
+                    raise ValueError("Spot in the wrong list")
         return True
     
     def revert_spot(self, spot: PlacedWord):
@@ -266,12 +271,11 @@ class CrosswordGridTemplate:
             self.set_spot_occupation(spot, False)
             self.update_grid(spot)
             self.update_all_spots()
-            #self.display()
         else:
             raise ValueError("Tried to revert an unoccupied spot")
         
-    def get_current_spot(self) -> Optional[tuple[List[ClueEntry], PlacedWord, int]]:
-        numbers_of_entries: List[tuple[List[ClueEntry], PlacedWord, int]] = []
+    def get_current_spot(self) -> Optional[tuple[List[ClueEntry], PlacedWord, int, bool]]:
+        entries: List[tuple[List[ClueEntry], PlacedWord, int, bool]] = []
         for length in self.unocupied_spots.keys():
             for spot in self.unocupied_spots[length]:
                 entries_for_length = self.get_all_possible_entries(length)
@@ -280,9 +284,9 @@ class CrosswordGridTemplate:
                 number_of_entries = len(possible_entries)
                 if number_of_entries == 0:
                     return None
-                numbers_of_entries.append((possible_entries, spot, number_of_entries))
-        numbers_of_entries.sort(key=lambda x: x[2])
-        return numbers_of_entries[0]
+                entries.append((possible_entries, spot, number_of_entries, spot.is_crossed()))
+        entries.sort(key=lambda x: (not x[3], x[2]))
+        return entries[0]
 
     def display(self):
         for row in self.grid:
