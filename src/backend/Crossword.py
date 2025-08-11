@@ -13,7 +13,7 @@ class Crossword:
         
     def solve(self):
         self.grid.set_entries(self.entries_by_length)
-        if self.grid.backtracking(1):
+        if self.grid.backtracking(0):
             solved_list = self.grid.get_spots()
             self.save_entries_json(solved_list)
             self.save_layout_json()
