@@ -1,3 +1,5 @@
 # Bytecode-Dateien ignorieren
 __pycache__/
 *.pyc
+launch.json
+settings.json
