@@ -214,7 +214,6 @@ class CrosswordGridTemplate:
                 return True
         return False
 
-    # Must be same length
     def fits_entry_on_spot(self, entry: ClueEntry, spot: PlacedWord) -> bool:
         for i, char in enumerate(spot.get_answer()):
             if char != "_" and char != entry.get_answer()[i]:
@@ -257,9 +256,7 @@ class CrosswordGridTemplate:
                         r = row + i if spot.get_direction() == Direction.VERTICAL else row
                         c = col + i if spot.get_direction() == Direction.HORIZONTAL else col
                         current_answer = current_answer + self.grid[r][c]
-                    if spot.get_answer != current_answer:
-                        print(f"Position: ({spot.get_row()}/{spot.get_col()})")
-                        print(f"Spot answer: {spot.get_answer()} and new answer: {current_answer}")
+                    if spot.get_answer() != current_answer:
                         spot.set_crossed(True)
                     spot.set_answer(current_answer)
                 else:
