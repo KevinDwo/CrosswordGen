@@ -27,10 +27,6 @@ def get_entries():
 def get_layout():
     return jsonify(layout)
 
-app.run(debug=True)
-
 if __name__ == '__main__':
-    # Render weist dynamisch einen Port zu. Wenn wir lokal testen, nehmen wir 5000.
     port = int(os.environ.get("PORT", 5000))
-    # host='0.0.0.0' ist wichtig, damit der Server von außen erreichbar ist
     app.run(host='0.0.0.0', port=port)
