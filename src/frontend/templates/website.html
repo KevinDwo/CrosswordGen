@@ -173,7 +173,6 @@
 
 
         // --- TEIL 2: LÖSUNG LADEN UND SPIEL-LOGIK ---
-        const apiUrl = 'http://127.0.0.1:5000';
         let solutions = [];
         const solvedSolutions = new Set();
         const cellToSolutionsMap = new Map();
@@ -458,8 +457,8 @@
 
         // Führe die Funktionen nacheinander aus
         Promise.all([
-            fetch(`${apiUrl}/api/layout`).then(res => res.json()),
-            fetch(`${apiUrl}/api/entries`).then(res => res.json())
+            fetch('/api/layout').then(res => res.json()),
+            fetch('/api/entries').then(res => res.json())
         ])
         .then(([spots, entries]) => {
             solutions = entries;
