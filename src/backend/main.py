@@ -9,8 +9,11 @@ def Main():
 
     entries = Utils.load_csv(args.csv_path)
     Utils.print_number_of_words(entries)
-    crossword = Crossword(entries, 2)
-    crossword.solve()
+    number_of_layouts = 5  
+    for current_layout in range(number_of_layouts):
+        print(f"Layout {current_layout + 1} von {number_of_layouts}:")
+        crossword = Crossword(entries, current_layout + 2)
+        crossword.solve()
 
 if __name__ == "__main__":
     Main()

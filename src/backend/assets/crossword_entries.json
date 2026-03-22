@@ -1,306 +1,322 @@
 [
   {
-    "question": "Kfz. island",
-    "answer": "IS",
-    "row": 7,
-    "col": 3,
-    "direction": "vertical",
-    "number": 23
-  },
-  {
-    "question": "Vorsilbe für: ehemalig",
-    "answer": "EX",
-    "row": 10,
-    "col": 3,
-    "direction": "vertical",
-    "number": 34
-  },
-  {
-    "question": "Kenn-zahl (Abk.)",
-    "answer": "NR",
-    "row": 10,
-    "col": 1,
-    "direction": "vertical",
-    "number": 33
-  },
-  {
-    "question": "Deh-nungs-laut",
-    "answer": "AH",
-    "row": 6,
-    "col": 10,
-    "direction": "horizontal",
-    "number": 27
-  },
-  {
-    "question": "Bob-bahn",
-    "answer": "EISKANAL",
-    "row": 8,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 29
-  },
-  {
-    "question": "13. Apostel",
-    "answer": "MATTHIAS",
-    "row": 0,
-    "col": 10,
-    "direction": "vertical",
-    "number": 8
-  },
-  {
-    "question": "Kosef.: Elfriede",
-    "answer": "ELFI",
-    "row": 7,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 21
-  },
-  {
-    "question": "engl.: Kante, Rand",
-    "answer": "EDGE",
-    "row": 10,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 36
-  },
-  {
-    "question": "Kühn-heit",
-    "answer": "MUMM",
-    "row": 0,
-    "col": 8,
-    "direction": "vertical",
-    "number": 6
-  },
-  {
-    "question": "Präfix: Sicht darüber",
-    "answer": "META",
-    "row": 3,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 14
-  },
-  {
-    "question": "türk. Jungen-name",
-    "answer": "EREN",
-    "row": 1,
-    "col": 5,
-    "direction": "vertical",
-    "number": 4
-  },
-  {
-    "question": "1. Plural: sein",
-    "answer": "SIND",
-    "row": 4,
-    "col": 3,
-    "direction": "horizontal",
-    "number": 16
-  },
-  {
-    "question": "Speer-bereich",
-    "answer": "BANNMEILE",
-    "row": 0,
-    "col": 1,
-    "direction": "vertical",
-    "number": 1
-  },
-  {
-    "question": "US Rock-Band",
-    "answer": "AEROSMITH",
-    "row": 2,
-    "col": 3,
-    "direction": "horizontal",
-    "number": 13
-  },
-  {
-    "question": "Täu-schung",
-    "answer": "FINTE",
-    "row": 7,
-    "col": 2,
-    "direction": "vertical",
-    "number": 22
-  },
-  {
-    "question": "jap. Trickfilm",
-    "answer": "ANIME",
+    "question": "?",
+    "answer": "PP",
     "row": 7,
     "col": 6,
-    "direction": "vertical",
-    "number": 25
-  },
-  {
-    "question": "Salz-wüste im iran",
-    "answer": "KAWIR",
-    "row": 7,
-    "col": 5,
-    "direction": "vertical",
-    "number": 24
-  },
-  {
-    "question": "witzeln",
-    "answer": "ULKEN",
-    "row": 7,
-    "col": 8,
-    "direction": "vertical",
-    "number": 26
-  },
-  {
-    "question": "ertrag-reich, Boden",
-    "answer": "URBAR",
-    "row": 5,
-    "col": 7,
-    "direction": "vertical",
-    "number": 17
-  },
-  {
-    "question": "jap. Fisch-gericht",
-    "answer": "SUSHI",
-    "row": 5,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 19
-  },
-  {
-    "question": "salopp: Tier",
-    "answer": "VIECH",
-    "row": 1,
-    "col": 9,
-    "direction": "vertical",
-    "number": 7
-  },
-  {
-    "question": "engl.: Herren",
-    "answer": "LORDS",
-    "row": 1,
-    "col": 6,
-    "direction": "vertical",
-    "number": 5
-  },
-  {
-    "question": "Selene u. Zeus Tochter",
-    "answer": "NEMEA",
-    "row": 5,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 15
-  },
-  {
-    "question": "Über-gangs-lösung",
-    "answer": "INTERIM",
-    "row": 10,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 32
-  },
-  {
-    "question": "effektiv",
-    "answer": "WIRKSAM",
-    "row": 9,
-    "col": 5,
-    "direction": "horizontal",
-    "number": 35
-  },
-  {
-    "question": "norddt.: enger Raum",
-    "answer": "KABUESE",
-    "row": 7,
-    "col": 5,
     "direction": "horizontal",
     "number": 28
   },
   {
-    "question": "Wieder-verein-igung",
-    "answer": "REUNION",
-    "row": 11,
-    "col": 5,
+    "question": "Von 100 auf 0 (Abk.)",
+    "answer": "OS",
+    "row": 8,
+    "col": 6,
     "direction": "horizontal",
-    "number": 38
+    "number": 33
   },
   {
-    "question": "Einge-weihter",
-    "answer": "INSIDER",
-    "row": 3,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 12
-  },
-  {
-    "question": "Hunde-name",
-    "answer": "REX",
-    "row": 11,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 37
-  },
-  {
-    "question": "Abwehr-system d. 80er",
-    "answer": "SDI",
-    "row": 9,
-    "col": 9,
+    "question": "?",
+    "answer": "TPS",
+    "row": 6,
+    "col": 7,
     "direction": "vertical",
-    "number": 30
+    "number": 20
   },
   {
-    "question": "engl.: vorüber",
-    "answer": "AGO",
+    "question": "?",
+    "answer": "API",
+    "row": 4,
+    "col": 5,
+    "direction": "vertical",
+    "number": 15
+  },
+  {
+    "question": "?",
+    "answer": "SEE",
+    "row": 5,
+    "col": 9,
+    "direction": "horizontal",
+    "number": 21
+  },
+  {
+    "question": "?",
+    "answer": "WTF",
+    "row": 7,
+    "col": 9,
+    "direction": "horizontal",
+    "number": 29
+  },
+  {
+    "question": "?",
+    "answer": "BEE",
+    "row": 1,
+    "col": 2,
+    "direction": "vertical",
+    "number": 3
+  },
+  {
+    "question": "?",
+    "answer": "MAT",
+    "row": 9,
+    "col": 8,
+    "direction": "vertical",
+    "number": 34
+  },
+  {
+    "question": "?",
+    "answer": "REN",
     "row": 9,
     "col": 10,
+    "direction": "vertical",
+    "number": 35
+  },
+  {
+    "question": "Minecraft Block",
+    "answer": "ICE",
+    "row": 9,
+    "col": 1,
     "direction": "vertical",
     "number": 31
   },
   {
-    "question": "Tanz: Cha ... Cha",
-    "answer": "CHA",
-    "row": 4,
+    "question": "?",
+    "answer": "DLC",
+    "row": 9,
+    "col": 3,
+    "direction": "vertical",
+    "number": 32
+  },
+  {
+    "question": "?",
+    "answer": "SPONGE",
+    "row": 6,
+    "col": 6,
+    "direction": "vertical",
+    "number": 19
+  },
+  {
+    "question": "?",
+    "answer": "FIREUP",
+    "row": 5,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 17
+  },
+  {
+    "question": "?",
+    "answer": "RIFLES",
+    "row": 0,
     "col": 9,
+    "direction": "vertical",
+    "number": 8
+  },
+  {
+    "question": "?",
+    "answer": "GRAVES",
+    "row": 10,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 38
+  },
+  {
+    "question": "?",
+    "answer": "ENCORE",
+    "row": 11,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 39
+  },
+  {
+    "question": "?",
+    "answer": "MISTA",
+    "row": 6,
+    "col": 4,
+    "direction": "horizontal",
+    "number": 24
+  },
+  {
+    "question": "?",
+    "answer": "MEWTU",
+    "row": 0,
+    "col": 6,
+    "direction": "vertical",
+    "number": 6
+  },
+  {
+    "question": "?",
+    "answer": "GIFTE",
+    "row": 1,
+    "col": 11,
+    "direction": "vertical",
+    "number": 9
+  },
+  {
+    "question": "?",
+    "answer": "ALERT",
+    "row": 3,
+    "col": 10,
+    "direction": "vertical",
+    "number": 13
+  },
+  {
+    "question": "?",
+    "answer": "BUTTE",
+    "row": 1,
+    "col": 3,
+    "direction": "vertical",
+    "number": 4
+  },
+  {
+    "question": "?",
+    "answer": "WEAVE",
+    "row": 7,
+    "col": 9,
+    "direction": "vertical",
+    "number": 25
+  },
+  {
+    "question": "?",
+    "answer": "FEAST",
+    "row": 7,
+    "col": 11,
+    "direction": "vertical",
+    "number": 26
+  },
+  {
+    "question": "?",
+    "answer": "SUSAN",
+    "row": 7,
+    "col": 2,
+    "direction": "vertical",
+    "number": 23
+  },
+  {
+    "question": "?",
+    "answer": "TANTRUM",
+    "row": 0,
+    "col": 4,
+    "direction": "vertical",
+    "number": 5
+  },
+  {
+    "question": "?",
+    "answer": "CABBAGE",
+    "row": 1,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 1
+  },
+  {
+    "question": "?",
+    "answer": "ANNAIRO",
+    "row": 1,
+    "col": 1,
+    "direction": "vertical",
+    "number": 2
+  },
+  {
+    "question": "?",
+    "answer": "DISDAIN",
+    "row": 9,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 30
+  },
+  {
+    "question": "?",
+    "answer": "TRAUMWELT",
+    "row": 4,
+    "col": 3,
     "direction": "horizontal",
     "number": 18
   },
   {
-    "question": "lange UV-Wellen",
-    "answer": "UVA",
+    "question": "?",
+    "answer": "PLOW",
+    "row": 1,
+    "col": 8,
+    "direction": "vertical",
+    "number": 7
+  },
+  {
+    "question": "?",
+    "answer": "WOLF",
+    "row": 2,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 12
+  },
+  {
+    "question": "?",
+    "answer": "OLAF",
+    "row": 3,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 16
+  },
+  {
+    "question": "?",
+    "answer": "PING",
     "row": 1,
     "col": 8,
     "direction": "horizontal",
     "number": 10
   },
   {
-    "question": "Alarm-anlage (Abk.)",
-    "answer": "HAA",
+    "question": "?",
+    "answer": "NETT",
+    "row": 3,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 14
+  },
+  {
+    "question": "?",
+    "answer": "NEUN",
     "row": 2,
-    "col": 11,
-    "direction": "vertical",
+    "col": 1,
+    "direction": "horizontal",
     "number": 11
   },
   {
-    "question": "behin-dern",
-    "answer": "HEMMEN",
-    "row": 6,
-    "col": 11,
-    "direction": "vertical",
-    "number": 20
-  },
-  {
-    "question": "Armteil am Hemd",
-    "answer": "AERMEL",
-    "row": 1,
-    "col": 1,
+    "question": "?",
+    "answer": "MARA",
+    "row": 9,
+    "col": 8,
     "direction": "horizontal",
-    "number": 9
+    "number": 36
   },
   {
-    "question": "in der Mitte gelegen",
-    "answer": "MEDIAN",
-    "row": 1,
+    "question": "?",
+    "answer": "TENT",
+    "row": 11,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 40
+  },
+  {
+    "question": "?",
+    "answer": "HALO",
+    "row": 8,
     "col": 4,
     "direction": "vertical",
-    "number": 3
+    "number": 27
   },
   {
-    "question": "Brühe zum dämpfen",
-    "answer": "BRAISE",
-    "row": 0,
-    "col": 3,
-    "direction": "vertical",
-    "number": 2
+    "question": "?",
+    "answer": "CALL",
+    "row": 10,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 37
+  },
+  {
+    "question": "?",
+    "answer": "BOSS",
+    "row": 7,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 22
   }
 ]
