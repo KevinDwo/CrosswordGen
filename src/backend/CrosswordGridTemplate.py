@@ -10,6 +10,8 @@ import random
 class CrosswordGridTemplate:
     def __init__(self, rows: int, cols: int):
         self.grid = [[' ' for _ in range(cols)] for _ in range(rows)]
+        self.grid_counts = [[0 for _ in range(cols)] for _ in range(rows)]
+        self._intersect_cache = {} 
         self.unocupied_spots: DefaultDict[int, List[PlacedWord]] = defaultdict(list)
         self.occupied_spots: DefaultDict[int, List[PlacedWord]] = defaultdict(list)
         self.entries: Dict[int, List[ClueEntry]] 
@@ -27,6 +29,10 @@ class CrosswordGridTemplate:
         for length in self.unocupied_spots:
             new_entries[length] = entries[length]
         self.entries = new_entries
+
+        for length in self.unocupied_spots.keys():
+            for spot in self.unocupied_spots[length]:
+                spot.set_domain(list(self.entries[length]))
 
     #Loading Layout
     def set_placeholder(self, row: int, col: int, length: int, direction: Direction, number: int) -> bool:
@@ -145,7 +151,8 @@ class CrosswordGridTemplate:
             spot.set_answer(entry.get_answer())
             spot.set_question(entry.get_question())
             self.set_spot_occupation(spot, True)
-            self.update_all_spots()
+            
+            self.add_word_to_grid(spot) 
             return True
         else:
             print("Answer does not match length")
@@ -161,52 +168,80 @@ class CrosswordGridTemplate:
             self.occupied_spots[length].remove(spot)
             self.unocupied_spots[length].append(spot)
     
-    def update_grid(self, spot: PlacedWord):
-        row = spot.get_row()
-        col = spot.get_col()
-        for i, char in enumerate(spot.get_answer()):
-            r = row + i if spot.get_direction() == Direction.VERTICAL else row
-            c = col + i if spot.get_direction() == Direction.HORIZONTAL else col
-            self.grid[r][c] = char
     
-    # Testing to get a solution
     # Testing to get a solution
     def backtracking(self, words_tried: int) -> bool:
         first_try = False
         if words_tried == 0:
             first_try = True
+            
         if self.crossword_finished():
             return True
-        # Current spot
+            
         entries_and_spot = self.get_current_spot()
-        # Es gibt mindestens einen Spot, der 0 mögliche entrys hat
         if entries_and_spot == None:
             return False
+            
         entries, spot = entries_and_spot[:2]
-        # Über alle spots drüber iterieren und den mit höchstem score auswählen
+
+        domain_backup = {}
+        for length in self.unocupied_spots.keys():
+            for s in self.unocupied_spots[length]:
+                domain_backup[s] = s.get_domain().copy()
+        
         for entry in entries:
             self.insert_answer(entry, spot)
+            
+            domain_wipeout = False
+            for length in self.unocupied_spots.keys():
+                for s in self.unocupied_spots[length]:
+                    new_domain = s.get_domain().copy()
+                    
+                    # 1. OPTIMIERUNG: Keine doppelten Wörter zulassen!
+                    # Das benutzte Wort wird aus ALLEN anderen freien Spots gestrichen
+                    if entry in new_domain:
+                        new_domain.remove(entry)
+
+                    # 2. Forward Checking (nur wenn sie sich wirklich kreuzen)
+                    if self.intersects(spot, s):
+                        new_domain = self.get_possible_entries(new_domain, s)
+                        
+                    s.set_domain(new_domain)
+                    
+                    if len(new_domain) == 0:
+                        domain_wipeout = True
+                        break
+                if domain_wipeout:
+                    break
+            
             occupied_count = sum(len(spots) for spots in self.occupied_spots.values())
             unoccupied_count = sum(len(spots) for spots in self.unocupied_spots.values())
             total_spots = occupied_count + unoccupied_count
             
             if total_spots > 0:
                 current_fill_ratio = occupied_count / total_spots
-                
-                # Wenn mindestens 85% erreicht sind und es ein neuer Höchststand ist
-                if current_fill_ratio >= 0.65 and current_fill_ratio > self.max_fill_ratio:
+                if current_fill_ratio >= 0.85 and current_fill_ratio > self.max_fill_ratio:
                     self.max_fill_ratio = current_fill_ratio
                     print(f"\n--- Zwischenstand: Rätsel ist zu {current_fill_ratio * 100:.1f}% gefüllt ---")
                     self.display()
+                    
             if first_try:
                 total_count = len(entries)
-                print(f"{words_tried/total_count * 100:.1f}% done. {total_count - words_tried} trys are still needed. Right now {entry.get_answer()} is tested.")
+                print(f"{words_tried/total_count * 100:.1f}% done. Right now {entry.get_answer()} is tested.")
                 words_tried += 1
-            # Rekursion
-            if self.backtracking(words_tried):
-                return True
-            else:
-                self.revert_spot(spot)
+                
+            # Rekursion NUR fortsetzen, wenn das Forward-Checking erfolgreich war
+            if not domain_wipeout:
+                if self.backtracking(words_tried):
+                    return True
+                    
+            # Wenn es hier ankommt, war der Pfad falsch -> Wort wieder entfernen
+            self.revert_spot(spot)
+            
+            for s, backup in domain_backup.items():
+                if not s.is_occupied():
+                    s.set_domain(backup.copy())
+            
         return False
 
     def fits_entry_on_spot(self, entry: ClueEntry, spot: PlacedWord) -> bool:
@@ -215,14 +250,11 @@ class CrosswordGridTemplate:
         word = entry.get_answer()
         
         for i in range(spot.get_length()):
-            # Bestimme die aktuelle Zelle im Grid
             r = row + i if spot.get_direction() == Direction.VERTICAL else row
             c = col + i if spot.get_direction() == Direction.HORIZONTAL else col
             
             grid_char = self.grid[r][c]
             
-            # Ist das Feld nicht leer (' ') und nicht der Startmarker ('_') 
-            # UND der Buchstabe stimmt nicht mit dem Wort überein?
             if grid_char != ' ' and grid_char != '_' and grid_char != word[i]:
                 return False
                 
@@ -245,47 +277,89 @@ class CrosswordGridTemplate:
                     return False
         return True
     
-    # Updates all spots to match the current grid
-    def update_all_spots(self):
-        # Wir aktualisieren nur noch die bereits platzierten Wörter im Grid
-        for length in self.occupied_spots.keys():
-            for spot in self.occupied_spots[length]:
-                if spot.is_occupied():
-                    self.update_grid(spot)
-                else:
-                    raise ValueError("Spot in der falschen Liste (sollte occupied sein)")
-        
-        # Der rechenintensive Teil für unbesetzte Spots entfällt komplett,
-        # da fits_entry_on_spot nun direkt das self.grid liest.
-        return True
     
     def revert_spot(self, spot: PlacedWord):
-
         if spot.is_occupied():
+            self.remove_word_from_grid(spot)
             spot.revert()
             self.set_spot_occupation(spot, False)
-            self.update_grid(spot)
-            self.update_all_spots()
-        else:
-            raise ValueError("Tried to revert an unoccupied spot")
         
     def get_current_spot(self) -> Optional[tuple[List[ClueEntry], PlacedWord, int, bool]]:
         entries: List[tuple[List[ClueEntry], PlacedWord, int, bool]] = []
         
         for length in self.unocupied_spots.keys():
-            all_words_of_length = self.entries[length] 
-            
             for spot in self.unocupied_spots[length]:
-                possible_entries = self.get_possible_entries(all_words_of_length, spot)
-                random.shuffle(possible_entries)
+                possible_entries = spot.get_domain()
                 number_of_entries = len(possible_entries)
+                
                 if number_of_entries == 0:
                     return None
                 entries.append((possible_entries, spot, number_of_entries, spot.is_crossed()))
+        
+        if not entries:
+            return None
                 
+        # Sortiere nach MRV (wenigste verbleibende Möglichkeiten zuerst)
         entries.sort(key=lambda x: (not x[3], x[2]))
-        return entries[0]
+        
+        # NEU: Nur die Liste für den WIRKLICH ausgewählten Spot mischen!
+        best_match = entries[0]
+        shuffled_domain = best_match[0].copy()
+        random.shuffle(shuffled_domain)
+        
+        return (shuffled_domain, best_match[1], best_match[2], best_match[3])
 
     def display(self):
         for row in self.grid:
             print(' '.join(c if c != ' ' else '.' for c in row))
+
+    def add_word_to_grid(self, spot: PlacedWord):
+        row = spot.get_row()
+        col = spot.get_col()
+        for i, char in enumerate(spot.get_answer()):
+            r = row + i if spot.get_direction() == Direction.VERTICAL else row
+            c = col + i if spot.get_direction() == Direction.HORIZONTAL else col
+            
+            self.grid[r][c] = char
+            self.grid_counts[r][c] += 1  # Zähler erhöhen
+
+    def remove_word_from_grid(self, spot: PlacedWord):
+        row = spot.get_row()
+        col = spot.get_col()
+        for i in range(spot.get_length()):
+            r = row + i if spot.get_direction() == Direction.VERTICAL else row
+            c = col + i if spot.get_direction() == Direction.HORIZONTAL else col
+            
+            self.grid_counts[r][c] -= 1  # Zähler verringern
+            
+            # Nur löschen, wenn KEIN anderes Wort mehr diesen Buchstaben nutzt!
+            if self.grid_counts[r][c] == 0:
+                self.grid[r][c] = '_'
+
+    def intersects(self, spot1: PlacedWord, spot2: PlacedWord) -> bool:
+        # Wir erzeugen einen einzigartigen Key für dieses Spot-Paar
+        key = frozenset([id(spot1), id(spot2)])
+        
+        # Wenn wir die Antwort schon kennen, sofort aus dem Cache laden (Millisekunden!)
+        if key in self._intersect_cache:
+            return self._intersect_cache[key]
+            
+        r1, c1 = spot1.get_row(), spot1.get_col()
+        r2, c2 = spot2.get_row(), spot2.get_col()
+        
+        cells1 = set()
+        for i in range(spot1.get_length()):
+            r = r1 + i if spot1.get_direction() == Direction.VERTICAL else r1
+            c = c1 + i if spot1.get_direction() == Direction.HORIZONTAL else c1
+            cells1.add((r, c))
+            
+        cells2 = set()
+        for i in range(spot2.get_length()):
+            r = r2 + i if spot2.get_direction() == Direction.VERTICAL else r2
+            c = c2 + i if spot2.get_direction() == Direction.HORIZONTAL else c2
+            cells2.add((r, c))
+            
+        result = bool(cells1 & cells2)
+        # Ergebnis im Cache für die Zukunft speichern
+        self._intersect_cache[key] = result
+        return result
