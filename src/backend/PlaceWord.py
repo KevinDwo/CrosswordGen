@@ -10,6 +10,7 @@ class PlacedWord:
         self._length = length
         self._occupied: bool = False
         self._cross: bool = False
+        self._domain = []
     
     # Getter
     def get_answer(self) -> str:
@@ -38,6 +39,10 @@ class PlacedWord:
 
     def is_crossed(self) -> bool:
         return self._cross
+    
+    def get_domain(self) -> list:
+        return self._domain
+
     # Setter
     def set_answer(self, answer: str):
         self._answer = answer
@@ -70,3 +75,6 @@ class PlacedWord:
         self.set_answer("_" * self.get_length())
         self.set_question("?")
         self.set_crossed(False)
+
+    def set_domain(self, domain: list):
+        self._domain = domain
