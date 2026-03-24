@@ -26,14 +26,16 @@ class CrosswordGridTemplate:
     
     def set_entries(self, entries: Dict[int, List[ClueEntry]]):
         new_entries: Dict[int, List[ClueEntry]] = defaultdict(list)
+        
         for length in self.unocupied_spots:
-            new_entries[length] = entries[length]
+            available_words = list(entries[length])
+            random.shuffle(available_words)
+            new_entries[length] = available_words[:200]
+            
         self.entries = new_entries
-
         for length in self.unocupied_spots.keys():
             for spot in self.unocupied_spots[length]:
                 spot.set_domain(list(self.entries[length]))
-
     #Loading Layout
     def set_placeholder(self, row: int, col: int, length: int, direction: Direction, number: int) -> bool:
         self.set_layout_spot(row, col, length, direction, number)
@@ -197,12 +199,9 @@ class CrosswordGridTemplate:
                 for s in self.unocupied_spots[length]:
                     new_domain = s.get_domain().copy()
                     
-                    # 1. OPTIMIERUNG: Keine doppelten Wörter zulassen!
-                    # Das benutzte Wort wird aus ALLEN anderen freien Spots gestrichen
                     if entry in new_domain:
                         new_domain.remove(entry)
 
-                    # 2. Forward Checking (nur wenn sie sich wirklich kreuzen)
                     if self.intersects(spot, s):
                         new_domain = self.get_possible_entries(new_domain, s)
                         
@@ -227,15 +226,13 @@ class CrosswordGridTemplate:
                     
             if first_try:
                 total_count = len(entries)
-                print(f"{words_tried/total_count * 100:.1f}% done. Right now {entry.get_answer()} is tested.")
+                if words_tried % 50 == 0:
+                    print(f"{words_tried/total_count * 100:.1f}% done. Right now {entry.get_answer()} is tested.")
                 words_tried += 1
                 
-            # Rekursion NUR fortsetzen, wenn das Forward-Checking erfolgreich war
             if not domain_wipeout:
                 if self.backtracking(words_tried):
                     return True
-                    
-            # Wenn es hier ankommt, war der Pfad falsch -> Wort wieder entfernen
             self.revert_spot(spot)
             
             for s, backup in domain_backup.items():
@@ -298,11 +295,7 @@ class CrosswordGridTemplate:
         
         if not entries:
             return None
-                
-        # Sortiere nach MRV (wenigste verbleibende Möglichkeiten zuerst)
         entries.sort(key=lambda x: (not x[3], x[2]))
-        
-        # NEU: Nur die Liste für den WIRKLICH ausgewählten Spot mischen!
         best_match = entries[0]
         shuffled_domain = best_match[0].copy()
         random.shuffle(shuffled_domain)
