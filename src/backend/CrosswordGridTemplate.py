@@ -29,8 +29,8 @@ class CrosswordGridTemplate:
         
         for length in self.unocupied_spots:
             available_words = list(entries[length])
-            random.shuffle(available_words)
-            new_entries[length] = available_words[:200]
+            available_words.sort(key=lambda w: self.get_word_score(w.get_answer()), reverse=True)
+            new_entries[length] = available_words[:150]
             
         self.entries = new_entries
         for length in self.unocupied_spots.keys():
@@ -356,3 +356,17 @@ class CrosswordGridTemplate:
         # Ergebnis im Cache für die Zukunft speichern
         self._intersect_cache[key] = result
         return result
+    
+    def get_word_score(self, word: str) -> float:
+        # Das sind die "Klebe-Buchstaben", die Kreuzungen am einfachsten machen
+        good_letters = set("AEIOUNRSTaeiounrst")
+        
+        # Zähle, wie viele gute Buchstaben das Wort hat
+        good_count = sum(1 for char in word if char in good_letters)
+        
+        # Berechne den prozentualen Anteil (z.B. MARIO = 4/5 = 0.8)
+        base_score = good_count / len(word)
+        
+        # Füge einen Zufallsfaktor hinzu (0.0 bis 0.3)
+        # Dadurch gewinnt nicht IMMER exakt dasselbe Wort, das Rätsel bleibt zufällig!
+        return base_score + random.uniform(0.0, 0.3)
