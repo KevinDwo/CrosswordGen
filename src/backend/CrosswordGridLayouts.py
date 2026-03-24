@@ -200,7 +200,6 @@ class CrosswordGridLayouts:
             grid.set_placeholder(4, 0, 3, Direction.RIGHTABOVE, 16)
             grid.set_placeholder(4, 1, 6, Direction.DOWNABOVE, 17)
             grid.set_placeholder(4, 3, 3, Direction.RIGHTLEFT, 18)
-            grid.set_placeholder(4, 7, 3, Direction.DOWNABOVE, 19)
             grid.set_placeholder(4, 9, 7, Direction.DOWNABOVE, 20)
             grid.set_placeholder(4, 11, 3, Direction.DOWNABOVE, 21)
             grid.set_placeholder(5, 3, 4, Direction.DOWNABOVE, 22)

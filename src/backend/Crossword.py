@@ -20,6 +20,9 @@ class Crossword:
             print("Eine Lösung wurde gefunden.")
         else:
             print("Es wurde keine Lösung gefunden")
+            
+    def display_grid(self):
+        self.grid.display()
 
     def convert_to_json(self, placedwords: DefaultDict[int, List[PlacedWord]]) -> List[Entry]:
         entries_json: List[Entry] = []
