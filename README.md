@@ -8,7 +8,7 @@ Dieses Projekt wurde entwickelt, um komplexe algorithmische Herausforderungen (C
 
 ## 📸 Screenshot
 
-Hier ist eine Vorschau des generierten, interaktiven Kreuzworträtsels: ![Screenshot](assets/website_screenshot.png)
+Hier ist eine Vorschau des generierten, interaktiven Kreuzworträtsels: ![Screenshot](src/backend/assets/website_screenshot.png)
 
 ## 🚀 Features
 
