@@ -1,322 +1,322 @@
 [
   {
-    "question": "?",
-    "answer": "PP",
+    "question": "Zu starker Champion (Abk.)",
+    "answer": "OP",
     "row": 7,
     "col": 6,
     "direction": "horizontal",
     "number": 28
   },
   {
-    "question": "Von 100 auf 0 (Abk.)",
-    "answer": "OS",
+    "question": "Heimat von Minimap und Healthbar (Abk.)",
+    "answer": "UI",
     "row": 8,
     "col": 6,
     "direction": "horizontal",
     "number": 33
   },
   {
-    "question": "?",
-    "answer": "TPS",
+    "question": "Software-Schnittstelle (Abk.)",
+    "answer": "API",
     "row": 6,
     "col": 7,
     "direction": "vertical",
     "number": 20
   },
   {
-    "question": "?",
-    "answer": "API",
-    "row": 4,
-    "col": 5,
-    "direction": "vertical",
-    "number": 15
-  },
-  {
-    "question": "?",
-    "answer": "SEE",
-    "row": 5,
-    "col": 9,
-    "direction": "horizontal",
-    "number": 21
-  },
-  {
-    "question": "?",
-    "answer": "WTF",
+    "question": "8-Bit-Retro-Kasten (Abk.)",
+    "answer": "NES",
     "row": 7,
     "col": 9,
     "direction": "horizontal",
     "number": 29
   },
   {
-    "question": "?",
-    "answer": "BEE",
-    "row": 1,
-    "col": 2,
-    "direction": "vertical",
-    "number": 3
-  },
-  {
-    "question": "?",
-    "answer": "MAT",
-    "row": 9,
-    "col": 8,
-    "direction": "vertical",
-    "number": 34
-  },
-  {
-    "question": "?",
-    "answer": "REN",
+    "question": "Anzahl Minecraft-Herzen (engl.)",
+    "answer": "TEN",
     "row": 9,
     "col": 10,
     "direction": "vertical",
     "number": 35
   },
   {
-    "question": "Minecraft Block",
-    "answer": "ICE",
+    "question": "Spawner-Kreatur",
+    "answer": "MOB",
     "row": 9,
-    "col": 1,
+    "col": 8,
     "direction": "vertical",
-    "number": 31
+    "number": 34
   },
   {
-    "question": "?",
-    "answer": "DLC",
+    "question": "Eisen oder Gold (mc)",
+    "answer": "ORE",
+    "row": 4,
+    "col": 5,
+    "direction": "vertical",
+    "number": 15
+  },
+  {
+    "question": "Rangloser Hypixel-Spieler",
+    "answer": "NON",
+    "row": 1,
+    "col": 2,
+    "direction": "vertical",
+    "number": 3
+  },
+  {
+    "question": "Fakers Heimat",
+    "answer": "LOL",
+    "row": 5,
+    "col": 9,
+    "direction": "horizontal",
+    "number": 21
+  },
+  {
+    "question": "Behälter des Energy-Drinks",
+    "answer": "CAN",
     "row": 9,
     "col": 3,
     "direction": "vertical",
     "number": 32
   },
   {
-    "question": "?",
-    "answer": "SPONGE",
+    "question": "Throwable Minecraft item",
+    "answer": "EGG",
+    "row": 9,
+    "col": 1,
+    "direction": "vertical",
+    "number": 31
+  },
+  {
+    "question": "Hardware-Knotenpunkt fürs Heimnetz",
+    "answer": "ROUTER",
     "row": 6,
     "col": 6,
     "direction": "vertical",
     "number": 19
   },
   {
-    "question": "?",
-    "answer": "FIREUP",
-    "row": 5,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 17
-  },
-  {
-    "question": "?",
-    "answer": "RIFLES",
-    "row": 0,
-    "col": 9,
-    "direction": "vertical",
-    "number": 8
-  },
-  {
-    "question": "?",
-    "answer": "GRAVES",
+    "question": "Droppt \"Totem der Unsterblichkeit\" (engl.)",
+    "answer": "EVOKER",
     "row": 10,
     "col": 6,
     "direction": "horizontal",
     "number": 38
   },
   {
-    "question": "?",
-    "answer": "ENCORE",
+    "question": "Käfer-Pokémon",
+    "answer": "PINSIR",
+    "row": 5,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 17
+  },
+  {
+    "question": "Item zur Wiederbelebung von Amonitas",
+    "answer": "FOSSIL",
+    "row": 0,
+    "col": 9,
+    "direction": "vertical",
+    "number": 8
+  },
+  {
+    "question": "Geist-Pokémon",
+    "answer": "GENGAR",
     "row": 11,
     "col": 1,
     "direction": "horizontal",
     "number": 39
   },
   {
-    "question": "?",
-    "answer": "MISTA",
-    "row": 6,
-    "col": 4,
-    "direction": "horizontal",
-    "number": 24
-  },
-  {
-    "question": "?",
-    "answer": "MEWTU",
-    "row": 0,
-    "col": 6,
-    "direction": "vertical",
-    "number": 6
-  },
-  {
-    "question": "?",
-    "answer": "GIFTE",
-    "row": 1,
-    "col": 11,
-    "direction": "vertical",
-    "number": 9
-  },
-  {
-    "question": "?",
-    "answer": "ALERT",
-    "row": 3,
-    "col": 10,
-    "direction": "vertical",
-    "number": 13
-  },
-  {
-    "question": "?",
-    "answer": "BUTTE",
-    "row": 1,
-    "col": 3,
-    "direction": "vertical",
-    "number": 4
-  },
-  {
-    "question": "?",
-    "answer": "WEAVE",
+    "question": "Chamäleon-Champ",
+    "answer": "NEEKO",
     "row": 7,
     "col": 9,
     "direction": "vertical",
     "number": 25
   },
   {
-    "question": "?",
-    "answer": "FEAST",
+    "question": "Bruder von Lux (rückwärts)",
+    "answer": "NERAG",
+    "row": 6,
+    "col": 4,
+    "direction": "horizontal",
+    "number": 24
+  },
+  {
+    "question": "CC-Fähigkeit",
+    "answer": "SNARE",
     "row": 7,
     "col": 11,
     "direction": "vertical",
     "number": 26
   },
   {
-    "question": "?",
-    "answer": "SUSAN",
+    "question": "Twitch-Chat-Symbol",
+    "answer": "EMOTE",
+    "row": 3,
+    "col": 10,
+    "direction": "vertical",
+    "number": 13
+  },
+  {
+    "question": "Rothaarige Witcher-Zauberin",
+    "answer": "TRISS",
+    "row": 1,
+    "col": 3,
+    "direction": "vertical",
+    "number": 4
+  },
+  {
+    "question": "Kratos für Atreus",
+    "answer": "VATER",
+    "row": 0,
+    "col": 6,
+    "direction": "vertical",
+    "number": 6
+  },
+  {
+    "question": "Bildschirm-Komponente",
+    "answer": "PANEL",
+    "row": 1,
+    "col": 11,
+    "direction": "vertical",
+    "number": 9
+  },
+  {
+    "question": "Stern am Himmel",
+    "answer": "SONNE",
     "row": 7,
     "col": 2,
     "direction": "vertical",
     "number": 23
   },
   {
-    "question": "?",
-    "answer": "TANTRUM",
+    "question": "Jana",
+    "answer": "GOETTIN",
     "row": 0,
     "col": 4,
     "direction": "vertical",
     "number": 5
   },
   {
-    "question": "?",
-    "answer": "CABBAGE",
+    "question": "Riesige Gift-Qualle",
+    "answer": "TENTOXA",
     "row": 1,
     "col": 0,
     "direction": "horizontal",
     "number": 1
   },
   {
-    "question": "?",
-    "answer": "ANNAIRO",
+    "question": "LoR-Schlüsselwort",
+    "answer": "ELUSIVE",
     "row": 1,
     "col": 1,
     "direction": "vertical",
     "number": 2
   },
   {
-    "question": "?",
-    "answer": "DISDAIN",
+    "question": "Chinesischer Gaming-Riese",
+    "answer": "TENCENT",
     "row": 9,
     "col": 0,
     "direction": "horizontal",
     "number": 30
   },
   {
-    "question": "?",
-    "answer": "TRAUMWELT",
-    "row": 4,
-    "col": 3,
-    "direction": "horizontal",
-    "number": 18
-  },
-  {
-    "question": "?",
-    "answer": "PLOW",
-    "row": 1,
-    "col": 8,
-    "direction": "vertical",
-    "number": 7
-  },
-  {
-    "question": "?",
-    "answer": "WOLF",
-    "row": 2,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 12
-  },
-  {
-    "question": "?",
-    "answer": "OLAF",
-    "row": 3,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 16
-  },
-  {
-    "question": "?",
-    "answer": "PING",
-    "row": 1,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 10
-  },
-  {
-    "question": "?",
-    "answer": "NETT",
-    "row": 3,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 14
-  },
-  {
-    "question": "?",
-    "answer": "NEUN",
-    "row": 2,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 11
-  },
-  {
-    "question": "?",
-    "answer": "MARA",
+    "question": "Aktuell stärkste Spieltaktik",
+    "answer": "META",
     "row": 9,
     "col": 8,
     "direction": "horizontal",
     "number": 36
   },
   {
-    "question": "?",
-    "answer": "TENT",
+    "question": "Zähmt Minecraft-Wölfe (engl.)",
+    "answer": "BONE",
     "row": 11,
     "col": 8,
     "direction": "horizontal",
     "number": 40
   },
   {
-    "question": "?",
-    "answer": "HALO",
+    "question": "Strategie-Spielfigur (engl.)",
+    "answer": "UNIT",
+    "row": 3,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 14
+  },
+  {
+    "question": "Wissen zum Spieluniversum",
+    "answer": "LORE",
+    "row": 2,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 11
+  },
+  {
+    "question": "Bewohner von Asgard",
+    "answer": "ASEN",
+    "row": 3,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 16
+  },
+  {
+    "question": "Boss-Champ (rückwärts)",
+    "answer": "TTES",
+    "row": 2,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 12
+  },
+  {
+    "question": "Gamer-Stuhl (engl.)",
+    "answer": "SEAT",
+    "row": 1,
+    "col": 8,
+    "direction": "vertical",
+    "number": 7
+  },
+  {
+    "question": "Modern-Warfare-Legende",
+    "answer": "SOAP",
+    "row": 1,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 10
+  },
+  {
+    "question": "Schauplatz von Celeste",
+    "answer": "BERG",
     "row": 8,
     "col": 4,
     "direction": "vertical",
     "number": 27
   },
   {
-    "question": "?",
-    "answer": "CALL",
+    "question": "Prähistorischer LoL-Champ",
+    "answer": "GNAR",
     "row": 10,
     "col": 1,
     "direction": "horizontal",
     "number": 37
   },
   {
-    "question": "?",
-    "answer": "BOSS",
+    "question": "Aufforderung im Text-Adventure",
+    "answer": "LEST",
     "row": 7,
     "col": 0,
     "direction": "horizontal",
     "number": 22
+  },
+  {
+    "question": "YouTube-Lore-Erklärvideo",
+    "answer": "STORYTIME",
+    "row": 4,
+    "col": 3,
+    "direction": "horizontal",
+    "number": 18
   }
 ]

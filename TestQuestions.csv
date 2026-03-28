@@ -26,7 +26,7 @@ questions,answers
 ?,akw
 ?,acts
 ?,harlekin
-?,non
+Rangloser Hypixel-Spieler,non
 ?,hz
 ?,na
 ?,strange
@@ -37,7 +37,7 @@ questions,answers
 ?,sr
 ?,besan
 ?,aktie
-?,snare
+CC-Fähigkeit,snare
 ?,so
 ?,irl
 ?,diven
@@ -147,7 +147,7 @@ LoL Champion,Graves
 ?,Jinx
 ?,Yasuo
 ?,Braum
-?,Gnar
+Prähistorischer LoL-Champ,Gnar
 ?,Azir
 ?,Kalista
 ?,RekSai
@@ -167,7 +167,7 @@ LoL Champion,Graves
 ?,Ornn
 ?,Zoe
 ?,Pyke
-?,Neeko
+Chamäleon-Champ,Neeko
 ?,Sylas
 ?,Yuumi
 ?,Qiyana
@@ -241,7 +241,7 @@ Downloadable Content,DLC
 ?,Mana
 ?,XP
 ?,NPC
-?,Mob
+Spawner-Kreatur,Mob
 ?,Aggro
 ?,Dungeon
 ?,Raid
@@ -253,10 +253,10 @@ Downloadable Content,DLC
 ?,pokecomp
 ?,Taktik
 ?,Build
-?,Meta
+Aktuell stärkste Spieltaktik,Meta
 ?,Nerf
 ?,Buff
-?,Op
+Zu starker Champion (Abk.),Op
 ?,Balance
 ?,Sandbox
 ?,Openworld
@@ -288,9 +288,9 @@ Alle 5 Gegner töten,ass
 ?,Plus
 ?,Random
 ?,Easteregg
-?,Lore
+Wissen zum Spieluniversum,Lore
 ?,Cutscene
-?,Emote
+Twitch-Chat-Symbol,Emote
 ?,Skin
 ?,Cosmetic
 ?,Emblem
@@ -355,7 +355,7 @@ LoL: Lässt Master Yi mit Ulti rasant wegsprinten (engl.),Fear
 ?,internet
 ?,wlan
 ?,lan
-?,router
+Hardware-Knotenpunkt fürs Heimnetz,router
 ?,latenz
 ?,server
 Transaktionsverarbeitungssystem (Abk.),tps
@@ -379,10 +379,10 @@ mc biome (deep),dark
 ?,ds
 ?,dk
 ?,gameboy
-?,NES
+8-Bit-Retro-Kasten (Abk.),NES
 ?,SNES
 ?,traenen
-?,ui
+Heimat von Minimap und Healthbar (Abk.),ui
 ?,ai
 ?,mp
 Jemanden von 100 auf 0 bursten (Abk.),os
@@ -782,7 +782,7 @@ phoenix character,blaze
 head of mobs,creeper
 head of mobs,skeleton
 ?,endermite
-?,evoker
+Droppt "Totem der Unsterblichkeit" (engl.),evoker
 ?,ghast
 ?,hoglin
 ?,husk
@@ -875,7 +875,7 @@ crafting,table
 ?,cyan
 ?,dandelion
 ?,deepslate
-?,ore
+Eisen oder Gold (mc),ore
 ?,dirt
 ?,dispenser
 ?,dripstone
@@ -1008,7 +1008,7 @@ Throwable Minecraft item,egg
 ?,igloo
 ?,vilage
 ?,shipwreck
-?,fossil
+Item zur Wiederbelebung von Amonitas,fossil
 ?,Bisasam
 ?,Bisaknosp
 ?,Bisaflor
@@ -1074,7 +1074,7 @@ Throwable Minecraft item,egg
 ?,Knofensa
 ?,Sarzenia
 ?,Tentacha
-?,Tentoxa
+Riesige Gift-Qualle,Tentoxa
 ?,Georok
 ?,Geowaz
 ?,Ponita
@@ -1094,7 +1094,7 @@ Throwable Minecraft item,egg
 ?,Austos
 ?,Nebulak
 ?,Alpollo
-?,Gengar
+Geist-Pokémon,Gengar
 ?,Onix
 ?,Traumato
 ?,Hypno
@@ -1127,7 +1127,7 @@ Throwable Minecraft item,egg
 ?,Rossana
 ?,Elektek
 ?,Magmar
-?,Pinsir
+Käfer-Pokémon,Pinsir
 ?,Tauros
 ?,Karpador
 ?,Garados
@@ -1166,7 +1166,7 @@ Psycho pokemon,Mewtu
 ?,musik
 ?,collab
 ?,gast
-?,storytime
+YouTube-Lore-Erklärvideo,storytime
 ?,clickbait
 ?,glocke
 ?,repeater
@@ -1411,7 +1411,7 @@ signature killjoy,turret
 ?,thermo
 Hochprozentiges (Kurzw.),alk
 ?,los
-?,asen
+Bewohner von Asgard,asen
 Geistreicher Aufsatz,essay
 ?,hl
 ?,recall
@@ -1553,11 +1553,11 @@ auch mc effect (fire),aspect
 ?,koenig
 ?,koenigin
 ?,drache
-?,goettin
+Janna,goettin
 ?,geister
 ?,daemon
 ?,ahne
-?,vater
+Kratos für Atreus,vater
 ?,mutter
 ?,verrat
 ?,treue
@@ -1581,8 +1581,8 @@ auch mc effect (fire),aspect
 ?,relikt
 ?,stern
 ?,mond
-?,sonne
-?,berg
+Eckige Minecraft-Lichtquelle,sonne
+Schauplatz von Celeste,berg
 ?,berge
 ?,tiefen
 ?,meer
@@ -2020,7 +2020,7 @@ Bruder von Mel,kino
 ?,mutig
 ?,ehrlich
 ?,nett
-?,lol
+Fakers Heimat,lol
 ?,eins
 ?,zwei
 ?,drei
@@ -2039,7 +2039,7 @@ Bruder von Mel,kino
 ?,seven
 ?,eight
 ?,nine
-?,ten
+Anzahl Minecraft-Herzen (engl.),ten
 ?,zehn
 ?,zero
 ?,Rokrund
@@ -2209,7 +2209,7 @@ mc item,arrow
 ?,bdd
 ?,life
 ?,rascal
-Dolmetscher zwischen Game und Grafikkarte (Abk.),API
+Software-Schnittstelle (Abk.),API
 ?,clid
 ?,haru
 supp blg,on
@@ -2443,7 +2443,7 @@ dragon,ender
 ?,follower
 ?,lor
 ?,card
-?,unit
+Strategie-Spielfigur (engl.),unit
 ?,spell
 ?,landmark
 ?,fast
@@ -2452,7 +2452,7 @@ dragon,ender
 ?,augment
 ?,brash
 ?,deathless
-?,elusive
+LoR-Schlüsselwort,elusive
 ?,fated
 ?,fearsome
 ?,fury
@@ -2544,7 +2544,7 @@ Hail of ,Blades
 ?,Demolish
 ?,Bash
 ?,Second
-mc,bone
+Zähmt Minecraft-Wölfe (engl.),bone
 ?,Plating
 ?,Unsealed
 ?,Spellbook
@@ -2924,7 +2924,7 @@ Drei Buchstaben kurz bevor das Gamepad fliegt,wtf
 ?,laerzE
 ?,nehS
 ?,nenneK
-?,neraG
+Bruder von Lux (rückwärts),neraG
 ?,ilakA
 ?,rahazlaM
 ?,falO
@@ -3012,7 +3012,7 @@ LoL Champion (Rückwärts),okkE
 ?,anayiQ
 ?,anneS
 ?,soilehpA
-?,tteS
+Boss-Champ (rückwärts),tteS
 ?,ailliL
 ?,enoY
 ?,arimaS
@@ -3038,10 +3038,10 @@ LoL Champion (Rückwärts),okkE
 ?,sol
 ?,Cithria
 ?,rarity
-?,tencent
+Chinesischer Gaming-Riese,tencent
 ?,Felicia
 ?,Gert
-?,Lest
+Aufforderung im Text-Adventure,Lest
 ?,Scar
 ?,hoskel
 ?,ren
@@ -3212,7 +3212,7 @@ questions,answers
 ?,tatsumaki
 ?,hare
 ?,long
-?,soap
+Modern-Warfare-Legende,soap
 ?,ravenclaw
 ?,wryneck
 ?,fork
@@ -3335,7 +3335,7 @@ questions,answers
 ?,barreleye
 ?,jar
 ?,gannet
-?,seat
+Gamer-Stuhl (engl.),seat
 ?,mista
 ?,big
 ?,jinbe
@@ -3525,7 +3525,7 @@ Handwerks-Rohstoff (Abk.)   ,mat
 ?,tallinn
 ?,lease
 ?,tyrion
-?,can
+Behälter des Energy-Drinks,can
 ?,sirius
 ?,lettuce
 ?,bang
@@ -3807,7 +3807,6 @@ Nintendo Character,mario
 ?,wrath
 ?,conger
 ?,flamingo
-?,anhinga
 ?,tempura
 ?,rice
 ?,caster
@@ -3819,7 +3818,6 @@ Nintendo Character,mario
 ?,rio
 ?,spice
 ?,madrid
-?,tub
 ?,atlantis
 ?,tack
 ?,chewbacca
@@ -4124,7 +4122,7 @@ Zauberer aus Harry Potter,snape
 ?,guanaco
 ?,sow
 ?,thimble
-?,triss
+Rothaarige Witcher-Zauberin,triss
 ?,pasta
 ?,mango
 ?,pump
@@ -4161,7 +4159,7 @@ Zauberer aus Harry Potter,snape
 ?,shark
 ?,pea
 ?,mello
-?,panel
+Bildschirm-Komponente,panel
 ?,belt
 ?,cormorant
 ?,light
