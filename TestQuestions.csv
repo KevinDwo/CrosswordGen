@@ -26,7 +26,7 @@ questions,answers
 ?,akw
 ?,acts
 ?,harlekin
-Rangloser Hypixel-Spieler,non
+Ranglos in Hypixel,non
 ?,hz
 ?,na
 ?,strange
@@ -147,7 +147,7 @@ LoL Champion,Graves
 ?,Jinx
 ?,Yasuo
 ?,Braum
-Prähistorischer LoL-Champ,Gnar
+Prähisto-rischer Champ,Gnar
 ?,Azir
 ?,Kalista
 ?,RekSai
@@ -167,7 +167,7 @@ Prähistorischer LoL-Champ,Gnar
 ?,Ornn
 ?,Zoe
 ?,Pyke
-Chamäleon-Champ,Neeko
+Cha-mäleon-Champ,Neeko
 ?,Sylas
 ?,Yuumi
 ?,Qiyana
@@ -241,7 +241,7 @@ Downloadable Content,DLC
 ?,Mana
 ?,XP
 ?,NPC
-Spawner-Kreatur,Mob
+SpawnerKreatur,Mob
 ?,Aggro
 ?,Dungeon
 ?,Raid
@@ -253,10 +253,10 @@ Spawner-Kreatur,Mob
 ?,pokecomp
 ?,Taktik
 ?,Build
-Aktuell stärkste Spieltaktik,Meta
+Aktuell stärkste Taktik,Meta
 ?,Nerf
 ?,Buff
-Zu starker Champion (Abk.),Op
+Zu starker Champ,Op
 ?,Balance
 ?,Sandbox
 ?,Openworld
@@ -288,7 +288,7 @@ Alle 5 Gegner töten,ass
 ?,Plus
 ?,Random
 ?,Easteregg
-Wissen zum Spieluniversum,Lore
+Nerd Wissen,Lore
 ?,Cutscene
 Twitch-Chat-Symbol,Emote
 ?,Skin
@@ -355,7 +355,7 @@ LoL: Lässt Master Yi mit Ulti rasant wegsprinten (engl.),Fear
 ?,internet
 ?,wlan
 ?,lan
-Hardware-Knotenpunkt fürs Heimnetz,router
+Knoten-punkt,router
 ?,latenz
 ?,server
 Transaktionsverarbeitungssystem (Abk.),tps
@@ -379,10 +379,10 @@ mc biome (deep),dark
 ?,ds
 ?,dk
 ?,gameboy
-8-Bit-Retro-Kasten (Abk.),NES
+8-Bit-Retro-Kasten,NES
 ?,SNES
 ?,traenen
-Heimat von Minimap und Healthbar (Abk.),ui
+Minimap und Manabar,ui
 ?,ai
 ?,mp
 Jemanden von 100 auf 0 bursten (Abk.),os
@@ -782,7 +782,7 @@ phoenix character,blaze
 head of mobs,creeper
 head of mobs,skeleton
 ?,endermite
-Droppt "Totem der Unsterblichkeit" (engl.),evoker
+Raid Gegner (mc),evoker
 ?,ghast
 ?,hoglin
 ?,husk
@@ -938,7 +938,7 @@ Minecraft Block,sponge
 ?,white
 ?,yellow
 ?,bow
-Throwable Minecraft item,egg
+Throw-able Item (mc),egg
 ?,lead
 ?,minecart
 ?,string
@@ -1008,7 +1008,7 @@ Throwable Minecraft item,egg
 ?,igloo
 ?,vilage
 ?,shipwreck
-Item zur Wiederbelebung von Amonitas,fossil
+Item für Kabuto,fossil
 ?,Bisasam
 ?,Bisaknosp
 ?,Bisaflor
@@ -1094,7 +1094,7 @@ Riesige Gift-Qualle,Tentoxa
 ?,Austos
 ?,Nebulak
 ?,Alpollo
-Geist-Pokémon,Gengar
+Geist-PKMN,Gengar
 ?,Onix
 ?,Traumato
 ?,Hypno
@@ -1127,7 +1127,7 @@ Geist-Pokémon,Gengar
 ?,Rossana
 ?,Elektek
 ?,Magmar
-Käfer-Pokémon,Pinsir
+Käfer-PKMN,Pinsir
 ?,Tauros
 ?,Karpador
 ?,Garados
@@ -1166,7 +1166,7 @@ Psycho pokemon,Mewtu
 ?,musik
 ?,collab
 ?,gast
-YouTube-Lore-Erklärvideo,storytime
+Maxim Format,storytime
 ?,clickbait
 ?,glocke
 ?,repeater
@@ -1411,7 +1411,7 @@ signature killjoy,turret
 ?,thermo
 Hochprozentiges (Kurzw.),alk
 ?,los
-Bewohner von Asgard,asen
+Volk von Asgard,asen
 Geistreicher Aufsatz,essay
 ?,hl
 ?,recall
@@ -1581,8 +1581,8 @@ Kratos für Atreus,vater
 ?,relikt
 ?,stern
 ?,mond
-Eckige Minecraft-Lichtquelle,sonne
-Schauplatz von Celeste,berg
+Stern am Himmel,sonne
+Schau-platz von Celeste,berg
 ?,berge
 ?,tiefen
 ?,meer
@@ -2039,7 +2039,7 @@ Fakers Heimat,lol
 ?,seven
 ?,eight
 ?,nine
-Anzahl Minecraft-Herzen (engl.),ten
+Anzahl Herzen (engl.),ten
 ?,zehn
 ?,zero
 ?,Rokrund
@@ -2209,7 +2209,7 @@ mc item,arrow
 ?,bdd
 ?,life
 ?,rascal
-Software-Schnittstelle (Abk.),API
+SoftwareSchnitt-stelle,API
 ?,clid
 ?,haru
 supp blg,on
@@ -2443,7 +2443,7 @@ dragon,ender
 ?,follower
 ?,lor
 ?,card
-Strategie-Spielfigur (engl.),unit
+StrategieSpielfigur (engl.),unit
 ?,spell
 ?,landmark
 ?,fast
@@ -2452,7 +2452,7 @@ Strategie-Spielfigur (engl.),unit
 ?,augment
 ?,brash
 ?,deathless
-LoR-Schlüsselwort,elusive
+LoR-Keyword,elusive
 ?,fated
 ?,fearsome
 ?,fury
@@ -2544,7 +2544,7 @@ Hail of ,Blades
 ?,Demolish
 ?,Bash
 ?,Second
-Zähmt Minecraft-Wölfe (engl.),bone
+Zähmt Wölfe (engl.),bone
 ?,Plating
 ?,Unsealed
 ?,Spellbook
@@ -2924,7 +2924,7 @@ Drei Buchstaben kurz bevor das Gamepad fliegt,wtf
 ?,laerzE
 ?,nehS
 ?,nenneK
-Bruder von Lux (rückwärts),neraG
+Bruder von Lux (rückw.),neraG
 ?,ilakA
 ?,rahazlaM
 ?,falO
@@ -3012,7 +3012,7 @@ LoL Champion (Rückwärts),okkE
 ?,anayiQ
 ?,anneS
 ?,soilehpA
-Boss-Champ (rückwärts),tteS
+Boss-Champ (rückw.),tteS
 ?,ailliL
 ?,enoY
 ?,arimaS
@@ -3041,7 +3041,7 @@ Boss-Champ (rückwärts),tteS
 Chinesischer Gaming-Riese,tencent
 ?,Felicia
 ?,Gert
-Aufforderung im Text-Adventure,Lest
+Bitte ... die Server-Regeln!,Lest
 ?,Scar
 ?,hoskel
 ?,ren
@@ -4122,7 +4122,7 @@ Zauberer aus Harry Potter,snape
 ?,guanaco
 ?,sow
 ?,thimble
-Rothaarige Witcher-Zauberin,triss
+Rot-haarige Witcher-Zauberin,triss
 ?,pasta
 ?,mango
 ?,pump
@@ -4159,7 +4159,7 @@ Rothaarige Witcher-Zauberin,triss
 ?,shark
 ?,pea
 ?,mello
-Bildschirm-Komponente,panel
+Bild eines Comics (engl.),panel
 ?,belt
 ?,cormorant
 ?,light
@@ -4175,3 +4175,4 @@ Bildschirm-Komponente,panel
 ?,prague
 ?,mirror
 ?,pick
+?,celeste
