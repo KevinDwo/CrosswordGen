@@ -1,6 +1,6 @@
 [
   {
-    "question": "Zu starker Champion (Abk.)",
+    "question": "Zu starker Champ",
     "answer": "OP",
     "row": 7,
     "col": 6,
@@ -8,7 +8,7 @@
     "number": 28
   },
   {
-    "question": "Heimat von Minimap und Healthbar (Abk.)",
+    "question": "Minimap und Manabar",
     "answer": "UI",
     "row": 8,
     "col": 6,
@@ -16,7 +16,7 @@
     "number": 33
   },
   {
-    "question": "Software-Schnittstelle (Abk.)",
+    "question": "SoftwareSchnitt-stelle",
     "answer": "API",
     "row": 6,
     "col": 7,
@@ -24,7 +24,7 @@
     "number": 20
   },
   {
-    "question": "8-Bit-Retro-Kasten (Abk.)",
+    "question": "8-Bit-Retro-Kasten",
     "answer": "NES",
     "row": 7,
     "col": 9,
@@ -32,7 +32,7 @@
     "number": 29
   },
   {
-    "question": "Anzahl Minecraft-Herzen (engl.)",
+    "question": "Anzahl Herzen (engl.)",
     "answer": "TEN",
     "row": 9,
     "col": 10,
@@ -40,7 +40,7 @@
     "number": 35
   },
   {
-    "question": "Spawner-Kreatur",
+    "question": "SpawnerKreatur",
     "answer": "MOB",
     "row": 9,
     "col": 8,
@@ -56,7 +56,7 @@
     "number": 15
   },
   {
-    "question": "Rangloser Hypixel-Spieler",
+    "question": "Ranglos in Hypixel",
     "answer": "NON",
     "row": 1,
     "col": 2,
@@ -80,7 +80,7 @@
     "number": 32
   },
   {
-    "question": "Throwable Minecraft item",
+    "question": "Throw-able Item (mc)",
     "answer": "EGG",
     "row": 9,
     "col": 1,
@@ -88,7 +88,7 @@
     "number": 31
   },
   {
-    "question": "Hardware-Knotenpunkt fürs Heimnetz",
+    "question": "Knoten-punkt",
     "answer": "ROUTER",
     "row": 6,
     "col": 6,
@@ -96,7 +96,7 @@
     "number": 19
   },
   {
-    "question": "Droppt \"Totem der Unsterblichkeit\" (engl.)",
+    "question": "Raid Gegner (mc)",
     "answer": "EVOKER",
     "row": 10,
     "col": 6,
@@ -104,7 +104,7 @@
     "number": 38
   },
   {
-    "question": "Käfer-Pokémon",
+    "question": "Käfer-PKMN",
     "answer": "PINSIR",
     "row": 5,
     "col": 0,
@@ -112,7 +112,7 @@
     "number": 17
   },
   {
-    "question": "Item zur Wiederbelebung von Amonitas",
+    "question": "Item für Kabuto",
     "answer": "FOSSIL",
     "row": 0,
     "col": 9,
@@ -120,7 +120,7 @@
     "number": 8
   },
   {
-    "question": "Geist-Pokémon",
+    "question": "Geist-PKMN",
     "answer": "GENGAR",
     "row": 11,
     "col": 1,
@@ -128,7 +128,7 @@
     "number": 39
   },
   {
-    "question": "Chamäleon-Champ",
+    "question": "Cha-mäleon-Champ",
     "answer": "NEEKO",
     "row": 7,
     "col": 9,
@@ -136,7 +136,7 @@
     "number": 25
   },
   {
-    "question": "Bruder von Lux (rückwärts)",
+    "question": "Bruder von Lux (rückw.)",
     "answer": "NERAG",
     "row": 6,
     "col": 4,
@@ -160,7 +160,7 @@
     "number": 13
   },
   {
-    "question": "Rothaarige Witcher-Zauberin",
+    "question": "Rot-haarige Witcher-Zauberin",
     "answer": "TRISS",
     "row": 1,
     "col": 3,
@@ -176,7 +176,7 @@
     "number": 6
   },
   {
-    "question": "Bildschirm-Komponente",
+    "question": "Bild eines Comics (engl.)",
     "answer": "PANEL",
     "row": 1,
     "col": 11,
@@ -208,7 +208,7 @@
     "number": 1
   },
   {
-    "question": "LoR-Schlüsselwort",
+    "question": "LoR-Keyword",
     "answer": "ELUSIVE",
     "row": 1,
     "col": 1,
@@ -224,7 +224,7 @@
     "number": 30
   },
   {
-    "question": "Aktuell stärkste Spieltaktik",
+    "question": "Aktuell stärkste Taktik",
     "answer": "META",
     "row": 9,
     "col": 8,
@@ -232,7 +232,7 @@
     "number": 36
   },
   {
-    "question": "Zähmt Minecraft-Wölfe (engl.)",
+    "question": "Zähmt Wölfe (engl.)",
     "answer": "BONE",
     "row": 11,
     "col": 8,
@@ -240,7 +240,7 @@
     "number": 40
   },
   {
-    "question": "Strategie-Spielfigur (engl.)",
+    "question": "StrategieSpielfigur (engl.)",
     "answer": "UNIT",
     "row": 3,
     "col": 1,
@@ -248,7 +248,7 @@
     "number": 14
   },
   {
-    "question": "Wissen zum Spieluniversum",
+    "question": "Nerd Wissen",
     "answer": "LORE",
     "row": 2,
     "col": 1,
@@ -256,7 +256,7 @@
     "number": 11
   },
   {
-    "question": "Bewohner von Asgard",
+    "question": "Volk von Asgard",
     "answer": "ASEN",
     "row": 3,
     "col": 8,
@@ -264,7 +264,7 @@
     "number": 16
   },
   {
-    "question": "Boss-Champ (rückwärts)",
+    "question": "Boss-Champ (rückw.)",
     "answer": "TTES",
     "row": 2,
     "col": 6,
@@ -288,7 +288,7 @@
     "number": 10
   },
   {
-    "question": "Schauplatz von Celeste",
+    "question": "Schau-platz von Celeste",
     "answer": "BERG",
     "row": 8,
     "col": 4,
@@ -296,7 +296,7 @@
     "number": 27
   },
   {
-    "question": "Prähistorischer LoL-Champ",
+    "question": "Prähisto-rischer Champ",
     "answer": "GNAR",
     "row": 10,
     "col": 1,
@@ -304,7 +304,7 @@
     "number": 37
   },
   {
-    "question": "Aufforderung im Text-Adventure",
+    "question": "Bitte ... die Server-Regeln!",
     "answer": "LEST",
     "row": 7,
     "col": 0,
@@ -312,7 +312,7 @@
     "number": 22
   },
   {
-    "question": "YouTube-Lore-Erklärvideo",
+    "question": "Maxim Format",
     "answer": "STORYTIME",
     "row": 4,
     "col": 3,
