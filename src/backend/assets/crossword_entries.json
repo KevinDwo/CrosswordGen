@@ -1,319 +1,319 @@
 [
   {
-    "question": "Zu starker Champ",
-    "answer": "OP",
+    "question": "Bestes Team (LoL)",
+    "answer": "PG",
     "row": 7,
     "col": 6,
     "direction": "horizontal",
     "number": 28
   },
   {
-    "question": "Minimap und Manabar",
-    "answer": "UI",
+    "question": "LoL-Weltmeister (abk.)",
+    "answer": "IG",
     "row": 8,
     "col": 6,
     "direction": "horizontal",
     "number": 33
   },
   {
-    "question": "SoftwareSchnitt-stelle",
-    "answer": "API",
+    "question": "Throw-able Item (mc)",
+    "answer": "EGG",
     "row": 6,
     "col": 7,
     "direction": "vertical",
     "number": 20
   },
   {
-    "question": "8-Bit-Retro-Kasten",
-    "answer": "NES",
-    "row": 7,
-    "col": 9,
-    "direction": "horizontal",
-    "number": 29
-  },
-  {
-    "question": "Anzahl Herzen (engl.)",
-    "answer": "TEN",
-    "row": 9,
-    "col": 10,
-    "direction": "vertical",
-    "number": 35
-  },
-  {
-    "question": "SpawnerKreatur",
-    "answer": "MOB",
-    "row": 9,
-    "col": 8,
-    "direction": "vertical",
-    "number": 34
-  },
-  {
-    "question": "Eisen oder Gold (mc)",
-    "answer": "ORE",
+    "question": "Genre von AoE",
+    "answer": "RTS",
     "row": 4,
     "col": 5,
     "direction": "vertical",
     "number": 15
   },
   {
-    "question": "Ranglos in Hypixel",
-    "answer": "NON",
+    "question": "LoL Championship Series",
+    "answer": "LCS",
+    "row": 9,
+    "col": 8,
+    "direction": "vertical",
+    "number": 34
+  },
+  {
+    "question": "Rust-Fass-Loot (engl.)",
+    "answer": "OIL",
+    "row": 9,
+    "col": 10,
+    "direction": "vertical",
+    "number": 35
+  },
+  {
+    "question": "Minecraft Biome: The ...",
+    "answer": "END",
+    "row": 7,
+    "col": 9,
+    "direction": "horizontal",
+    "number": 29
+  },
+  {
+    "question": "... des Zorns (PKMN)",
+    "answer": "SEE",
     "row": 1,
     "col": 2,
     "direction": "vertical",
     "number": 3
   },
   {
-    "question": "Fakers Heimat",
-    "answer": "LOL",
+    "question": "Ober-fläche Rutschig",
+    "answer": "EIS",
     "row": 5,
     "col": 9,
     "direction": "horizontal",
     "number": 21
   },
   {
-    "question": "Behälter des Energy-Drinks",
-    "answer": "CAN",
-    "row": 9,
-    "col": 3,
-    "direction": "vertical",
-    "number": 32
-  },
-  {
-    "question": "Throw-able Item (mc)",
-    "answer": "EGG",
+    "question": "Twitch-Kanal-Unter-stützung",
+    "answer": "ABO",
     "row": 9,
     "col": 1,
     "direction": "vertical",
     "number": 31
   },
   {
-    "question": "Knoten-punkt",
-    "answer": "ROUTER",
+    "question": "Key-stone Rune (abk.)",
+    "answer": "PTA",
+    "row": 9,
+    "col": 3,
+    "direction": "vertical",
+    "number": 32
+  },
+  {
+    "question": "Elises Helfer",
+    "answer": "SPINNE",
     "row": 6,
     "col": 6,
     "direction": "vertical",
     "number": 19
   },
   {
-    "question": "Raid Gegner (mc)",
-    "answer": "EVOKER",
+    "question": "Lore-YTer (LoL)",
+    "answer": "NECRIT",
     "row": 10,
     "col": 6,
     "direction": "horizontal",
     "number": 38
   },
   {
-    "question": "Käfer-PKMN",
-    "answer": "PINSIR",
+    "question": "Komplett verbuggt",
+    "answer": "CLIENT",
     "row": 5,
     "col": 0,
     "direction": "horizontal",
     "number": 17
   },
   {
-    "question": "Item für Kabuto",
-    "answer": "FOSSIL",
+    "question": "Über-lebende in TCM",
+    "answer": "CONNIE",
     "row": 0,
     "col": 9,
     "direction": "vertical",
     "number": 8
   },
   {
-    "question": "Geist-PKMN",
-    "answer": "GENGAR",
+    "question": "Piraten Frucht",
+    "answer": "ORANGE",
     "row": 11,
     "col": 1,
     "direction": "horizontal",
     "number": 39
   },
   {
-    "question": "Cha-mäleon-Champ",
-    "answer": "NEEKO",
-    "row": 7,
-    "col": 9,
-    "direction": "vertical",
-    "number": 25
-  },
-  {
-    "question": "Bruder von Lux (rückw.)",
-    "answer": "NERAG",
+    "question": "Pac Mans Beschäf-tigung",
+    "answer": "ESSEN",
     "row": 6,
     "col": 4,
     "direction": "horizontal",
     "number": 24
   },
   {
-    "question": "CC-Fähigkeit",
-    "answer": "SNARE",
+    "question": "Form-wandler (PKMN)",
+    "answer": "DITTO",
     "row": 7,
     "col": 11,
     "direction": "vertical",
     "number": 26
   },
   {
-    "question": "Twitch-Chat-Symbol",
-    "answer": "EMOTE",
+    "question": "Spyros Ver-bündete",
+    "answer": "ELORA",
+    "row": 7,
+    "col": 9,
+    "direction": "vertical",
+    "number": 25
+  },
+  {
+    "question": "Dark Souls Ritter (engl.)",
+    "answer": "ONION",
     "row": 3,
     "col": 10,
     "direction": "vertical",
     "number": 13
   },
   {
-    "question": "Rot-haarige Witcher-Zauberin",
-    "answer": "TRISS",
-    "row": 1,
-    "col": 3,
-    "direction": "vertical",
-    "number": 4
-  },
-  {
-    "question": "Kratos für Atreus",
-    "answer": "VATER",
+    "question": "Iconic move (LoL)",
+    "answer": "INSEC",
     "row": 0,
     "col": 6,
     "direction": "vertical",
     "number": 6
   },
   {
-    "question": "Bild eines Comics (engl.)",
-    "answer": "PANEL",
+    "question": "Zauberer Harry Potter",
+    "answer": "SNAPE",
+    "row": 1,
+    "col": 3,
+    "direction": "vertical",
+    "number": 4
+  },
+  {
+    "question": "Black ... (Pl.)",
+    "answer": "ROSES",
     "row": 1,
     "col": 11,
     "direction": "vertical",
     "number": 9
   },
   {
-    "question": "Stern am Himmel",
-    "answer": "SONNE",
+    "question": "Schach-figur",
+    "answer": "BAUER",
     "row": 7,
     "col": 2,
     "direction": "vertical",
     "number": 23
   },
   {
-    "question": "Jana",
-    "answer": "GOETTIN",
-    "row": 0,
-    "col": 4,
-    "direction": "vertical",
-    "number": 5
-  },
-  {
-    "question": "Riesige Gift-Qualle",
-    "answer": "TENTOXA",
-    "row": 1,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 1
-  },
-  {
-    "question": "LoR-Keyword",
-    "answer": "ELUSIVE",
-    "row": 1,
-    "col": 1,
-    "direction": "vertical",
-    "number": 2
-  },
-  {
-    "question": "Chinesischer Gaming-Riese",
-    "answer": "TENCENT",
-    "row": 9,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 30
-  },
-  {
-    "question": "Aktuell stärkste Taktik",
-    "answer": "META",
-    "row": 9,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 36
-  },
-  {
-    "question": "Zähmt Wölfe (engl.)",
-    "answer": "BONE",
+    "question": "Piltover-Ratsherr (Arcane)",
+    "answer": "SALO",
     "row": 11,
     "col": 8,
     "direction": "horizontal",
     "number": 40
   },
   {
-    "question": "StrategieSpielfigur (engl.)",
-    "answer": "UNIT",
-    "row": 3,
-    "col": 1,
+    "question": "Drop",
+    "answer": "LOOT",
+    "row": 9,
+    "col": 8,
     "direction": "horizontal",
-    "number": 14
+    "number": 36
   },
   {
-    "question": "Nerd Wissen",
-    "answer": "LORE",
+    "question": "Living ...-free in your head",
+    "answer": "RENT",
     "row": 2,
     "col": 1,
     "direction": "horizontal",
     "number": 11
   },
   {
-    "question": "Volk von Asgard",
-    "answer": "ASEN",
+    "question": "CC-Effekt (LoL)",
+    "answer": "FEAR",
     "row": 3,
-    "col": 8,
+    "col": 1,
     "direction": "horizontal",
-    "number": 16
+    "number": 14
   },
   {
-    "question": "Boss-Champ (rückw.)",
-    "answer": "TTES",
-    "row": 2,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 12
-  },
-  {
-    "question": "Gamer-Stuhl (engl.)",
-    "answer": "SEAT",
+    "question": "Grants Enemies Gloom (LoR)",
+    "answer": "REAP",
     "row": 1,
     "col": 8,
     "direction": "vertical",
     "number": 7
   },
   {
-    "question": "Modern-Warfare-Legende",
-    "answer": "SOAP",
+    "question": "Stummer Char. (rückw.)",
+    "answer": "ANOS",
+    "row": 3,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 16
+  },
+  {
+    "question": "Flappy Bird Blockade",
+    "answer": "ROHR",
     "row": 1,
     "col": 8,
     "direction": "horizontal",
     "number": 10
   },
   {
-    "question": "Schau-platz von Celeste",
-    "answer": "BERG",
+    "question": "Meister des Zwielicht (LoL)",
+    "answer": "SHEN",
+    "row": 2,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 12
+  },
+  {
+    "question": "Kabel-loses Heim-netz",
+    "answer": "WLAN",
     "row": 8,
     "col": 4,
     "direction": "vertical",
     "number": 27
   },
   {
-    "question": "Prähisto-rischer Champ",
-    "answer": "GNAR",
+    "question": "Unfertige Spiel-version",
+    "answer": "BETA",
     "row": 10,
     "col": 1,
     "direction": "horizontal",
     "number": 37
   },
   {
-    "question": "Bitte ... die Server-Regeln!",
-    "answer": "LEST",
+    "question": "Vergibt Tom Nook (Engl.)",
+    "answer": "DEBT",
     "row": 7,
     "col": 0,
     "direction": "horizontal",
     "number": 22
   },
   {
-    "question": "Maxim Format",
-    "answer": "STORYTIME",
+    "question": "Gaming-Phase (engl.)",
+    "answer": "SESSION",
+    "row": 1,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 1
+  },
+  {
+    "question": "Brenn-bare Portal 2 Frucht",
+    "answer": "ZITRONE",
+    "row": 0,
+    "col": 4,
+    "direction": "vertical",
+    "number": 5
+  },
+  {
+    "question": "Ziele Comple-tionists",
+    "answer": "ERFOLGE",
+    "row": 1,
+    "col": 1,
+    "direction": "vertical",
+    "number": 2
+  },
+  {
+    "question": "Rust-Crafting-Rezept",
+    "answer": "BAUPLAN",
+    "row": 9,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 30
+  },
+  {
+    "question": "Tier mit Dornen-panzer (engl.)",
+    "answer": "PORCUPINE",
     "row": 4,
     "col": 3,
     "direction": "horizontal",
