@@ -12,7 +12,7 @@ questions,answers
 ?,boomen
 ?,ug
 ?,orbit
-?,inh
+LoL-Struktur (Abk.),inh
 ?,live
 ?,ddos
 ?,iwo
@@ -59,7 +59,7 @@ LoL Champion,Warwick
 ?,Zilean
 ?,Evelynn
 ?,Twitch
-?,Karthus
+Sänger des Todes (LoL),Karthus
 ?,Amumu
 ?,Anivia
 ?,Rammus
@@ -376,7 +376,7 @@ Transaktionsverarbeitungssystem (Abk.),tps
 mc biome (deep),dark
 ?,ps
 ?,psp
-?,ds
+Hand-held,ds
 ?,dk
 ?,gameboy
 8-Bit-Retro-Kasten,NES
@@ -648,7 +648,7 @@ Produktplatzierung (Abk.),pp
 ?,vergleich
 ?,unboxing
 ?,clutch
-?,cut
+Kamera-Schnitt,cut
 ?,hackathon
 ?,ultra
 ?,ragequit
@@ -736,7 +736,7 @@ feather,falling
 ?,piercing
 ?,power
 ?,punch
-?,sharpness
+Enchantment (MC),sharpness
 ?,thorns
 ?,cleaving
 ?,allay
@@ -848,7 +848,7 @@ head of mobs,player
 ?,brown
 ?,mushroom
 ?,glass
-?,cactus
+Zerstört Items (MC),cactus
 ?,cake
 ?,calcite
 ?,campfire
@@ -958,7 +958,7 @@ Throw-able Item (mc),egg
 ?,cookies
 ?,axe
 ?,boots
-?,helmet
+Kopf-schutz (engl.),helmet
 ?,hoe
 ?,leggings
 ?,shovel
@@ -980,7 +980,7 @@ Throw-able Item (mc),egg
 ?,spyglass
 ?,steak
 ?,sugar
-?,wheat
+Farmt Kayn,wheat
 ?,wooden
 ?,clock
 ?,flint
@@ -992,7 +992,7 @@ Throw-able Item (mc),egg
 ?,stick
 ?,slowness
 ?,strength
-?,nausea
+Minecraft-Debuff (engl.),nausea
 ?,blindness
 ?,hunger
 ?,weakness
@@ -1124,7 +1124,7 @@ Geist-PKMN,Gengar
 ?,Starmie
 ?,Pantimos
 ?,Sichlor
-?,Rossana
+Eis Psycho (PKMN),Rossana
 ?,Elektek
 ?,Magmar
 Käfer-PKMN,Pinsir
@@ -1150,7 +1150,7 @@ Käfer-PKMN,Pinsir
 ?,Dragonir
 ?,Dragoran
 Psycho pokemon,Mewtu
-?,Mew
+Klon-Vorlage (PKMN),Mew
 ?,schnitt
 ?,editing
 ?,aufnahme
@@ -1284,7 +1284,7 @@ Maxim Format,storytime
 ?,adoption
 ?,geburt
 ?,tod
-?,geist
+Zustand von Isolde,geist
 ?,friedhof
 ?,trauer
 ?,urne
@@ -1614,7 +1614,7 @@ Spiel: ...romantik,dorf
 ?,unrated
 ?,immortal
 ?,radiant
-?,iron
+LoL-Rang,iron
 ?,bronze
 ?,silber
 ?,platin
@@ -1694,7 +1694,7 @@ lol world song + valorant charkter,phoenix
 ?,cypher
 ?,raze
 mc effect,breach
-?,omen
+Agent (Valo),omen
 ?,killjoy
 ?,reyna
 ?,skye
@@ -1714,7 +1714,7 @@ Valorants Zeri,neon
 ?,grenade
 ?,ultimate
 ?,reload
-?,aim
+Zielen (engl.),aim
 ?,scope
 ?,buyphase
 ?,round
@@ -2121,7 +2121,7 @@ Pro player (LoL; Jungle),Wei
 ?,Theshy
 ?,gala
 ?,rookie
-?,oner
+LoL-Welt-meister,oner
 ?,guma
 ?,Gumayusi
 Pro player (LoL; Support),keria
@@ -2255,7 +2255,7 @@ Deutscher pro player (LoL),kaiser
 LoL-Stat (Abk.),ms
 ?,no
 ?,qq
-?,rt
+Game-pad-Taste,rt
 ?,ty
 ?,uv
 ?,ww
@@ -2424,7 +2424,7 @@ reyna ability,Devour
 ?,magical
 ?,Journey
 ?,cosmic
-?,Ardent
+2017-Meta,Ardent
 ?,Culling
 Minecraft Block,ice
 ?,frozen
@@ -2521,7 +2521,7 @@ Hail of ,Blades
 ?,Cheap
 ?,Sudden
 ?,Sixth
-?,Sense
+Akalis alte Waffe,Sense
 ?,Grisly
 ?,Mementos
 ... Hunter,Treasure
@@ -2611,7 +2611,7 @@ mc items,Golden
 ?,Unending
 ?,Formless
 ?,Jubilant
-?,Veil
+Spell-Schild-Item,Veil
 ?,Umbra
 mc item,Snowball
 ?,epic
@@ -2686,7 +2686,7 @@ mc item/proplayer/Gangplank,barrel
 ?,bisa
 ?,heuler
 ?,misty
-?,ash
+Pikachus Begleiter,ash
 ?,Ketchum
 ?,Rocko
 ?,banned
@@ -2712,7 +2712,7 @@ missfortuen pistols,ave
 ?,cassandra
 ?,chross
 ?,elora
-?,finn
+Ex-LEC-Toplaner,finn
 ?,isha
 ?,marcus
 ?,margot
@@ -2763,7 +2763,7 @@ valo map,abyss
 ?,canon
 ?,canons
 ?,leg
-?,legs
+Camilles Klingen (engl.),legs
 ?,ranged
 ?,champs
 ?,champ
@@ -2879,7 +2879,7 @@ Drei Buchstaben kurz bevor das Gamepad fliegt,wtf
 ?,hella
 ?,mad
 ?,madlife
-?,shit
+Holy ...!,shit
 ?,dude
 ?,connected
 ?,what
@@ -2954,7 +2954,7 @@ Bruder von Lux (rückw.),neraG
 ?,gnokuW
 ?,renrakS
 ?,nolaT
-?,neviR
+Q-Cancel-Champ (rückw.),neviR
 ?,htareX
 ?,sevarG
 ?,anavyhS
@@ -2976,7 +2976,7 @@ LoL champion (Rückwärts),rotkiV
 ?,anaiD
 ?,ragneR
 ?,ardnyS
-?,esilE
+LoL-Spinne (rückw.),esilE
 ?,deZ
 ?,imaN
 ?,hserhT
@@ -3044,7 +3044,7 @@ Chinesischer Gaming-Riese,tencent
 Bitte ... die Server-Regeln!,Lest
 ?,Scar
 ?,hoskel
-?,ren
+Kylo ...,ren
 ?,thieram
 ?,jules
 ?,huck
@@ -3191,7 +3191,7 @@ Frucht zum entfernen von CC,zitrone
 ?,horizont
 ?,kristall
 ?,labyrinth
-?,magnet
+Münz-Sammler (Item),magnet
 ?,nebel
 questions,answers
 ?,order
@@ -3254,7 +3254,7 @@ Modern-Warfare-Legende,soap
 ?,hummingbird
 ?,gluttony
 ?,kingston
-?,frigate
+Sea of Thieves Schiff,frigate
 ?,swift
 ?,jackal
 ?,santiago
@@ -3394,7 +3394,7 @@ Handwerks-Rohstoff (Abk.)   ,mat
 ?,cross
 ?,yoda
 ?,sushi
-?,plank
+...plank,plank
 ?,turnbuckle
 ?,cauliflower
 ?,superman
@@ -3490,7 +3490,7 @@ Handwerks-Rohstoff (Abk.)   ,mat
 ?,sasha
 ?,break
 ?,symbol
-?,moose
+Don't Starve-Boss (engl.),moose
 ?,gappy
 ?,iggy
 ?,zelda
@@ -3533,7 +3533,7 @@ Behälter des Energy-Drinks,can
 ?,desk
 ?,caribou
 ?,high
-?,core
+Viktors altes Item,core
 ?,rogers
 ?,bulbasaur
 ?,kiritsugu
@@ -3570,7 +3570,7 @@ Behälter des Energy-Drinks,can
 ?,petrel
 ?,watermelon
 ?,check
-?,tie
+...-Fighter,tie
 ?,tongue
 ?,price
 ?,avocado
@@ -3920,7 +3920,7 @@ Living ...-free in your head,rent
 ?,caracas
 ?,asuka
 ?,squirtle
-?,tent
+Animal-Crossing-Start (engl.),tent
 ?,cheese
 ?,otter
 ?,sloth
@@ -4047,7 +4047,7 @@ Zauberer aus Harry Potter,snape
 ?,delhi
 ?,twist
 ?,mug
-?,sardine
+Stardew-Valley-Fisch (engl.),sardine
 ?,father
 ?,strait
 ?,sanemi
@@ -4057,7 +4057,7 @@ Zauberer aus Harry Potter,snape
 ?,caracal
 ?,oasis
 ?,pencil
-?,lion
+Löwe (engl.),lion
 ?,spin
 ?,vicuna
 ?,broom
@@ -4176,3 +4176,4 @@ Bild eines Comics (engl.),panel
 ?,mirror
 ?,pick
 ?,celeste
+Viegos Frau,Isolde

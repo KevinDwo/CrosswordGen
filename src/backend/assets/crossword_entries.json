@@ -1,322 +1,322 @@
 [
   {
-    "question": "Bestes Team (LoL)",
-    "answer": "PG",
+    "question": "Game-pad-Taste",
+    "answer": "RT",
     "row": 7,
     "col": 6,
     "direction": "horizontal",
     "number": 28
   },
   {
-    "question": "LoL-Weltmeister (abk.)",
-    "answer": "IG",
+    "question": "Hand-held",
+    "answer": "DS",
     "row": 8,
     "col": 6,
     "direction": "horizontal",
     "number": 33
   },
   {
-    "question": "Throw-able Item (mc)",
-    "answer": "EGG",
+    "question": "AoE Genre",
+    "answer": "RTS",
     "row": 6,
     "col": 7,
     "direction": "vertical",
     "number": 20
   },
   {
-    "question": "Genre von AoE",
-    "answer": "RTS",
+    "question": "Pikachus Begleiter",
+    "answer": "ASH",
     "row": 4,
     "col": 5,
     "direction": "vertical",
     "number": 15
   },
   {
-    "question": "LoL Championship Series",
-    "answer": "LCS",
+    "question": "Kamera-Schnitt",
+    "answer": "CUT",
     "row": 9,
     "col": 8,
     "direction": "vertical",
     "number": 34
   },
   {
-    "question": "Rust-Fass-Loot (engl.)",
-    "answer": "OIL",
+    "question": "Kylo ...",
+    "answer": "REN",
     "row": 9,
     "col": 10,
     "direction": "vertical",
     "number": 35
   },
   {
-    "question": "Minecraft Biome: The ...",
-    "answer": "END",
+    "question": "Klon-Vorlage (PKMN)",
+    "answer": "MEW",
     "row": 7,
     "col": 9,
     "direction": "horizontal",
     "number": 29
   },
   {
-    "question": "... des Zorns (PKMN)",
-    "answer": "SEE",
+    "question": "LoL-Struktur (Abk.)",
+    "answer": "INH",
     "row": 1,
     "col": 2,
     "direction": "vertical",
     "number": 3
   },
   {
-    "question": "Ober-fläche Rutschig",
-    "answer": "EIS",
+    "question": "...-Fighter",
+    "answer": "TIE",
     "row": 5,
     "col": 9,
     "direction": "horizontal",
     "number": 21
   },
   {
-    "question": "Twitch-Kanal-Unter-stützung",
-    "answer": "ABO",
+    "question": "Zielen (engl.)",
+    "answer": "AIM",
     "row": 9,
     "col": 1,
     "direction": "vertical",
     "number": 31
   },
   {
-    "question": "Key-stone Rune (abk.)",
-    "answer": "PTA",
+    "question": "Watch ... (Game)",
+    "answer": "DOG",
     "row": 9,
     "col": 3,
     "direction": "vertical",
     "number": 32
   },
   {
-    "question": "Elises Helfer",
-    "answer": "SPINNE",
-    "row": 6,
-    "col": 6,
-    "direction": "vertical",
-    "number": 19
-  },
-  {
-    "question": "Lore-YTer (LoL)",
-    "answer": "NECRIT",
-    "row": 10,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 38
-  },
-  {
-    "question": "Komplett verbuggt",
-    "answer": "CLIENT",
-    "row": 5,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 17
-  },
-  {
-    "question": "Über-lebende in TCM",
-    "answer": "CONNIE",
-    "row": 0,
-    "col": 9,
-    "direction": "vertical",
-    "number": 8
-  },
-  {
-    "question": "Piraten Frucht",
-    "answer": "ORANGE",
-    "row": 11,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 39
-  },
-  {
-    "question": "Pac Mans Beschäf-tigung",
-    "answer": "ESSEN",
+    "question": "Skin...",
+    "answer": "SHARD",
     "row": 6,
     "col": 4,
     "direction": "horizontal",
     "number": 24
   },
   {
-    "question": "Form-wandler (PKMN)",
-    "answer": "DITTO",
-    "row": 7,
-    "col": 11,
-    "direction": "vertical",
-    "number": 26
-  },
-  {
-    "question": "Spyros Ver-bündete",
-    "answer": "ELORA",
+    "question": "Don't Starve-Boss (engl.)",
+    "answer": "MOOSE",
     "row": 7,
     "col": 9,
     "direction": "vertical",
     "number": 25
   },
   {
-    "question": "Dark Souls Ritter (engl.)",
-    "answer": "ONION",
+    "question": "Farmt Kayn",
+    "answer": "WHEAT",
+    "row": 7,
+    "col": 11,
+    "direction": "vertical",
+    "number": 26
+  },
+  {
+    "question": "LoL-Spinne (rückw.)",
+    "answer": "ESILE",
     "row": 3,
     "col": 10,
     "direction": "vertical",
     "number": 13
   },
   {
-    "question": "Iconic move (LoL)",
-    "answer": "INSEC",
-    "row": 0,
-    "col": 6,
-    "direction": "vertical",
-    "number": 6
-  },
-  {
-    "question": "Zauberer Harry Potter",
-    "answer": "SNAPE",
+    "question": "Zustand von Isolde",
+    "answer": "GEIST",
     "row": 1,
     "col": 3,
     "direction": "vertical",
     "number": 4
   },
   {
-    "question": "Black ... (Pl.)",
-    "answer": "ROSES",
+    "question": "Q-Cancel-Champ (rückw.)",
+    "answer": "NEVIR",
+    "row": 0,
+    "col": 6,
+    "direction": "vertical",
+    "number": 6
+  },
+  {
+    "question": "Akalis alte Waffe",
+    "answer": "SENSE",
     "row": 1,
     "col": 11,
     "direction": "vertical",
     "number": 9
   },
   {
-    "question": "Schach-figur",
-    "answer": "BAUER",
+    "question": "Yuumis Meisterin",
+    "answer": "NORRA",
     "row": 7,
     "col": 2,
     "direction": "vertical",
     "number": 23
   },
   {
-    "question": "Piltover-Ratsherr (Arcane)",
-    "answer": "SALO",
-    "row": 11,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 40
+    "question": "2017-Meta",
+    "answer": "ARDENT",
+    "row": 6,
+    "col": 6,
+    "direction": "vertical",
+    "number": 19
   },
   {
-    "question": "Drop",
-    "answer": "LOOT",
+    "question": "Minecraft-Debuff (engl.)",
+    "answer": "NAUSEA",
+    "row": 10,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 38
+  },
+  {
+    "question": "Zerstört Items (MC)",
+    "answer": "CACTUS",
+    "row": 5,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 17
+  },
+  {
+    "question": "Kopf-schutz (engl.)",
+    "answer": "HELMET",
+    "row": 0,
+    "col": 9,
+    "direction": "vertical",
+    "number": 8
+  },
+  {
+    "question": "Münz-Sammler (Item)",
+    "answer": "MAGNET",
+    "row": 11,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 39
+  },
+  {
+    "question": "Viktors altes Item",
+    "answer": "CORE",
     "row": 9,
     "col": 8,
     "direction": "horizontal",
     "number": 36
   },
   {
-    "question": "Living ...-free in your head",
-    "answer": "RENT",
-    "row": 2,
-    "col": 1,
+    "question": "Animal-Crossing-Start (engl.)",
+    "answer": "TENT",
+    "row": 11,
+    "col": 8,
     "direction": "horizontal",
-    "number": 11
+    "number": 40
   },
   {
-    "question": "CC-Effekt (LoL)",
-    "answer": "FEAR",
+    "question": "Holy ...!",
+    "answer": "SHIT",
     "row": 3,
     "col": 1,
     "direction": "horizontal",
     "number": 14
   },
   {
-    "question": "Grants Enemies Gloom (LoR)",
-    "answer": "REAP",
-    "row": 1,
-    "col": 8,
-    "direction": "vertical",
-    "number": 7
-  },
-  {
-    "question": "Stummer Char. (rückw.)",
-    "answer": "ANOS",
-    "row": 3,
-    "col": 8,
+    "question": "LoL-Welt-meister",
+    "answer": "ONER",
+    "row": 2,
+    "col": 1,
     "direction": "horizontal",
-    "number": 16
+    "number": 11
   },
   {
-    "question": "Flappy Bird Blockade",
-    "answer": "ROHR",
-    "row": 1,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 10
-  },
-  {
-    "question": "Meister des Zwielicht (LoL)",
-    "answer": "SHEN",
+    "question": "Spell-Schild-Item",
+    "answer": "VEIL",
     "row": 2,
     "col": 6,
     "direction": "horizontal",
     "number": 12
   },
   {
-    "question": "Kabel-loses Heim-netz",
-    "answer": "WLAN",
-    "row": 8,
-    "col": 4,
-    "direction": "vertical",
-    "number": 27
+    "question": "Agent (Valo)",
+    "answer": "OMEN",
+    "row": 3,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 16
   },
   {
-    "question": "Unfertige Spiel-version",
-    "answer": "BETA",
+    "question": "Löwe (engl.)",
+    "answer": "LION",
+    "row": 1,
+    "col": 8,
+    "direction": "vertical",
+    "number": 7
+  },
+  {
+    "question": "Camilles Klingen (engl.)",
+    "answer": "LEGS",
+    "row": 1,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 10
+  },
+  {
+    "question": "LoL-Rang",
+    "answer": "IRON",
     "row": 10,
     "col": 1,
     "direction": "horizontal",
     "number": 37
   },
   {
-    "question": "Vergibt Tom Nook (Engl.)",
-    "answer": "DEBT",
+    "question": "Ex LEC-Toplaner",
+    "answer": "FINN",
+    "row": 8,
+    "col": 4,
+    "direction": "vertical",
+    "number": 27
+  },
+  {
+    "question": "...plank",
+    "answer": "GANG",
     "row": 7,
     "col": 0,
     "direction": "horizontal",
     "number": 22
   },
   {
-    "question": "Gaming-Phase (engl.)",
-    "answer": "SESSION",
-    "row": 1,
-    "col": 0,
+    "question": "Enchantment (MC)",
+    "answer": "SHARPNESS",
+    "row": 4,
+    "col": 3,
     "direction": "horizontal",
-    "number": 1
+    "number": 18
   },
   {
-    "question": "Brenn-bare Portal 2 Frucht",
-    "answer": "ZITRONE",
+    "question": "Sänger des Todes (LoL)",
+    "answer": "KARTHUS",
     "row": 0,
     "col": 4,
     "direction": "vertical",
     "number": 5
   },
   {
-    "question": "Ziele Comple-tionists",
-    "answer": "ERFOLGE",
+    "question": "Eis Psycho (PKMN)",
+    "answer": "ROSSANA",
     "row": 1,
     "col": 1,
     "direction": "vertical",
     "number": 2
   },
   {
-    "question": "Rust-Crafting-Rezept",
-    "answer": "BAUPLAN",
+    "question": "Sea of Thieves Schiff",
+    "answer": "FRIGATE",
+    "row": 1,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 1
+  },
+  {
+    "question": "Stardew-Valley-Fisch (engl.)",
+    "answer": "SARDINE",
     "row": 9,
     "col": 0,
     "direction": "horizontal",
     "number": 30
-  },
-  {
-    "question": "Tier mit Dornen-panzer (engl.)",
-    "answer": "PORCUPINE",
-    "row": 4,
-    "col": 3,
-    "direction": "horizontal",
-    "number": 18
   }
 ]
