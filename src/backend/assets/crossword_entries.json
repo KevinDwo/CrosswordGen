@@ -1,322 +1,338 @@
 [
   {
-    "question": "Game-pad-Taste",
-    "answer": "RT",
-    "row": 7,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 28
-  },
-  {
-    "question": "Hand-held",
-    "answer": "DS",
-    "row": 8,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 33
-  },
-  {
-    "question": "AoE Genre",
-    "answer": "RTS",
-    "row": 6,
-    "col": 7,
-    "direction": "vertical",
-    "number": 20
-  },
-  {
-    "question": "Pikachus Begleiter",
-    "answer": "ASH",
-    "row": 4,
+    "question": "LoL-Stat (Abk.)",
+    "answer": "MS",
+    "row": 5,
     "col": 5,
-    "direction": "vertical",
-    "number": 15
+    "direction": "horizontal",
+    "number": 23
   },
   {
-    "question": "Kamera-Schnitt",
-    "answer": "CUT",
+    "question": "Mass Effect Planet",
+    "answer": "URANUS",
     "row": 9,
-    "col": 8,
-    "direction": "vertical",
-    "number": 34
+    "col": 6,
+    "direction": "horizontal",
+    "number": 38
   },
   {
-    "question": "Kylo ...",
-    "answer": "REN",
-    "row": 9,
+    "question": "Amumus Bedarf (engl.)",
+    "answer": "TISSUE",
+    "row": 11,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 42
+  },
+  {
+    "question": "Alter EA-Client",
+    "answer": "ORIGIN",
+    "row": 1,
     "col": 10,
     "direction": "vertical",
-    "number": 35
+    "number": 9
   },
   {
-    "question": "Klon-Vorlage (PKMN)",
-    "answer": "MEW",
-    "row": 7,
-    "col": 9,
+    "question": "Feuer PKMN",
+    "answer": "ARKANI",
+    "row": 10,
+    "col": 1,
     "direction": "horizontal",
-    "number": 29
+    "number": 39
   },
   {
-    "question": "LoL-Struktur (Abk.)",
-    "answer": "INH",
-    "row": 1,
-    "col": 2,
+    "question": "LoLs Fass-werfer",
+    "answer": "GRAGAS",
+    "row": 6,
+    "col": 1,
     "direction": "vertical",
-    "number": 3
-  },
-  {
-    "question": "...-Fighter",
-    "answer": "TIE",
-    "row": 5,
-    "col": 9,
-    "direction": "horizontal",
     "number": 21
   },
   {
-    "question": "Zielen (engl.)",
-    "answer": "AIM",
-    "row": 9,
-    "col": 1,
-    "direction": "vertical",
-    "number": 31
-  },
-  {
-    "question": "Watch ... (Game)",
-    "answer": "DOG",
-    "row": 9,
-    "col": 3,
-    "direction": "vertical",
-    "number": 32
-  },
-  {
-    "question": "Skin...",
-    "answer": "SHARD",
+    "question": "Valorant Push",
+    "answer": "RETAKE",
     "row": 6,
-    "col": 4,
-    "direction": "horizontal",
-    "number": 24
-  },
-  {
-    "question": "Don't Starve-Boss (engl.)",
-    "answer": "MOOSE",
-    "row": 7,
-    "col": 9,
-    "direction": "vertical",
-    "number": 25
-  },
-  {
-    "question": "Farmt Kayn",
-    "answer": "WHEAT",
-    "row": 7,
-    "col": 11,
-    "direction": "vertical",
-    "number": 26
-  },
-  {
-    "question": "LoL-Spinne (rückw.)",
-    "answer": "ESILE",
-    "row": 3,
-    "col": 10,
-    "direction": "vertical",
-    "number": 13
-  },
-  {
-    "question": "Zustand von Isolde",
-    "answer": "GEIST",
-    "row": 1,
     "col": 3,
     "direction": "vertical",
-    "number": 4
+    "number": 22
   },
   {
-    "question": "Q-Cancel-Champ (rückw.)",
-    "answer": "NEVIR",
+    "question": "LoL Honor emblem (old)",
+    "answer": "RIBBON",
+    "row": 1,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 11
+  },
+  {
+    "question": "LoL Wüsten-rose (rückw.)",
+    "answer": "ARIMAS",
     "row": 0,
     "col": 6,
     "direction": "vertical",
     "number": 6
   },
   {
-    "question": "Akalis alte Waffe",
-    "answer": "SENSE",
-    "row": 1,
-    "col": 11,
-    "direction": "vertical",
-    "number": 9
+    "question": "LoL Baum (rückw.)",
+    "answer": "IAKOAM",
+    "row": 3,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 15
   },
   {
-    "question": "Yuumis Meisterin",
-    "answer": "NORRA",
-    "row": 7,
+    "question": "Grund für Jinx Wahn-sinn",
+    "answer": "TRAUMA",
+    "row": 1,
     "col": 2,
     "direction": "vertical",
-    "number": 23
+    "number": 3
   },
   {
-    "question": "2017-Meta",
-    "answer": "ARDENT",
+    "question": "Türkey LoL-Profi",
+    "answer": "ARMUT",
+    "row": 3,
+    "col": 5,
+    "direction": "vertical",
+    "number": 13
+  },
+  {
+    "question": "Fatal-Fury Ableger",
+    "answer": "GAROU",
     "row": 6,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 25
+  },
+  {
+    "question": "Schnitt-gut Ninjas (engl.)",
+    "answer": "FRUIT",
+    "row": 7,
     "col": 6,
     "direction": "vertical",
-    "number": 19
+    "number": 26
   },
   {
-    "question": "Minecraft-Debuff (engl.)",
-    "answer": "NAUSEA",
-    "row": 10,
+    "question": "Batmans Sidekick",
+    "answer": "ROBIN",
+    "row": 8,
     "col": 6,
     "direction": "horizontal",
-    "number": 38
+    "number": 35
   },
   {
-    "question": "Zerstört Items (MC)",
-    "answer": "CACTUS",
-    "row": 5,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 17
-  },
-  {
-    "question": "Kopf-schutz (engl.)",
-    "answer": "HELMET",
-    "row": 0,
-    "col": 9,
-    "direction": "vertical",
-    "number": 8
-  },
-  {
-    "question": "Münz-Sammler (Item)",
-    "answer": "MAGNET",
-    "row": 11,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 39
-  },
-  {
-    "question": "Viktors altes Item",
-    "answer": "CORE",
-    "row": 9,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 36
-  },
-  {
-    "question": "Animal-Crossing-Start (engl.)",
-    "answer": "TENT",
-    "row": 11,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 40
-  },
-  {
-    "question": "Holy ...!",
-    "answer": "SHIT",
-    "row": 3,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 14
-  },
-  {
-    "question": "LoL-Welt-meister",
-    "answer": "ONER",
-    "row": 2,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 11
-  },
-  {
-    "question": "Spell-Schild-Item",
-    "answer": "VEIL",
-    "row": 2,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 12
-  },
-  {
-    "question": "Agent (Valo)",
-    "answer": "OMEN",
-    "row": 3,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 16
-  },
-  {
-    "question": "Löwe (engl.)",
-    "answer": "LION",
+    "question": "Kanto Top Vier Mitglied",
+    "answer": "BRUNO",
     "row": 1,
     "col": 8,
     "direction": "vertical",
     "number": 7
   },
   {
-    "question": "Camilles Klingen (engl.)",
-    "answer": "LEGS",
-    "row": 1,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 10
-  },
-  {
-    "question": "LoL-Rang",
-    "answer": "IRON",
-    "row": 10,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 37
-  },
-  {
-    "question": "Ex LEC-Toplaner",
-    "answer": "FINN",
-    "row": 8,
-    "col": 4,
-    "direction": "vertical",
-    "number": 27
-  },
-  {
-    "question": "...plank",
-    "answer": "GANG",
-    "row": 7,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 22
-  },
-  {
-    "question": "Enchantment (MC)",
-    "answer": "SHARPNESS",
-    "row": 4,
-    "col": 3,
-    "direction": "horizontal",
-    "number": 18
-  },
-  {
-    "question": "Sänger des Todes (LoL)",
-    "answer": "KARTHUS",
-    "row": 0,
-    "col": 4,
-    "direction": "vertical",
-    "number": 5
-  },
-  {
-    "question": "Eis Psycho (PKMN)",
-    "answer": "ROSSANA",
-    "row": 1,
-    "col": 1,
-    "direction": "vertical",
-    "number": 2
-  },
-  {
-    "question": "Sea of Thieves Schiff",
-    "answer": "FRIGATE",
+    "question": "Scene zu Spiel-beginn",
+    "answer": "INTRO",
     "row": 1,
     "col": 0,
     "direction": "horizontal",
     "number": 1
   },
   {
-    "question": "Stardew-Valley-Fisch (engl.)",
-    "answer": "SARDINE",
+    "question": "Stamm der Notai (Lol-champ)",
+    "answer": "NUNU",
+    "row": 8,
+    "col": 10,
+    "direction": "vertical",
+    "number": 33
+  },
+  {
+    "question": "HP displays",
+    "answer": "BARS",
+    "row": 8,
+    "col": 8,
+    "direction": "vertical",
+    "number": 32
+  },
+  {
+    "question": "Währung in Elden Ring",
+    "answer": "RUNE",
+    "row": 10,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 40
+  },
+  {
+    "question": "Waffe in Valo",
+    "answer": "ODIN",
+    "row": 5,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 24
+  },
+  {
+    "question": "Fakers in-offizieller Titel",
+    "answer": "GOAT",
     "row": 9,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 37
+  },
+  {
+    "question": "Micro: Side...",
+    "answer": "STEP",
+    "row": 11,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 41
+  },
+  {
+    "question": "Bubble... (IT)",
+    "answer": "SORT",
+    "row": 8,
+    "col": 2,
+    "direction": "vertical",
+    "number": 30
+  },
+  {
+    "question": "Cross-over Figur",
+    "answer": "GAST",
+    "row": 8,
     "col": 0,
     "direction": "horizontal",
-    "number": 30
+    "number": 29
+  },
+  {
+    "question": "Strategie Spiel-figur (engl.)",
+    "answer": "UNIT",
+    "row": 3,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 16
+  },
+  {
+    "question": "... Candy",
+    "answer": "RARE",
+    "row": 2,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 14
+  },
+  {
+    "question": "Heavy ...",
+    "answer": "RAIN",
+    "row": 4,
+    "col": 5,
+    "direction": "horizontal",
+    "number": 17
+  },
+  {
+    "question": "Talons W",
+    "answer": "RAKE",
+    "row": 1,
+    "col": 3,
+    "direction": "vertical",
+    "number": 4
+  },
+  {
+    "question": "Singed wirft (engl.)",
+    "answer": "GLUE",
+    "row": 4,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 20
+  },
+  {
+    "question": "Waffe in Hollow Knight",
+    "answer": "NAIL",
+    "row": 1,
+    "col": 1,
+    "direction": "vertical",
+    "number": 2
+  },
+  {
+    "question": "LoL Spiel-modus",
+    "answer": "ARAM",
+    "row": 2,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 12
+  },
+  {
+    "question": "Outsider-Roboter in Stray",
+    "answer": "MOMO",
+    "row": 0,
+    "col": 4,
+    "direction": "vertical",
+    "number": 5
+  },
+  {
+    "question": "Riots Taktik-spiel",
+    "answer": "TFT",
+    "row": 7,
+    "col": 5,
+    "direction": "horizontal",
+    "number": 31
+  },
+  {
+    "question": "Rocket League Ziel",
+    "answer": "TOR",
+    "row": 7,
+    "col": 7,
+    "direction": "vertical",
+    "number": 27
+  },
+  {
+    "question": "... des Zorns (PKMN)",
+    "answer": "SEE",
+    "row": 9,
+    "col": 11,
+    "direction": "vertical",
+    "number": 36
+  },
+  {
+    "question": "Spiele-konsole (Ninten.)",
+    "answer": "NES",
+    "row": 5,
+    "col": 11,
+    "direction": "vertical",
+    "number": 19
+  },
+  {
+    "question": "Xbox Gene-ration",
+    "answer": "ONE",
+    "row": 6,
+    "col": 9,
+    "direction": "horizontal",
+    "number": 28
+  },
+  {
+    "question": "Kopfschuss mit einer Kugel",
+    "answer": "TAP",
+    "row": 9,
+    "col": 4,
+    "direction": "vertical",
+    "number": 34
+  },
+  {
+    "question": "Animal Crossing tool",
+    "answer": "NET",
+    "row": 1,
+    "col": 11,
+    "direction": "vertical",
+    "number": 10
+  },
+  {
+    "question": "Strafe für Cheating",
+    "answer": "BAN",
+    "row": 1,
+    "col": 9,
+    "direction": "vertical",
+    "number": 8
+  },
+  {
+    "question": "Renek-tons R",
+    "answer": "DOMINUS",
+    "row": 5,
+    "col": 9,
+    "direction": "vertical",
+    "number": 18
   }
 ]
