@@ -47,7 +47,7 @@ G.O.A.T,Faker
 ?,Jax
 ?,Kayle
 ?,Morgana
-?,Nunu
+Stamm der Notai (Lol-champ),Nunu
 ?,Ryze
 ?,Sion
 ?,Sivir
@@ -77,7 +77,7 @@ Sänger des Todes (LoL),Karthus
 ?,Udyr
 ?,Nidalee
 mc block,Poppy
-?,Gragas
+LoLs Fass-werfer,Gragas
 ?,Pantheon
 ?,Ezreal
 ?,Shen
@@ -99,7 +99,7 @@ mc block,Poppy
 ?,Caitlyn
 ?,Renekton
 ?,Karma
-?,Maokai
+LoL Baum (rückw.),Maokai
 ?,JarvanIV
 ?,Nocturne
 ?,LeeSin
@@ -281,7 +281,7 @@ Alle 5 Gegner töten,ass
 ?,Scrub
 ?,Toxic
 ?,Report
-?,Ban
+Strafe für Cheating,Ban
 ?,Mute
 ?,Trophy
 ?,Save
@@ -339,7 +339,7 @@ LoL: Lässt Master Yi mit Ulti rasant wegsprinten (engl.),Fear
 ?,treiber
 ?,steam
 ?,epicgames
-?,origin
+Alter EA-Client,origin
 ?,uplay
 ?,gog
 ?,xbox
@@ -379,7 +379,7 @@ mc biome (deep),dark
 Hand-held,ds
 ?,dk
 ?,gameboy
-8-Bit-Retro-Kasten,NES
+Spiele-konsole (Ninten.),NES
 ?,SNES
 ?,traenen
 Minimap und Manabar,ui
@@ -507,7 +507,7 @@ Unreal oder Unity,engine
 ?,helm
 ?,helme
 ?,runen
-?,rune
+Währung in Elden Ring,rune
 ?,zauber
 ?,zauberei
 ?,trank
@@ -769,7 +769,7 @@ Minecraft Mob,bee
 ?,dolphin
 ?,enderman
 ?,fox
-?,goat
+Fakers in-offizieller Titel,goat
 iron,golem
 ?,llama
 ?,panda
@@ -891,7 +891,7 @@ table,fletching
 ?,hay
 ?,honey
 ?,hopper
-?,bars
+HP displays,bars
 ?,jukebox
 ?,kelp
 ?,ladder
@@ -1061,7 +1061,7 @@ Item für Kabuto,fossil
 ?,Menki
 ?,Rasaff
 ?,Fukano
-?,Arkani
+Feuer PKMN,Arkani
 ?,Quapsel
 ?,Quaputzi
 ?,Quappo
@@ -1161,11 +1161,11 @@ Klon-Vorlage (PKMN),Mew
 ?,rendern
 ?,zeitplan
 ?,skript
-?,intro
+Scene zu Spiel-beginn,intro
 ?,outro
 ?,musik
 ?,collab
-?,gast
+Cross-over Figur,gast
 Maxim Format,storytime
 ?,clickbait
 ?,glocke
@@ -1651,7 +1651,7 @@ valorant waffe + caitlyn titel,sheriff
 ?,stinger
 ?,spectre
 ?,ares
-?,odin
+Waffe in Valo,odin
 ?,bulldog
 mc mob,guardian
 ?,marshal
@@ -1674,7 +1674,7 @@ mc mob,breeze
 ?,site
 ?,default
 ?,execute
-?,retake
+Valorant Push,retake
 ?,eco
 ?,halfbuy
 ?,fullbuy
@@ -1851,7 +1851,7 @@ valo ability modification,sustain
 ?,erfinder
 ?,schwester
 ?,zwillinge
-?,trauma
+Grund für Jinx Wahn-sinn,trauma
 ?,kampf
 ?,großstadt
 ?,maschine
@@ -1869,7 +1869,7 @@ valo ability modification,sustain
 ?,forschung
 ?,bürger
 ?,arbeit
-?,armut
+Türkey LoL-Profi,armut
 ?,reichtum
 ?,spionage
 ?,heilung
@@ -2030,7 +2030,7 @@ Fakers Heimat,lol
 ?,acht
 ?,neun
 ?,null
-?,one
+Xbox Gene-ration,one
 ?,two
 ?,three
 ?,four
@@ -2075,7 +2075,7 @@ Anzahl Herzen (engl.),ten
 ?,Marnie
 ?,Pam
 ?,Pierre
-?,Robin
+Batmans Sidekick,Robin
 ?,Sandy
 ?,Vincent
 ?,Willy
@@ -2370,7 +2370,7 @@ mc block,Vault
 ?,Bailout
 ?,Slice
 ?,dice
-?,Dominus
+Renek-tons R,Dominus
 ?,Savagery
 ?,Valor
 ?,Overload
@@ -2395,7 +2395,7 @@ Beliebter Bonus-Modus in Sonic Mania,Encore
 ?,Abscond
 ?,Hijack
 reyna ability,Devour
-?,Rake
+Talons W,Rake
 ?,Bravado
 ?,Bastion
 ?,Dazzle
@@ -2443,7 +2443,7 @@ dragon,ender
 ?,follower
 ?,lor
 ?,card
-StrategieSpielfigur (engl.),unit
+Strategie Spiel-figur (engl.),unit
 ?,spell
 ?,landmark
 ?,fast
@@ -2576,7 +2576,7 @@ mc items,Golden
 ?,Reaping
 ?,Slash
 ?,Shadow
-?,Step
+Micro: Side...,Step
 ?,Umbral
 ?,Trespass
 ?,Lightning
@@ -2615,7 +2615,7 @@ Spell-Schild-Item,Veil
 ?,Umbra
 mc item,Snowball
 ?,epic
-?,rare
+... Candy,rare
 ?,common
 ?,beekeeper
 ?,surfer
@@ -2633,7 +2633,7 @@ lol lore,Axiomata
 lol lore,Aliay
 lol Lore,Rygann
 ?,valoran
-?,tft
+Riots Taktik-spiel,tft
 ?,fluffball
 ?,dagger
 ?,tear
@@ -2734,7 +2734,7 @@ mc,emerald
 ?,lpl
 ?,pros
 ?,fountain
-?,net
+Animal Crossing tool,net
 ?,fountains
 ?,pull
 ?,pulls
@@ -2758,7 +2758,7 @@ mc,emerald
 ?,rook
 ?,aids
 ?,cancer
-?,aram
+LoL Spiel-modus,aram
 valo map,abyss
 ?,canon
 ?,canons
@@ -2941,7 +2941,7 @@ Bruder von Lux (rückw.),neraG
 ?,nyltiaC
 ?,notkeneR
 ?,amraK
-?,iakoaM
+LoL Baum (rückw.),iakoaM
 ?,VInavraJ
 ?,enrutcoN
 ?,niSeeL
@@ -3015,25 +3015,7 @@ LoL Champion (Rückwärts),okkE
 Boss-Champ (rückw.),tteS
 ?,ailliL
 ?,enoY
-?,arimaS
-?,enihpareS
-?,lleR
-?,ogeiV
-?,newG
-?,nahskA
-?,xeV
-?,ireZ
-?,haliNv
-?,oiliM
-?,irifaaN
-?,rairB
-?,iewH
-?,redlomS
-?,aroruA
-?,assebmA
-?,leM
-?,renata
-?,glasc
+LoL Wüsten-rose (rückw.),arimaS
 ?,aurelion
 ?,sol
 ?,Cithria
@@ -3204,7 +3186,7 @@ questions,answers
 ?,soil
 ?,gather
 ?,flat
-?,rain
+Heavy ...,rain
 ?,avengers
 ?,alley
 ?,hedgehog
@@ -3482,7 +3464,7 @@ Handwerks-Rohstoff (Abk.)   ,mat
 ?,armstrong
 ?,ponyo
 ?,whiting
-?,garou
+Fatal-Fury Ableger,garou
 ?,skate
 ?,tengen
 ?,nutmeg
@@ -3578,7 +3560,7 @@ Viktors altes Item,core
 ?,notice
 ?,slytherin
 ?,tile
-?,tor
+Rocket League Ziel,tor
 ?,arryn
 ?,burro
 ?,falcon
@@ -3635,7 +3617,7 @@ Waldtier mit eingebautem Dornenpanzer (engl.),porcupine
 ?,fugo
 ?,misa
 ?,draft
-?,tap
+Kopfschuss mit einer Kugel,tap
 ?,lock
 ?,atlanta
 ?,stamp
@@ -3683,7 +3665,7 @@ Waldtier mit eingebautem Dornenpanzer (engl.),porcupine
 ?,scoop
 ?,bristlemouth
 ?,suitcase
-?,uranus
+Mass Effect Planet,uranus
 ?,toll
 ?,rocket
 ?,aizen
@@ -3731,7 +3713,7 @@ Nintendo Character,mario
 ?,glider
 ?,far
 ?,dodo
-?,nail
+Waffe in Hollow Knight,nail
 ?,romanoff
 ?,dish
 ?,stark
@@ -3753,7 +3735,7 @@ Nintendo Character,mario
 ?,cilantro
 ?,grogu
 ?,zinc
-?,tissue
+Amumus Bedarf (engl.),tissue
 ?,eel
 ?,wallet
 ?,masterchief
@@ -3780,7 +3762,7 @@ Nintendo Character,mario
 ?,nerv
 ?,elbow
 ?,saitama
-?,momo
+Outsider-Roboter in Stray,momo
 ?,lust
 ?,ring
 ?,yarn
@@ -3851,7 +3833,7 @@ Nintendo Character,mario
 ?,chair
 ?,wire
 ?,batman
-LoL: Was man bei Minute 0 im Tab-Menü macht (engl.),sort
+Bubble... (IT),sort
 ?,brasilia
 ?,aquaman
 ?,auckland
@@ -3904,16 +3886,16 @@ Living ...-free in your head,rent
 ?,historia
 ?,blueberry
 ?,lemon
-?,ribbon
+LoL Honor emblem (old),ribbon
 ?,needle
 ?,creek
 ?,mink
 ?,toronto
-?,glue
+Singed wirft (engl.),glue
 ?,oslo
 ?,han
 ?,cougar
-?,bruno
+Kanto Top Vier Mitglied,bruno
 ?,show
 ?,dallas
 ?,wakanda
@@ -4030,7 +4012,7 @@ Zauberer aus Harry Potter,snape
 ?,lobster
 ?,rack
 ?,douma
-?,fruit
+Schnitt-gut Ninjas (engl.),fruit
 ?,fertilize
 ?,dune
 ?,print
