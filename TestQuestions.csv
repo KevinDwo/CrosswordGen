@@ -10,7 +10,7 @@ questions,answers
 ?,unlust
 ?,oase
 ?,boomen
-?,ug
+NfS Titel (Abk.),ug
 ?,orbit
 LoL-Struktur (Abk.),inh
 ?,live
@@ -18,7 +18,7 @@ LoL-Struktur (Abk.),inh
 ?,iwo
 ?,bastei
 ?,stew
-?,nerd
+Beleidigung für Gamer,nerd
 ?,asiatisch
 ?,deep
 ?,fairness
@@ -319,7 +319,7 @@ Twitch-Chat-Symbol,Emote
 ?,Manatrank
 ?,Debuff
 ?,Cleansen
-?,Stun
+CC Effekt,Stun
 ?,Slow
 ?,Root
 ?,Silence
@@ -425,7 +425,7 @@ Jemanden von 100 auf 0 bursten (Abk.),os
 ?,benchmark
 ?,leistung
 ?,fanspeed
-?,rgb
+Buntes Gamer-Licht (Abk.),rgb
 ?,bios
 ?,uefi
 ?,firmware
@@ -772,7 +772,7 @@ Minecraft Mob,bee
 Fakers in-offizieller Titel,goat
 iron,golem
 ?,llama
-?,panda
+Annie Skin,panda
 head of mobs,piglin
 ?,spider
 ?,wolf
@@ -883,13 +883,13 @@ Eisen oder Gold (mc),ore
 ?,fern
 table,fletching
 ?,furnance
-?,glowstone
+Verstärkt Trank Effekte (mc),glowstone
 ?,granite
 ?,grass
 ?,gray
 ?,green
 ?,hay
-?,honey
+MC: Block / Nahrung (engl.),honey
 ?,hopper
 HP displays,bars
 ?,jukebox
@@ -905,7 +905,7 @@ HP displays,bars
 ?,mossy
 ?,mud
 ?,mycelium
-?,oak
+Person aus PKMN,oak
 ?,obisidian
 ?,orange
 ?,pale
@@ -938,7 +938,7 @@ Minecraft Block,sponge
 ?,white
 ?,yellow
 ?,bow
-Throw-able Item (mc),egg
+Anivias Verwand-lung,egg
 ?,lead
 ?,minecart
 ?,string
@@ -1099,7 +1099,7 @@ Geist-PKMN,Gengar
 ?,Traumato
 ?,Hypno
 ?,Krabby
-?,Kingler
+Krabbys Entwick-lung,Kingler
 ?,Voltobal
 ?,Lektrobal
 ?,Owei
@@ -1154,7 +1154,7 @@ Klon-Vorlage (PKMN),Mew
 ?,schnitt
 ?,editing
 ?,aufnahme
-?,kamera
+Hat Phil Fixed,kamera
 ?,auflosung
 ?,hd
 ?,fullhd
@@ -1406,7 +1406,7 @@ signature killjoy,turret
 ?,freeze
 ?,slowpush
 ?,fastpush
-?,ngo
+'Stop Killing Games' (abk.),ngo
 ?,mulmig
 ?,thermo
 Hochprozentiges (Kurzw.),alk
@@ -1420,7 +1420,7 @@ Geistreicher Aufsatz,essay
 valorant begriff,flash
 lol world song,ignite
 ?,heal
-mc block,barrier
+Mc: Unzer-störbarer Block,barrier
 ?,exhaust
 ?,ghost
 ?,cleanse
@@ -1455,7 +1455,7 @@ ender (head mc),dragon
 ?,krugs
 ?,krug
 ?,raptors
-?,raptor
+Heutiges Wraith Camp,raptor
 ?,wolves
 ?,wolve
 ?,gromp
@@ -1478,7 +1478,7 @@ ender (head mc),dragon
 ?,knockup
 ?,knockups
 ?,disengage
-?,engage
+Job von Rell Spielern,engage
 ?,engages
 ?,skrimish
 ?,splitpush
@@ -1604,7 +1604,7 @@ Spiel: ...romantik,dorf
 ?,ability
 ?,abilities
 ?,ult
-?,orbs
+Saugt Reyna,orbs
 ?,spike
 ?,low
 ?,defuse
@@ -1790,7 +1790,7 @@ auch mc effect,knockback
 ?,targeted
 ?,skillshot
 ?,casttime
-?,range
+Kann Kennen '-25' von haben,range
 valo ability modification,sustain
 ?,armorpen
 ?,magicpen
@@ -1800,7 +1800,7 @@ valo ability modification,sustain
 ?,empower
 ?,reflect
 ?,absorb
-?,regen
+Make it ... (deut.),regen
 ?,manaregen
 ?,tempest
 ?,feuer
@@ -2049,7 +2049,7 @@ Anzahl Herzen (engl.),ten
 ?,Alex
 ?,Elliott
 ?,Harvey
-?,Sam
+Agent Fischer's Vorname,Sam
 ?,Sebastian
 ?,Shane
 ?,Abigail
@@ -2091,7 +2091,7 @@ Batmans Sidekick,Robin
 ?,sOAZ
 ?,Expect
 ?,Bwipo
-?,Adam
+GODS Player,Adam
 ?,Nisqy
 ?,Wunder
 ?,Upset
@@ -2156,7 +2156,7 @@ valorant character,viper
 ?,uzi
 ?,deft
 ?,knight
-?,tian
+LPL Jungler,tian
 ?,meiko
 ?,zoom
 ?,bin
@@ -2203,7 +2203,7 @@ valorant character,viper
 ?,ray
 ?,altec
 ?,rush
-mc item,arrow
+Ging bei Skyrim ins Knie,arrow
 ?,crown
 ?,fly
 ?,bdd
@@ -2304,7 +2304,7 @@ auch mc effect,speed
 ?,Moonfall
 ?,Cocoon
 ?,Terrify
-?,Reap
+Fiddle E,Reap
 ?,Crowstorm
 ?,Lunge
 ?,Riposte
@@ -2323,7 +2323,7 @@ auch mc effect,speed
 ?,Daisy
 ?,Tailwind
 ?,Zephyr
-?,Monsoon
+Janna Ult,Monsoon
 ?,Cataclysm
 ?,Whisper
 ?,Zap
@@ -2482,7 +2482,7 @@ stay behind...,me
 ?,gaze
 ?,gatling
 ?,spinning
-?,last
+... Breath (Yasuo),last
 ?,caress
 ?,essence
 ?,flux
@@ -2582,7 +2582,7 @@ Micro: Side...,Step
 ?,Lightning
 ?,Slicing
 ?,Maelstrom
-?,Unseen
+The ... blade is the deadliest,Unseen
 ?,Threat
 ?,Mounting
 ?,Dread
@@ -2592,7 +2592,7 @@ Micro: Side...,Step
 ?,Living
 ?,Artillery
 ?,Surging
-?,Tides
+Bilgewater Event Name,Tides
 ?,Aqua
 ?,Tidal
 ?,Wave
@@ -2663,7 +2663,7 @@ bodyguard of jarvan iii,tianna
 ?,cfo
 ?,flyquest
 ?,gam
-?,ig
+Team mit erstem Kaisa Skin,ig
 ?,dunk
 ?,reg
 ?,sidelane
@@ -2671,7 +2671,7 @@ bodyguard of jarvan iii,tianna
 ?,forfeit
 ?,opera
 ?,dog
-?,cat
+Rengars Spezies (engl.),cat
 ?,kutcher
 ?,karni
 ?,broeki
@@ -2823,7 +2823,7 @@ Esports Team (Abk.),vit
 ?,diable
 ?,clozer
 ?,kellin
-?,clear
+LCK Top-laner,clear
 ?,stomp
 ?,stompen
 ?,fifteen
@@ -3193,7 +3193,7 @@ Heavy ...,rain
 ?,westeros
 ?,tatsumaki
 ?,hare
-?,long
+... Sword,long
 Modern-Warfare-Legende,soap
 ?,ravenclaw
 ?,wryneck
@@ -3262,7 +3262,7 @@ Sea of Thieves Schiff,frigate
 ?,pack
 ?,singapore
 ?,stitch
-?,unova
+Region Zekrom (engl.),unova
 ?,rhino
 ?,tarpon
 ?,rider
@@ -3365,7 +3365,7 @@ Handwerks-Rohstoff (Abk.)   ,mat
 ?,oilbird
 ?,skywalker
 ?,oat
-?,lash
+Whip ... (Eve),lash
 ?,pool
 ?,sanji
 ?,file
@@ -3619,7 +3619,7 @@ Waldtier mit eingebautem Dornenpanzer (engl.),porcupine
 ?,draft
 Kopfschuss mit einer Kugel,tap
 ?,lock
-?,atlanta
+Stadt Worlds Halb-finale,atlanta
 ?,stamp
 ?,matrix
 ?,gulf
@@ -3742,7 +3742,7 @@ Amumus Bedarf (engl.),tissue
 ?,york
 ?,parsley
 ?,deer
-?,roy
+Koopa pinke Sonnen-brille,roy
 ?,hoopoe
 ?,spoonbill
 ?,hippo
@@ -3781,7 +3781,7 @@ Outsider-Roboter in Stray,momo
 ?,grenadier
 ?,tarp
 ?,tomato
-?,rome
+Total War Teil,rome
 ?,quito
 ?,dasyure
 ?,witcher
@@ -3797,7 +3797,7 @@ Outsider-Roboter in Stray,momo
 ?,sinnoh
 ?,mop
 ?,hornbill
-?,rio
+Austrag-ungsort MSI,rio
 ?,spice
 ?,madrid
 ?,atlantis
@@ -3823,7 +3823,7 @@ Outsider-Roboter in Stray,momo
 ?,pineapple
 ?,kolkata
 ?,pork
-?,tape
+Speicher-Item Res Ev 7,tape
 ?,antelope
 ?,stockholm
 ?,knock
@@ -4146,7 +4146,7 @@ Bild eines Comics (engl.),panel
 ?,cormorant
 ?,light
 ?,broccoli
-?,guinea
+PBE Tester sind ... Pigs,guinea
 ?,tax
 ?,dill
 ?,giraffe
@@ -4160,3 +4160,6 @@ Bild eines Comics (engl.),panel
 ?,celeste
 Viegos Frau,Isolde
 ?,ga
+?,chatgpt
+?,gemini
+?,pro

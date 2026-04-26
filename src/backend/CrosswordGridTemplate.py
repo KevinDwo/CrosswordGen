@@ -30,7 +30,7 @@ class CrosswordGridTemplate:
         for length in self.unocupied_spots:
             available_words = list(entries[length])
             available_words.sort(key=lambda w: self.get_word_score(w.get_answer()), reverse=True)
-            new_entries[length] = available_words[:150]
+            new_entries[length] = available_words[:450]
             
         self.entries = new_entries
         for length in self.unocupied_spots.keys():
