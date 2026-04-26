@@ -1,338 +1,322 @@
 [
   {
-    "question": "LoL-Stat (Abk.)",
-    "answer": "MS",
-    "row": 5,
-    "col": 5,
+    "question": "NfS Titel (Abk.)",
+    "answer": "UG",
+    "row": 7,
+    "col": 6,
     "direction": "horizontal",
-    "number": 23
+    "number": 28
   },
   {
-    "question": "Mass Effect Planet",
-    "answer": "URANUS",
+    "question": "Team mit erstem Kaisa Skin",
+    "answer": "IG",
+    "row": 8,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 33
+  },
+  {
+    "question": "Anivias Verwand-lung",
+    "answer": "EGG",
+    "row": 6,
+    "col": 7,
+    "direction": "vertical",
+    "number": 20
+  },
+  {
+    "question": "'Stop Killing Games' (abk.)",
+    "answer": "NGO",
     "row": 9,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 38
+    "col": 8,
+    "direction": "vertical",
+    "number": 34
   },
   {
-    "question": "Amumus Bedarf (engl.)",
-    "answer": "TISSUE",
-    "row": 11,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 42
-  },
-  {
-    "question": "Alter EA-Client",
-    "answer": "ORIGIN",
-    "row": 1,
+    "question": "Buntes Gamer-Licht (Abk.)",
+    "answer": "RGB",
+    "row": 9,
     "col": 10,
     "direction": "vertical",
-    "number": 9
+    "number": 35
   },
   {
-    "question": "Feuer PKMN",
-    "answer": "ARKANI",
-    "row": 10,
-    "col": 1,
+    "question": "Rengars Spezies (engl.)",
+    "answer": "CAT",
+    "row": 7,
+    "col": 9,
     "direction": "horizontal",
-    "number": 39
+    "number": 29
   },
   {
-    "question": "LoLs Fass-werfer",
-    "answer": "GRAGAS",
-    "row": 6,
-    "col": 1,
+    "question": "Xbox Gene-ration",
+    "answer": "ONE",
+    "row": 4,
+    "col": 5,
     "direction": "vertical",
-    "number": 21
-  },
-  {
-    "question": "Valorant Push",
-    "answer": "RETAKE",
-    "row": 6,
-    "col": 3,
-    "direction": "vertical",
-    "number": 22
-  },
-  {
-    "question": "LoL Honor emblem (old)",
-    "answer": "RIBBON",
-    "row": 1,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 11
-  },
-  {
-    "question": "LoL Wüsten-rose (rückw.)",
-    "answer": "ARIMAS",
-    "row": 0,
-    "col": 6,
-    "direction": "vertical",
-    "number": 6
-  },
-  {
-    "question": "LoL Baum (rückw.)",
-    "answer": "IAKOAM",
-    "row": 3,
-    "col": 1,
-    "direction": "horizontal",
     "number": 15
   },
   {
-    "question": "Grund für Jinx Wahn-sinn",
-    "answer": "TRAUMA",
+    "question": "Austrag-ungsort MSI",
+    "answer": "RIO",
     "row": 1,
     "col": 2,
     "direction": "vertical",
     "number": 3
   },
   {
-    "question": "Türkey LoL-Profi",
-    "answer": "ARMUT",
-    "row": 3,
-    "col": 5,
-    "direction": "vertical",
-    "number": 13
+    "question": "Koopa pinke Sonnen-brille",
+    "answer": "ROY",
+    "row": 5,
+    "col": 9,
+    "direction": "horizontal",
+    "number": 21
   },
   {
-    "question": "Fatal-Fury Ableger",
-    "answer": "GAROU",
-    "row": 6,
+    "question": "Person aus PKMN",
+    "answer": "OAK",
+    "row": 9,
     "col": 1,
-    "direction": "horizontal",
-    "number": 25
-  },
-  {
-    "question": "Schnitt-gut Ninjas (engl.)",
-    "answer": "FRUIT",
-    "row": 7,
-    "col": 6,
     "direction": "vertical",
-    "number": 26
+    "number": 31
   },
   {
-    "question": "Batmans Sidekick",
-    "answer": "ROBIN",
-    "row": 8,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 35
-  },
-  {
-    "question": "Kanto Top Vier Mitglied",
-    "answer": "BRUNO",
-    "row": 1,
-    "col": 8,
-    "direction": "vertical",
-    "number": 7
-  },
-  {
-    "question": "Scene zu Spiel-beginn",
-    "answer": "INTRO",
-    "row": 1,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 1
-  },
-  {
-    "question": "Stamm der Notai (Lol-champ)",
-    "answer": "NUNU",
-    "row": 8,
-    "col": 10,
-    "direction": "vertical",
-    "number": 33
-  },
-  {
-    "question": "HP displays",
-    "answer": "BARS",
-    "row": 8,
-    "col": 8,
+    "question": "Agent Fischer's Vorname",
+    "answer": "SAM",
+    "row": 9,
+    "col": 3,
     "direction": "vertical",
     "number": 32
   },
   {
-    "question": "Währung in Elden Ring",
-    "answer": "RUNE",
-    "row": 10,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 40
-  },
-  {
-    "question": "Waffe in Valo",
-    "answer": "ODIN",
-    "row": 5,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 24
-  },
-  {
-    "question": "Fakers in-offizieller Titel",
-    "answer": "GOAT",
-    "row": 9,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 37
-  },
-  {
-    "question": "Micro: Side...",
-    "answer": "STEP",
-    "row": 11,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 41
-  },
-  {
-    "question": "Bubble... (IT)",
-    "answer": "SORT",
-    "row": 8,
-    "col": 2,
+    "question": "PBE Tester sind ... Pigs",
+    "answer": "GUINEA",
+    "row": 6,
+    "col": 6,
     "direction": "vertical",
-    "number": 30
+    "number": 19
   },
   {
-    "question": "Cross-over Figur",
-    "answer": "GAST",
-    "row": 8,
+    "question": "Job von Rell Spielern",
+    "answer": "ENGAGE",
+    "row": 10,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 38
+  },
+  {
+    "question": "The ... blade is the deadliest",
+    "answer": "UNSEEN",
+    "row": 5,
     "col": 0,
-    "direction": "horizontal",
-    "number": 29
-  },
-  {
-    "question": "Strategie Spiel-figur (engl.)",
-    "answer": "UNIT",
-    "row": 3,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 16
-  },
-  {
-    "question": "... Candy",
-    "answer": "RARE",
-    "row": 2,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 14
-  },
-  {
-    "question": "Heavy ...",
-    "answer": "RAIN",
-    "row": 4,
-    "col": 5,
     "direction": "horizontal",
     "number": 17
   },
   {
-    "question": "Talons W",
-    "answer": "RAKE",
+    "question": "Heutiges Wraith Camp",
+    "answer": "RAPTOR",
+    "row": 0,
+    "col": 9,
+    "direction": "vertical",
+    "number": 8
+  },
+  {
+    "question": "Hat Phil Fixed",
+    "answer": "KAMERA",
+    "row": 11,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 39
+  },
+  {
+    "question": "Make it ... (deut.)",
+    "answer": "REGEN",
+    "row": 6,
+    "col": 4,
+    "direction": "horizontal",
+    "number": 24
+  },
+  {
+    "question": "Bilgewater Event Name",
+    "answer": "TIDES",
+    "row": 7,
+    "col": 11,
+    "direction": "vertical",
+    "number": 26
+  },
+  {
+    "question": "LCK Top-laner",
+    "answer": "CLEAR",
+    "row": 7,
+    "col": 9,
+    "direction": "vertical",
+    "number": 25
+  },
+  {
+    "question": "Region Zekrom (engl.)",
+    "answer": "UNOVA",
+    "row": 3,
+    "col": 10,
+    "direction": "vertical",
+    "number": 13
+  },
+  {
+    "question": "Ging bei Skyrim ins Knie",
+    "answer": "ARROW",
+    "row": 0,
+    "col": 6,
+    "direction": "vertical",
+    "number": 6
+  },
+  {
+    "question": "Kann Kennen '-25' von haben",
+    "answer": "RANGE",
     "row": 1,
     "col": 3,
     "direction": "vertical",
     "number": 4
   },
   {
-    "question": "Singed wirft (engl.)",
-    "answer": "GLUE",
-    "row": 4,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 20
-  },
-  {
-    "question": "Waffe in Hollow Knight",
-    "answer": "NAIL",
+    "question": "MC: Block / Nahrung (engl.)",
+    "answer": "HONEY",
     "row": 1,
-    "col": 1,
+    "col": 11,
     "direction": "vertical",
-    "number": 2
+    "number": 9
   },
   {
-    "question": "LoL Spiel-modus",
-    "answer": "ARAM",
-    "row": 2,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 12
+    "question": "Annie Skin",
+    "answer": "PANDA",
+    "row": 7,
+    "col": 2,
+    "direction": "vertical",
+    "number": 23
   },
   {
-    "question": "Outsider-Roboter in Stray",
-    "answer": "MOMO",
+    "question": "Krabbys Entwick-lung",
+    "answer": "KINGLER",
     "row": 0,
     "col": 4,
     "direction": "vertical",
     "number": 5
   },
   {
-    "question": "Riots Taktik-spiel",
-    "answer": "TFT",
-    "row": 7,
-    "col": 5,
+    "question": "Mc: Unzer-störbarer Block",
+    "answer": "BARRIER",
+    "row": 1,
+    "col": 0,
     "direction": "horizontal",
-    "number": 31
+    "number": 1
   },
   {
-    "question": "Rocket League Ziel",
-    "answer": "TOR",
-    "row": 7,
-    "col": 7,
+    "question": "Stadt Worlds Halb-finale",
+    "answer": "ATLANTA",
+    "row": 1,
+    "col": 1,
+    "direction": "vertical",
+    "number": 2
+  },
+  {
+    "question": "Janna Ult",
+    "answer": "MONSOON",
+    "row": 9,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 30
+  },
+  {
+    "question": "Saugt Reyna",
+    "answer": "ORBS",
+    "row": 11,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 40
+  },
+  {
+    "question": "Beleidigung für Gamer",
+    "answer": "NERD",
+    "row": 9,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 36
+  },
+  {
+    "question": "LPL Jungler",
+    "answer": "TIAN",
+    "row": 2,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 11
+  },
+  {
+    "question": "... Sword",
+    "answer": "LONG",
+    "row": 3,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 14
+  },
+  {
+    "question": "CC Effekt",
+    "answer": "STUN",
+    "row": 3,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 16
+  },
+  {
+    "question": "Fiddle E",
+    "answer": "REAP",
+    "row": 2,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 12
+  },
+  {
+    "question": "Whip ... (Eve)",
+    "answer": "LASH",
+    "row": 1,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 10
+  },
+  {
+    "question": "... Breath (Yasuo)",
+    "answer": "LAST",
+    "row": 1,
+    "col": 8,
+    "direction": "vertical",
+    "number": 7
+  },
+  {
+    "question": "GODS Player",
+    "answer": "ADAM",
+    "row": 10,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 37
+  },
+  {
+    "question": "Total War Teil",
+    "answer": "ROME",
+    "row": 8,
+    "col": 4,
     "direction": "vertical",
     "number": 27
   },
   {
-    "question": "... des Zorns (PKMN)",
-    "answer": "SEE",
-    "row": 9,
-    "col": 11,
-    "direction": "vertical",
-    "number": 36
-  },
-  {
-    "question": "Spiele-konsole (Ninten.)",
-    "answer": "NES",
-    "row": 5,
-    "col": 11,
-    "direction": "vertical",
-    "number": 19
-  },
-  {
-    "question": "Xbox Gene-ration",
-    "answer": "ONE",
-    "row": 6,
-    "col": 9,
+    "question": "Speicher-Item Res Ev 7",
+    "answer": "TAPE",
+    "row": 7,
+    "col": 0,
     "direction": "horizontal",
-    "number": 28
+    "number": 22
   },
   {
-    "question": "Kopfschuss mit einer Kugel",
-    "answer": "TAP",
-    "row": 9,
-    "col": 4,
-    "direction": "vertical",
-    "number": 34
-  },
-  {
-    "question": "Animal Crossing tool",
-    "answer": "NET",
-    "row": 1,
-    "col": 11,
-    "direction": "vertical",
-    "number": 10
-  },
-  {
-    "question": "Strafe für Cheating",
-    "answer": "BAN",
-    "row": 1,
-    "col": 9,
-    "direction": "vertical",
-    "number": 8
-  },
-  {
-    "question": "Renek-tons R",
-    "answer": "DOMINUS",
-    "row": 5,
-    "col": 9,
-    "direction": "vertical",
+    "question": "Verstärkt Trank Effekte (mc)",
+    "answer": "GLOWSTONE",
+    "row": 4,
+    "col": 3,
+    "direction": "horizontal",
     "number": 18
   }
 ]
