@@ -12,7 +12,7 @@ def Main():
     number_of_layouts = 6
 
     for current_layout in range(number_of_layouts):
-        print(f"Layout {current_layout + 1} von {number_of_layouts - 1}:")
+        print(f"Layout {current_layout + 1} von {number_of_layouts}:")
         crossword = Crossword(entries, current_layout + 1)
         crossword.solve()
 

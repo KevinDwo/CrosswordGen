@@ -219,7 +219,7 @@ class CrosswordGridTemplate:
             
             if total_spots > 0:
                 current_fill_ratio = occupied_count / total_spots
-                if current_fill_ratio >= 0.85 and current_fill_ratio > self.max_fill_ratio:
+                if current_fill_ratio >= 0.4 and current_fill_ratio > self.max_fill_ratio:
                     self.max_fill_ratio = current_fill_ratio
                     print(f"\n--- Zwischenstand: Rätsel ist zu {current_fill_ratio * 100:.1f}% gefüllt ---")
                     self.display()
