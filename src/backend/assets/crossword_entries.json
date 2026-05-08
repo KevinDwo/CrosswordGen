@@ -1,319 +1,319 @@
 [
   {
-    "question": "NfS Titel (Abk.)",
-    "answer": "UG",
+    "question": "?",
+    "answer": "CS",
     "row": 7,
     "col": 6,
     "direction": "horizontal",
     "number": 28
   },
   {
-    "question": "Team mit erstem Kaisa Skin",
-    "answer": "IG",
+    "question": "Jemanden von 100 auf 0 bursten (Abk.)",
+    "answer": "OS",
     "row": 8,
     "col": 6,
     "direction": "horizontal",
     "number": 33
   },
   {
-    "question": "Anivias Verwand-lung",
-    "answer": "EGG",
-    "row": 6,
-    "col": 7,
-    "direction": "vertical",
-    "number": 20
-  },
-  {
-    "question": "'Stop Killing Games' (abk.)",
-    "answer": "NGO",
-    "row": 9,
-    "col": 8,
-    "direction": "vertical",
-    "number": 34
-  },
-  {
-    "question": "Buntes Gamer-Licht (Abk.)",
-    "answer": "RGB",
-    "row": 9,
-    "col": 10,
-    "direction": "vertical",
-    "number": 35
-  },
-  {
-    "question": "Rengars Spezies (engl.)",
-    "answer": "CAT",
-    "row": 7,
-    "col": 9,
-    "direction": "horizontal",
-    "number": 29
-  },
-  {
-    "question": "Xbox Gene-ration",
-    "answer": "ONE",
-    "row": 4,
-    "col": 5,
-    "direction": "vertical",
-    "number": 15
-  },
-  {
-    "question": "Austrag-ungsort MSI",
-    "answer": "RIO",
-    "row": 1,
-    "col": 2,
-    "direction": "vertical",
-    "number": 3
-  },
-  {
-    "question": "Koopa pinke Sonnen-brille",
-    "answer": "ROY",
-    "row": 5,
-    "col": 9,
-    "direction": "horizontal",
-    "number": 21
-  },
-  {
-    "question": "Person aus PKMN",
-    "answer": "OAK",
-    "row": 9,
-    "col": 1,
-    "direction": "vertical",
-    "number": 31
-  },
-  {
-    "question": "Agent Fischer's Vorname",
-    "answer": "SAM",
-    "row": 9,
-    "col": 3,
-    "direction": "vertical",
-    "number": 32
-  },
-  {
-    "question": "PBE Tester sind ... Pigs",
-    "answer": "GUINEA",
+    "question": "?",
+    "answer": "SCORES",
     "row": 6,
     "col": 6,
     "direction": "vertical",
     "number": 19
   },
   {
-    "question": "Job von Rell Spielern",
-    "answer": "ENGAGE",
+    "question": "Raid Gegner (mc)",
+    "answer": "EVOKER",
     "row": 10,
     "col": 6,
     "direction": "horizontal",
     "number": 38
   },
   {
-    "question": "The ... blade is the deadliest",
-    "answer": "UNSEEN",
-    "row": 5,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 17
-  },
-  {
-    "question": "Heutiges Wraith Camp",
-    "answer": "RAPTOR",
+    "question": "?",
+    "answer": "GERALT",
     "row": 0,
     "col": 9,
     "direction": "vertical",
     "number": 8
   },
   {
-    "question": "Hat Phil Fixed",
-    "answer": "KAMERA",
+    "question": "?",
+    "answer": "INVADE",
+    "row": 5,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 17
+  },
+  {
+    "question": "?",
+    "answer": "STRESS",
     "row": 11,
     "col": 1,
     "direction": "horizontal",
     "number": 39
   },
   {
-    "question": "Make it ... (deut.)",
-    "answer": "REGEN",
+    "question": "Alle 5 Gegner töten",
+    "answer": "ASS",
+    "row": 6,
+    "col": 7,
+    "direction": "vertical",
+    "number": 20
+  },
+  {
+    "question": "Ranglos in Hypixel",
+    "answer": "NON",
+    "row": 7,
+    "col": 9,
+    "direction": "horizontal",
+    "number": 29
+  },
+  {
+    "question": "?",
+    "answer": "LOS",
+    "row": 9,
+    "col": 8,
+    "direction": "vertical",
+    "number": 34
+  },
+  {
+    "question": "?",
+    "answer": "EEL",
+    "row": 9,
+    "col": 10,
+    "direction": "vertical",
+    "number": 35
+  },
+  {
+    "question": "Spiele-konsole (Ninten.)",
+    "answer": "NES",
+    "row": 4,
+    "col": 5,
+    "direction": "vertical",
+    "number": 15
+  },
+  {
+    "question": "...-Fighter",
+    "answer": "TIE",
+    "row": 5,
+    "col": 9,
+    "direction": "horizontal",
+    "number": 21
+  },
+  {
+    "question": "...sin",
+    "answer": "LEE",
+    "row": 1,
+    "col": 2,
+    "direction": "vertical",
+    "number": 3
+  },
+  {
+    "question": "Rocket League Ziel",
+    "answer": "TOR",
+    "row": 9,
+    "col": 3,
+    "direction": "vertical",
+    "number": 32
+  },
+  {
+    "question": "?",
+    "answer": "EIS",
+    "row": 9,
+    "col": 1,
+    "direction": "vertical",
+    "number": 31
+  },
+  {
+    "question": "Geistreicher Aufsatz",
+    "answer": "ESSAY",
     "row": 6,
     "col": 4,
     "direction": "horizontal",
     "number": 24
   },
   {
-    "question": "Bilgewater Event Name",
-    "answer": "TIDES",
-    "row": 7,
-    "col": 11,
-    "direction": "vertical",
-    "number": 26
-  },
-  {
-    "question": "LCK Top-laner",
-    "answer": "CLEAR",
+    "question": "Cha-mäleon-Champ",
+    "answer": "NEEKO",
     "row": 7,
     "col": 9,
     "direction": "vertical",
     "number": 25
   },
   {
-    "question": "Region Zekrom (engl.)",
-    "answer": "UNOVA",
+    "question": "?",
+    "answer": "NORRA",
+    "row": 7,
+    "col": 11,
+    "direction": "vertical",
+    "number": 26
+  },
+  {
+    "question": "?",
+    "answer": "MEIKO",
     "row": 3,
     "col": 10,
     "direction": "vertical",
     "number": 13
   },
   {
-    "question": "Ging bei Skyrim ins Knie",
-    "answer": "ARROW",
-    "row": 0,
-    "col": 6,
-    "direction": "vertical",
-    "number": 6
-  },
-  {
-    "question": "Kann Kennen '-25' von haben",
-    "answer": "RANGE",
-    "row": 1,
-    "col": 3,
-    "direction": "vertical",
-    "number": 4
-  },
-  {
-    "question": "MC: Block / Nahrung (engl.)",
-    "answer": "HONEY",
+    "question": "?",
+    "answer": "PHASE",
     "row": 1,
     "col": 11,
     "direction": "vertical",
     "number": 9
   },
   {
-    "question": "Annie Skin",
-    "answer": "PANDA",
+    "question": "?",
+    "answer": "LEASE",
+    "row": 0,
+    "col": 6,
+    "direction": "vertical",
+    "number": 6
+  },
+  {
+    "question": "?",
+    "answer": "CANNA",
+    "row": 1,
+    "col": 3,
+    "direction": "vertical",
+    "number": 4
+  },
+  {
+    "question": "?",
+    "answer": "HEART",
     "row": 7,
     "col": 2,
     "direction": "vertical",
     "number": 23
   },
   {
-    "question": "Krabbys Entwick-lung",
-    "answer": "KINGLER",
-    "row": 0,
-    "col": 4,
-    "direction": "vertical",
-    "number": 5
-  },
-  {
-    "question": "Mc: Unzer-störbarer Block",
-    "answer": "BARRIER",
-    "row": 1,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 1
-  },
-  {
-    "question": "Stadt Worlds Halb-finale",
-    "answer": "ATLANTA",
-    "row": 1,
-    "col": 1,
-    "direction": "vertical",
-    "number": 2
-  },
-  {
-    "question": "Janna Ult",
-    "answer": "MONSOON",
-    "row": 9,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 30
-  },
-  {
-    "question": "Saugt Reyna",
-    "answer": "ORBS",
+    "question": "?",
+    "answer": "SOLA",
     "row": 11,
     "col": 8,
     "direction": "horizontal",
     "number": 40
   },
   {
-    "question": "Beleidigung für Gamer",
-    "answer": "NERD",
+    "question": "?",
+    "answer": "LEER",
     "row": 9,
     "col": 8,
     "direction": "horizontal",
     "number": 36
   },
   {
-    "question": "LPL Jungler",
-    "answer": "TIAN",
-    "row": 2,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 11
-  },
-  {
-    "question": "... Sword",
-    "answer": "LONG",
-    "row": 3,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 14
-  },
-  {
-    "question": "CC Effekt",
-    "answer": "STUN",
+    "question": "?",
+    "answer": "MAMA",
     "row": 3,
     "col": 8,
     "direction": "horizontal",
     "number": 16
   },
   {
-    "question": "Fiddle E",
-    "answer": "REAP",
-    "row": 2,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 12
-  },
-  {
-    "question": "Whip ... (Eve)",
-    "answer": "LASH",
-    "row": 1,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 10
-  },
-  {
-    "question": "... Breath (Yasuo)",
-    "answer": "LAST",
+    "question": "?",
+    "answer": "LIMA",
     "row": 1,
     "col": 8,
     "direction": "vertical",
     "number": 7
   },
   {
-    "question": "GODS Player",
-    "answer": "ADAM",
+    "question": "?",
+    "answer": "LEAP",
+    "row": 1,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 10
+  },
+  {
+    "question": "?",
+    "answer": "AZIR",
+    "row": 2,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 12
+  },
+  {
+    "question": "Living ...-free in your head",
+    "answer": "RENT",
+    "row": 3,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 14
+  },
+  {
+    "question": "Fiddle E",
+    "answer": "REAP",
+    "row": 2,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 11
+  },
+  {
+    "question": "LoL-Rang",
+    "answer": "IRON",
     "row": 10,
     "col": 1,
     "direction": "horizontal",
     "number": 37
   },
   {
-    "question": "Total War Teil",
-    "answer": "ROME",
-    "row": 8,
-    "col": 4,
-    "direction": "vertical",
-    "number": 27
-  },
-  {
-    "question": "Speicher-Item Res Ev 7",
-    "answer": "TAPE",
+    "question": "?",
+    "answer": "NEHS",
     "row": 7,
     "col": 0,
     "direction": "horizontal",
     "number": 22
   },
   {
-    "question": "Verstärkt Trank Effekte (mc)",
-    "answer": "GLOWSTONE",
+    "question": "?",
+    "answer": "AHNE",
+    "row": 8,
+    "col": 4,
+    "direction": "vertical",
+    "number": 27
+  },
+  {
+    "question": "auch mc effect",
+    "answer": "RIPTIDE",
+    "row": 0,
+    "col": 4,
+    "direction": "vertical",
+    "number": 5
+  },
+  {
+    "question": "?",
+    "answer": "CALCITE",
+    "row": 1,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 1
+  },
+  {
+    "question": "?",
+    "answer": "ARRANGE",
+    "row": 1,
+    "col": 1,
+    "direction": "vertical",
+    "number": 2
+  },
+  {
+    "question": "?",
+    "answer": "WEATHER",
+    "row": 9,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 30
+  },
+  {
+    "question": "?",
+    "answer": "NINETALES",
     "row": 4,
     "col": 3,
     "direction": "horizontal",
