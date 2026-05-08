@@ -1,0 +1,37 @@
+[
+  {
+    "row": 7,
+    "col": 2,
+    "number": 1
+  },
+  {
+    "row": 9,
+    "col": 9,
+    "number": 2
+  },
+  {
+    "row": 4,
+    "col": 7,
+    "number": 3
+  },
+  {
+    "row": 10,
+    "col": 11,
+    "number": 4
+  },
+  {
+    "row": 10,
+    "col": 8,
+    "number": 5
+  },
+  {
+    "row": 9,
+    "col": 3,
+    "number": 6
+  },
+  {
+    "row": 4,
+    "col": 1,
+    "number": 7
+  }
+]
