@@ -1,15 +1,15 @@
 [
   {
     "question": "?",
-    "answer": "CS",
+    "answer": "MM",
     "row": 7,
     "col": 6,
     "direction": "horizontal",
     "number": 28
   },
   {
-    "question": "Jemanden von 100 auf 0 bursten (Abk.)",
-    "answer": "OS",
+    "question": "?",
+    "answer": "PG",
     "row": 8,
     "col": 6,
     "direction": "horizontal",
@@ -17,31 +17,15 @@
   },
   {
     "question": "?",
-    "answer": "SCORES",
+    "answer": "IMPALE",
     "row": 6,
     "col": 6,
     "direction": "vertical",
     "number": 19
   },
   {
-    "question": "Raid Gegner (mc)",
-    "answer": "EVOKER",
-    "row": 10,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 38
-  },
-  {
     "question": "?",
-    "answer": "GERALT",
-    "row": 0,
-    "col": 9,
-    "direction": "vertical",
-    "number": 8
-  },
-  {
-    "question": "?",
-    "answer": "INVADE",
+    "answer": "ASCENT",
     "row": 5,
     "col": 0,
     "direction": "horizontal",
@@ -49,59 +33,43 @@
   },
   {
     "question": "?",
-    "answer": "STRESS",
+    "answer": "GATHER",
+    "row": 0,
+    "col": 9,
+    "direction": "vertical",
+    "number": 8
+  },
+  {
+    "question": "?",
+    "answer": "LEAVER",
+    "row": 10,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 38
+  },
+  {
+    "question": "Job von Rell Spielern",
+    "answer": "ENGAGE",
     "row": 11,
     "col": 1,
     "direction": "horizontal",
     "number": 39
   },
   {
-    "question": "Alle 5 Gegner töten",
-    "answer": "ASS",
+    "question": "?",
+    "answer": "SMG",
     "row": 6,
     "col": 7,
     "direction": "vertical",
     "number": 20
   },
   {
-    "question": "Ranglos in Hypixel",
-    "answer": "NON",
-    "row": 7,
-    "col": 9,
-    "direction": "horizontal",
-    "number": 29
-  },
-  {
-    "question": "?",
-    "answer": "LOS",
-    "row": 9,
-    "col": 8,
-    "direction": "vertical",
-    "number": 34
-  },
-  {
-    "question": "?",
-    "answer": "EEL",
-    "row": 9,
-    "col": 10,
-    "direction": "vertical",
-    "number": 35
-  },
-  {
-    "question": "Spiele-konsole (Ninten.)",
-    "answer": "NES",
+    "question": "press the attack",
+    "answer": "PTA",
     "row": 4,
     "col": 5,
     "direction": "vertical",
     "number": 15
-  },
-  {
-    "question": "...-Fighter",
-    "answer": "TIE",
-    "row": 5,
-    "col": 9,
-    "direction": "horizontal",
-    "number": 21
   },
   {
     "question": "...sin",
@@ -112,56 +80,64 @@
     "number": 3
   },
   {
-    "question": "Rocket League Ziel",
-    "answer": "TOR",
+    "question": "Austrag-ungsort MSI",
+    "answer": "RIO",
+    "row": 5,
+    "col": 9,
+    "direction": "horizontal",
+    "number": 21
+  },
+  {
+    "question": "Pro player (LoL; Jungle)",
+    "answer": "WEI",
+    "row": 7,
+    "col": 9,
+    "direction": "horizontal",
+    "number": 29
+  },
+  {
+    "question": "?",
+    "answer": "LEO",
+    "row": 9,
+    "col": 10,
+    "direction": "vertical",
+    "number": 35
+  },
+  {
+    "question": "?",
+    "answer": "PAN",
+    "row": 9,
+    "col": 8,
+    "direction": "vertical",
+    "number": 34
+  },
+  {
+    "question": "?",
+    "answer": "GOG",
     "row": 9,
     "col": 3,
     "direction": "vertical",
     "number": 32
   },
   {
-    "question": "?",
-    "answer": "EIS",
+    "question": "Eisen oder Gold (mc)",
+    "answer": "ORE",
     "row": 9,
     "col": 1,
     "direction": "vertical",
     "number": 31
   },
   {
-    "question": "Geistreicher Aufsatz",
-    "answer": "ESSAY",
+    "question": "?",
+    "answer": "DAISY",
     "row": 6,
     "col": 4,
     "direction": "horizontal",
     "number": 24
   },
   {
-    "question": "Cha-mäleon-Champ",
-    "answer": "NEEKO",
-    "row": 7,
-    "col": 9,
-    "direction": "vertical",
-    "number": 25
-  },
-  {
     "question": "?",
-    "answer": "NORRA",
-    "row": 7,
-    "col": 11,
-    "direction": "vertical",
-    "number": 26
-  },
-  {
-    "question": "?",
-    "answer": "MEIKO",
-    "row": 3,
-    "col": 10,
-    "direction": "vertical",
-    "number": 13
-  },
-  {
-    "question": "?",
-    "answer": "PHASE",
+    "answer": "GENDO",
     "row": 1,
     "col": 11,
     "direction": "vertical",
@@ -170,14 +146,6 @@
   {
     "question": "?",
     "answer": "LEASE",
-    "row": 0,
-    "col": 6,
-    "direction": "vertical",
-    "number": 6
-  },
-  {
-    "question": "?",
-    "answer": "CANNA",
     "row": 1,
     "col": 3,
     "direction": "vertical",
@@ -185,7 +153,39 @@
   },
   {
     "question": "?",
-    "answer": "HEART",
+    "answer": "STUFE",
+    "row": 0,
+    "col": 6,
+    "direction": "vertical",
+    "number": 6
+  },
+  {
+    "question": "?",
+    "answer": "ELISE",
+    "row": 3,
+    "col": 10,
+    "direction": "vertical",
+    "number": 13
+  },
+  {
+    "question": "?",
+    "answer": "WEAVE",
+    "row": 7,
+    "col": 9,
+    "direction": "vertical",
+    "number": 25
+  },
+  {
+    "question": "?",
+    "answer": "IVERN",
+    "row": 7,
+    "col": 11,
+    "direction": "vertical",
+    "number": 26
+  },
+  {
+    "question": "?",
+    "answer": "BARON",
     "row": 7,
     "col": 2,
     "direction": "vertical",
@@ -193,111 +193,23 @@
   },
   {
     "question": "?",
-    "answer": "SOLA",
-    "row": 11,
-    "col": 8,
+    "answer": "SUPERHELD",
+    "row": 4,
+    "col": 3,
     "direction": "horizontal",
-    "number": 40
+    "number": 18
   },
   {
     "question": "?",
-    "answer": "LEER",
-    "row": 9,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 36
-  },
-  {
-    "question": "?",
-    "answer": "MAMA",
-    "row": 3,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 16
-  },
-  {
-    "question": "?",
-    "answer": "LIMA",
-    "row": 1,
-    "col": 8,
-    "direction": "vertical",
-    "number": 7
-  },
-  {
-    "question": "?",
-    "answer": "LEAP",
-    "row": 1,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 10
-  },
-  {
-    "question": "?",
-    "answer": "AZIR",
-    "row": 2,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 12
-  },
-  {
-    "question": "Living ...-free in your head",
-    "answer": "RENT",
-    "row": 3,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 14
-  },
-  {
-    "question": "Fiddle E",
-    "answer": "REAP",
-    "row": 2,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 11
-  },
-  {
-    "question": "LoL-Rang",
-    "answer": "IRON",
-    "row": 10,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 37
-  },
-  {
-    "question": "?",
-    "answer": "NEHS",
-    "row": 7,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 22
-  },
-  {
-    "question": "?",
-    "answer": "AHNE",
-    "row": 8,
-    "col": 4,
-    "direction": "vertical",
-    "number": 27
-  },
-  {
-    "question": "auch mc effect",
-    "answer": "RIPTIDE",
+    "answer": "TORMUND",
     "row": 0,
     "col": 4,
     "direction": "vertical",
     "number": 5
   },
   {
-    "question": "?",
-    "answer": "CALCITE",
-    "row": 1,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 1
-  },
-  {
-    "question": "?",
-    "answer": "ARRANGE",
+    "question": "LoL Champion",
+    "answer": "AMBESSA",
     "row": 1,
     "col": 1,
     "direction": "vertical",
@@ -305,7 +217,15 @@
   },
   {
     "question": "?",
-    "answer": "WEATHER",
+    "answer": "CALLOUT",
+    "row": 1,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 1
+  },
+  {
+    "question": "?",
+    "answer": "MORGANA",
     "row": 9,
     "col": 0,
     "direction": "horizontal",
@@ -313,10 +233,90 @@
   },
   {
     "question": "?",
-    "answer": "NINETALES",
-    "row": 4,
-    "col": 3,
+    "answer": "BEAM",
+    "row": 3,
+    "col": 1,
     "direction": "horizontal",
-    "number": 18
+    "number": 14
+  },
+  {
+    "question": "?",
+    "answer": "MEER",
+    "row": 2,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 11
+  },
+  {
+    "question": "Strategie Spiel-figur (engl.)",
+    "answer": "UNIT",
+    "row": 2,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 12
+  },
+  {
+    "question": "?",
+    "answer": "FISH",
+    "row": 1,
+    "col": 8,
+    "direction": "vertical",
+    "number": 7
+  },
+  {
+    "question": "?",
+    "answer": "FANG",
+    "row": 1,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 10
+  },
+  {
+    "question": "?",
+    "answer": "SHEN",
+    "row": 3,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 16
+  },
+  {
+    "question": "Valorants Zeri",
+    "answer": "NEON",
+    "row": 11,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 40
+  },
+  {
+    "question": "?",
+    "answer": "PALE",
+    "row": 9,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 36
+  },
+  {
+    "question": "?",
+    "answer": "ROOT",
+    "row": 10,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 37
+  },
+  {
+    "question": "?",
+    "answer": "MATA",
+    "row": 8,
+    "col": 4,
+    "direction": "vertical",
+    "number": 27
+  },
+  {
+    "question": "?",
+    "answer": "DABI",
+    "row": 7,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 22
   }
 ]

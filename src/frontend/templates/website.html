@@ -41,15 +41,23 @@
         .cell.solution-part {
             background-color: #fefcbf; /* Leichter gelber Hintergrund zur Hervorhebung */
         }
+
         .cell .cell-solution-number {
             position: absolute;
-            bottom: 2px;
-            right: 4px;
+            bottom: 1px;
+            right: 3px;
             font-size: 10px;
-            color: #e53e3e; /* Rote Zahl im Raster */
+            color: #e53e3e; /* Ein kräftiges Rot für die Nummer */
             font-weight: bold;
             pointer-events: none;
             z-index: 10;
+            background: transparent;
+            border: none;
+        }
+
+        /* Optional: Falls du die Lösungszellen farblich noch etwas abheben willst */
+        .cell.solution-part {
+            background-color: #fff; /* Ganz leicht abgetönter Hintergrund */
         }
         /* Grundlegende Stildefinitionen für den Body */
         body {
@@ -386,12 +394,29 @@
 
             const cellIndex = parseInt(cell.dataset.index);
 
+            // Validierung (nur Buchstaben)
             if (!regex.test(inputField.value)) {
                 inputField.value = '';
                 return;
             }
             inputField.value = inputField.value.toUpperCase();
 
+            // --- NEU: LÖSUNGSWORT UNTEN LIVE AKTUALISIEREN ---
+            if (typeof solutionCellsData !== 'undefined' && solutionCellsData.length > 0) {
+                // Prüfen, ob die aktuelle Zelle Teil des Lösungsworts ist
+                const isSolutionCell = solutionCellsData.find(s => (s.row * gridWidth + s.col) === cellIndex);
+                if (isSolutionCell) {
+                    const solBox = document.getElementById(`solution-box-${isSolutionCell.number}`);
+                    if (solBox) {
+                        const letterSpan = solBox.querySelector('.solution-letter');
+                        if (letterSpan) {
+                            letterSpan.textContent = inputField.value; // Buchstabe (oder leer bei Backspace) übertragen
+                        }
+                    }
+                }
+            }
+
+            // Restliche Logik (Markierung und Fokus-Weiterleitung)
             if (!currentSelection) {
                 const associatedSolutions = cellToSolutionsMap.get(cellIndex);
                 if (associatedSolutions && associatedSolutions.length > 0) {

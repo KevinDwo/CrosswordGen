@@ -3,6 +3,7 @@ import random
 from PlaceWord import PlacedWord
 from CrosswordGridLayouts import CrosswordGridLayouts
 from typing import DefaultDict, Dict, List
+from collections import defaultdict
 from ClueEntry import ClueEntry
 from utils.Utils import Entry
 
