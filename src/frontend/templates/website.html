@@ -5,6 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kreuzworträtsel</title>
     <style>
+        /* --- STILE FÜR DAS LÖSUNGSWORT --- */
+        .solution-container {
+            margin-top: 3rem;
+            text-align: center;
+        }
+        .solution-boxes {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        .solution-box {
+            width: 44px;
+            height: 44px;
+            border: 2px solid #1a202c;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            position: relative;
+            transition: background-color 0.4s ease-in-out;
+        }
+        .solution-box .box-number {
+            position: absolute;
+            bottom: 2px;
+            right: 4px;
+            font-size: 10px;
+            color: #718096;
+            font-weight: normal;
+        }
+        .cell.solution-part {
+            background-color: #fefcbf; /* Leichter gelber Hintergrund zur Hervorhebung */
+        }
+        .cell .cell-solution-number {
+            position: absolute;
+            bottom: 2px;
+            right: 4px;
+            font-size: 10px;
+            color: #e53e3e; /* Rote Zahl im Raster */
+            font-weight: bold;
+            pointer-events: none;
+            z-index: 10;
+        }
         /* Grundlegende Stildefinitionen für den Body */
         body {
             font-family: 'Inter', sans-serif;
@@ -141,7 +187,10 @@
     <h1>Kreuzworträtsel</h1>
 
     <div class="container"></div>
-
+    <div class="solution-container">
+        <h2>Lösungswort:</h2>
+        <div class="solution-boxes" id="solution-boxes"></div>
+    </div>
     <script>
         // --- TEIL 1: GRUNDGERÜST ERSTELLEN ---
         const container = document.querySelector('.container');
@@ -455,14 +504,19 @@
         container.addEventListener('click', handleClick);
         container.addEventListener('keydown', handleKeyDown);
 
-        // Führe die Funktionen nacheinander aus
+        // Deklariere diese Variable am Anfang deines Scripts (zusammen mit let solutions = [];)
+        let solutionCellsData = [];
+
+        // Lade die Daten vom Server
         Promise.all([
             fetch('/api/layout').then(res => res.json()),
-            fetch('/api/entries').then(res => res.json())
+            fetch('/api/entries').then(res => res.json()),
+            fetch('/api/solution').then(res => res.json().catch(() => [])) // NEU
         ])
-        .then(([spots, entries]) => {
+        .then(([spots, entries, solutionData]) => {
             solutions = entries;
             
+            // Layout (Hinweise & Pfeile) aufbauen
             spots.forEach(spot => {
                 const hintIndex = spot.row * gridWidth + spot.col;
                 if (allCells[hintIndex]) {
@@ -472,14 +526,13 @@
                     const correspondingEntry = entries.find(entry => entry.number === spot.number);
                     if (correspondingEntry && correspondingEntry.question) {
                         hintCell.innerHTML = correspondingEntry.question;
-                    } else {
-                        hintCell.innerHTML = '';
                     }
                 }
             });
 
             buildCellToSolutionMap();
 
+            // Pfeile zeichnen (Dein bestehender Code)
             spots.forEach(spot => {
                 const solution = entries.find(e => e.number === spot.number);
                 if (!solution) return;
@@ -503,14 +556,44 @@
                     firstLetterCell.appendChild(arrowContainer);
                 }
             });
+
+            // --- NEU: Lösungswort UI aufbauen ---
+            solutionCellsData = solutionData;
+            const solutionBoxesContainer = document.getElementById('solution-boxes');
+            
+            if (solutionData && solutionData.length > 0) {
+                solutionData.forEach(item => {
+                    // 1. Zelle im Raster markieren und kleine rote Zahl hinzufügen
+                    const cellIndex = item.row * gridWidth + item.col;
+                    const cell = allCells[cellIndex];
+                    if (cell) {
+                        cell.classList.add('solution-part');
+                        const numSpan = document.createElement('span');
+                        numSpan.classList.add('cell-solution-number');
+                        numSpan.textContent = item.number;
+                        cell.appendChild(numSpan);
+                    }
+                    
+                    // 2. Box unten aufbauen
+                    const box = document.createElement('div');
+                    box.classList.add('solution-box');
+                    box.id = `solution-box-${item.number}`;
+                    
+                    const numSpanBox = document.createElement('span');
+                    numSpanBox.classList.add('box-number');
+                    numSpanBox.textContent = item.number;
+                    box.appendChild(numSpanBox);
+                    
+                    const letterSpan = document.createElement('span');
+                    letterSpan.classList.add('solution-letter');
+                    box.appendChild(letterSpan);
+                    
+                    solutionBoxesContainer.appendChild(box);
+                });
+            }
         })
         .catch(error => {
-            console.error('Fehler beim Laden des Rätsels:', error);
-            const errorDiv = document.createElement('div');
-            errorDiv.style.color = 'red';
-            errorDiv.style.marginTop = '1rem';
-            errorDiv.textContent = 'Das Rätsel konnte nicht geladen werden. Bitte stelle sicher, dass der Server läuft.';
-            document.body.appendChild(errorDiv);
+            console.error('Fehler beim Laden:', error);
         });
     </script>
 </body>
