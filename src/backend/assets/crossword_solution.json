@@ -1,7 +1,7 @@
 [
   {
-    "row": 7,
-    "col": 2,
+    "row": 8,
+    "col": 0,
     "number": 1
   },
   {
@@ -10,28 +10,28 @@
     "number": 2
   },
   {
-    "row": 4,
-    "col": 7,
+    "row": 2,
+    "col": 10,
     "number": 3
   },
   {
     "row": 10,
-    "col": 11,
+    "col": 10,
     "number": 4
   },
   {
-    "row": 10,
+    "row": 9,
     "col": 8,
     "number": 5
   },
   {
-    "row": 9,
-    "col": 3,
+    "row": 2,
+    "col": 9,
     "number": 6
   },
   {
-    "row": 4,
-    "col": 1,
+    "row": 3,
+    "col": 11,
     "number": 7
   }
 ]
