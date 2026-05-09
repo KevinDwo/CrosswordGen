@@ -1,322 +1,338 @@
 [
   {
-    "question": "?",
-    "answer": "MM",
-    "row": 7,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 28
-  },
-  {
-    "question": "?",
-    "answer": "PG",
-    "row": 8,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 33
-  },
-  {
-    "question": "?",
-    "answer": "IMPALE",
-    "row": 6,
-    "col": 6,
-    "direction": "vertical",
-    "number": 19
-  },
-  {
-    "question": "?",
-    "answer": "ASCENT",
+    "question": "I'm my own backup",
+    "answer": "VI",
     "row": 5,
-    "col": 0,
+    "col": 5,
     "direction": "horizontal",
-    "number": 17
+    "number": 23
   },
   {
-    "question": "?",
-    "answer": "GATHER",
-    "row": 0,
-    "col": 9,
-    "direction": "vertical",
-    "number": 8
-  },
-  {
-    "question": "?",
-    "answer": "LEAVER",
+    "question": "Zuhause der Voidmite (abk.)",
+    "answer": "SR",
     "row": 10,
-    "col": 6,
-    "direction": "horizontal",
+    "col": 11,
+    "direction": "vertical",
     "number": 38
   },
   {
-    "question": "Job von Rell Spielern",
-    "answer": "ENGAGE",
-    "row": 11,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 39
-  },
-  {
-    "question": "?",
-    "answer": "SMG",
-    "row": 6,
-    "col": 7,
-    "direction": "vertical",
-    "number": 20
-  },
-  {
-    "question": "press the attack",
-    "answer": "PTA",
-    "row": 4,
-    "col": 5,
-    "direction": "vertical",
-    "number": 15
-  },
-  {
-    "question": "...sin",
-    "answer": "LEE",
-    "row": 1,
-    "col": 2,
-    "direction": "vertical",
-    "number": 3
-  },
-  {
-    "question": "Austrag-ungsort MSI",
-    "answer": "RIO",
-    "row": 5,
-    "col": 9,
-    "direction": "horizontal",
-    "number": 21
-  },
-  {
-    "question": "Pro player (LoL; Jungle)",
-    "answer": "WEI",
-    "row": 7,
-    "col": 9,
-    "direction": "horizontal",
-    "number": 29
-  },
-  {
-    "question": "?",
-    "answer": "LEO",
-    "row": 9,
-    "col": 10,
-    "direction": "vertical",
-    "number": 35
-  },
-  {
-    "question": "?",
-    "answer": "PAN",
-    "row": 9,
-    "col": 8,
-    "direction": "vertical",
-    "number": 34
-  },
-  {
-    "question": "?",
-    "answer": "GOG",
-    "row": 9,
-    "col": 3,
-    "direction": "vertical",
-    "number": 32
-  },
-  {
-    "question": "Eisen oder Gold (mc)",
-    "answer": "ORE",
-    "row": 9,
-    "col": 1,
-    "direction": "vertical",
-    "number": 31
-  },
-  {
-    "question": "?",
-    "answer": "DAISY",
-    "row": 6,
-    "col": 4,
-    "direction": "horizontal",
-    "number": 24
-  },
-  {
-    "question": "?",
-    "answer": "GENDO",
-    "row": 1,
-    "col": 11,
-    "direction": "vertical",
-    "number": 9
-  },
-  {
-    "question": "?",
-    "answer": "LEASE",
-    "row": 1,
-    "col": 3,
-    "direction": "vertical",
-    "number": 4
-  },
-  {
-    "question": "?",
-    "answer": "STUFE",
-    "row": 0,
-    "col": 6,
-    "direction": "vertical",
-    "number": 6
-  },
-  {
-    "question": "?",
-    "answer": "ELISE",
+    "question": "Box in Shooter",
+    "answer": "COVER",
     "row": 3,
-    "col": 10,
+    "col": 5,
     "direction": "vertical",
     "number": 13
   },
   {
-    "question": "?",
-    "answer": "WEAVE",
-    "row": 7,
-    "col": 9,
-    "direction": "vertical",
-    "number": 25
+    "question": "Browser",
+    "answer": "OPERA",
+    "row": 9,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 37
   },
   {
-    "question": "?",
-    "answer": "IVERN",
+    "question": "Precision and grace (rückw.)",
+    "answer": "AROIF",
     "row": 7,
-    "col": 11,
+    "col": 6,
     "direction": "vertical",
     "number": 26
   },
   {
-    "question": "?",
-    "answer": "BARON",
-    "row": 7,
-    "col": 2,
-    "direction": "vertical",
-    "number": 23
-  },
-  {
-    "question": "?",
-    "answer": "SUPERHELD",
-    "row": 4,
-    "col": 3,
-    "direction": "horizontal",
-    "number": 18
-  },
-  {
-    "question": "?",
-    "answer": "TORMUND",
-    "row": 0,
-    "col": 4,
-    "direction": "vertical",
-    "number": 5
-  },
-  {
-    "question": "LoL Champion",
-    "answer": "AMBESSA",
-    "row": 1,
-    "col": 1,
-    "direction": "vertical",
-    "number": 2
-  },
-  {
-    "question": "?",
-    "answer": "CALLOUT",
-    "row": 1,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 1
-  },
-  {
-    "question": "?",
-    "answer": "MORGANA",
-    "row": 9,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 30
-  },
-  {
-    "question": "?",
-    "answer": "BEAM",
-    "row": 3,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 14
-  },
-  {
-    "question": "?",
-    "answer": "MEER",
-    "row": 2,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 11
-  },
-  {
-    "question": "Strategie Spiel-figur (engl.)",
-    "answer": "UNIT",
-    "row": 2,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 12
-  },
-  {
-    "question": "?",
-    "answer": "FISH",
+    "question": "War of the ... (game)",
+    "answer": "ROSES",
     "row": 1,
     "col": 8,
     "direction": "vertical",
     "number": 7
   },
   {
-    "question": "?",
-    "answer": "FANG",
-    "row": 1,
-    "col": 8,
+    "question": "Crafting ...",
+    "answer": "TABLE",
+    "row": 6,
+    "col": 1,
     "direction": "horizontal",
+    "number": 25
+  },
+  {
+    "question": "War-frame Char.",
+    "answer": "RHINO",
+    "row": 1,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 1
+  },
+  {
+    "question": "Caedrel, der ... King",
+    "answer": "RAT",
+    "row": 7,
+    "col": 5,
+    "direction": "horizontal",
+    "number": 31
+  },
+  {
+    "question": "Kopf-schuss mit einer Kugel",
+    "answer": "TAP",
+    "row": 7,
+    "col": 7,
+    "direction": "vertical",
+    "number": 27
+  },
+  {
+    "question": "Bronze / Supreme",
+    "answer": "ELO",
+    "row": 6,
+    "col": 9,
+    "direction": "horizontal",
+    "number": 28
+  },
+  {
+    "question": "Xbox Gene-ration",
+    "answer": "ONE",
+    "row": 1,
+    "col": 9,
+    "direction": "vertical",
+    "number": 8
+  },
+  {
+    "question": "Item (mc)",
+    "answer": "AXT",
+    "row": 1,
+    "col": 11,
+    "direction": "vertical",
     "number": 10
   },
   {
-    "question": "?",
-    "answer": "SHEN",
+    "question": "Spitz-name der Baronin",
+    "answer": "REN",
+    "row": 9,
+    "col": 4,
+    "direction": "vertical",
+    "number": 34
+  },
+  {
+    "question": "Häufig in Shurima",
+    "answer": "OASE",
+    "row": 4,
+    "col": 5,
+    "direction": "horizontal",
+    "number": 17
+  },
+  {
+    "question": "... bomb (Destiny)",
+    "answer": "NOVA",
+    "row": 1,
+    "col": 3,
+    "direction": "vertical",
+    "number": 4
+  },
+  {
+    "question": "Brand Ability",
+    "answer": "SEAR",
+    "row": 8,
+    "col": 8,
+    "direction": "vertical",
+    "number": 32
+  },
+  {
+    "question": "Übergibt Malzahar",
+    "answer": "AIDS",
+    "row": 10,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 40
+  },
+  {
+    "question": "Valorant Agent",
+    "answer": "FADE",
+    "row": 8,
+    "col": 10,
+    "direction": "vertical",
+    "number": 33
+  },
+  {
+    "question": "Marai / Foss-barrow (deut.)",
+    "answer": "DORF",
+    "row": 5,
+    "col": 11,
+    "direction": "vertical",
+    "number": 19
+  },
+  {
+    "question": "Gummi-köder beim Angeln",
+    "answer": "SHAD",
+    "row": 5,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 24
+  },
+  {
+    "question": "Pokedex 95",
+    "answer": "ONIX",
+    "row": 2,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 14
+  },
+  {
+    "question": "Fist, meet face",
+    "answer": "SETT",
     "row": 3,
     "col": 8,
     "direction": "horizontal",
     "number": 16
   },
   {
-    "question": "Valorants Zeri",
-    "answer": "NEON",
+    "question": "Feet are strange",
+    "answer": "IMAN",
     "row": 11,
-    "col": 8,
+    "col": 1,
     "direction": "horizontal",
-    "number": 40
+    "number": 41
   },
   {
-    "question": "?",
-    "answer": "PALE",
+    "question": "Hat man abwech-selnd bei LoR",
+    "answer": "TURN",
+    "row": 8,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 29
+  },
+  {
+    "question": "Macht Matze nie",
+    "answer": "ROAM",
+    "row": 8,
+    "col": 2,
+    "direction": "vertical",
+    "number": 30
+  },
+  {
+    "question": "... stance (LoR - Frejord)",
+    "answer": "BOAR",
     "row": 9,
-    "col": 8,
+    "col": 1,
     "direction": "horizontal",
     "number": 36
   },
   {
-    "question": "?",
-    "answer": "ROOT",
+    "question": "Grafik Bib Linux",
+    "answer": "MESA",
+    "row": 4,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 20
+  },
+  {
+    "question": "Curtains up. I'm ready",
+    "answer": "ANOS",
+    "row": 2,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 12
+  },
+  {
+    "question": "Ist Aurora (engl.)",
+    "answer": "HARE",
+    "row": 1,
+    "col": 1,
+    "direction": "vertical",
+    "number": 2
+  },
+  {
+    "question": "...mondy",
+    "answer": "ROSE",
+    "row": 0,
+    "col": 4,
+    "direction": "vertical",
+    "number": 5
+  },
+  {
+    "question": "Corin ... (Orianna Dad)",
+    "answer": "REVECK",
+    "row": 3,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 15
+  },
+  {
+    "question": "Nature conceals darkness",
+    "answer": "MAOKAI",
+    "row": 0,
+    "col": 6,
+    "direction": "vertical",
+    "number": 6
+  },
+  {
+    "question": "Kayns Profes-sion",
+    "answer": "FARMER",
+    "row": 11,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 42
+  },
+  {
+    "question": "Pokedex 57",
+    "answer": "RASAFF",
+    "row": 8,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 35
+  },
+  {
+    "question": "... des Ruins (arena item)",
+    "answer": "RITUAL",
+    "row": 1,
+    "col": 10,
+    "direction": "vertical",
+    "number": 9
+  },
+  {
+    "question": "See with eyes un-clouded",
+    "answer": "AURORA",
+    "row": 1,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 11
+  },
+  {
+    "question": "... Shinazu-gawa",
+    "answer": "SANEMI",
     "row": 10,
     "col": 1,
     "direction": "horizontal",
-    "number": 37
+    "number": 39
   },
   {
-    "question": "?",
-    "answer": "MATA",
-    "row": 8,
-    "col": 4,
+    "question": "Pokedex 95",
+    "answer": "TAUBSI",
+    "row": 6,
+    "col": 1,
     "direction": "vertical",
-    "number": 27
+    "number": 21
   },
   {
-    "question": "?",
-    "answer": "DABI",
-    "row": 7,
-    "col": 0,
-    "direction": "horizontal",
+    "question": "Wirft Soraka",
+    "answer": "BANANA",
+    "row": 6,
+    "col": 3,
+    "direction": "vertical",
     "number": 22
+  },
+  {
+    "question": "Qiyanas Schwes-ter",
+    "answer": "INESSA",
+    "row": 1,
+    "col": 2,
+    "direction": "vertical",
+    "number": 3
+  },
+  {
+    "question": "I do not rest",
+    "answer": "HECARIM",
+    "row": 5,
+    "col": 9,
+    "direction": "vertical",
+    "number": 18
   }
 ]

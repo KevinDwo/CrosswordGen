@@ -8,7 +8,7 @@ questions,answers
 ?,ziel
 ?,sound
 ?,unlust
-?,oase
+Häufig in Shurima,oase
 ?,boomen
 NfS Titel (Abk.),ug
 ?,orbit
@@ -34,7 +34,7 @@ Ranglos in Hypixel,non
 ?,zna
 ?,nebenan
 ?,tagen
-?,sr
+Zuhause der Voidmite (abk.),sr
 ?,besan
 ?,aktie
 CC-Fähigkeit,snare
@@ -99,7 +99,7 @@ LoLs Fass-werfer,Gragas
 ?,Caitlyn
 ?,Renekton
 ?,Karma
-LoL Baum (rückw.),Maokai
+Nature conceals darkness,Maokai
 ?,JarvanIV
 ?,Nocturne
 ?,LeeSin
@@ -125,7 +125,7 @@ LoL Champion,Graves
 ?,Nautilus
 ?,Fiora
 ?,Lulu
-?,Hecarim
+I do not rest,Hecarim
 ?,Varus
 ?,Darius
 ?,Draven
@@ -137,7 +137,7 @@ LoL Champion,Graves
 ?,Elise
 ?,Zed
 ?,Nami
-?,Vi
+I'm my own backup,Vi
 ?,Thresh
 ?,Quinn
 ?,Zac
@@ -173,7 +173,7 @@ Cha-mäleon-Champ,Neeko
 ?,Qiyana
 ?,Senna
 ?,Aphelios
-?,Sett
+Fist meet face,Sett
 ?,Lillia
 ?,Yone
 ?,Samira
@@ -190,7 +190,7 @@ LoL Champion,Vex
 LoL Champion,Briar
 LoL Champion,Hwei
 LoL Champion,Smolder
-LoL Champion,Aurora
+See with eyes un-clouded,Aurora
 LoL Champion,Ambessa
 LoL Champion,Mel
 Western GOAT,Caps
@@ -397,7 +397,7 @@ Jemanden von 100 auf 0 bursten (Abk.),os
 ?,expansion
 ?,skins
 ?,cosmetics
-?,elo
+Bronze / Supreme,elo
 ?,proplayer
 ?,endgame
 ?,metagame
@@ -710,7 +710,7 @@ end,barrens
 ?,armorer
 ?,butcher
 ?,cleric
-?,farmer
+Kayns Profes-sion,farmer
 ?,fisherman
 ?,fletcher
 ?,Librarian
@@ -871,7 +871,7 @@ block,command
 ?,lantern
 ?,cracked
 ?,crafter
-crafting,table
+Crafting ...,table
 ?,cyan
 ?,dandelion
 ?,deepslate
@@ -1024,7 +1024,7 @@ Item für Kabuto,fossil
 ?,Hornliu
 ?,Kokuna
 ?,Bibor
-?,Taubsi
+Pokedex 95,Taubsi
 ?,Tauboga
 ?,Tauboss
 ?,Rattfratz
@@ -1059,7 +1059,7 @@ Item für Kabuto,fossil
 ?,Enton
 ?,Entoron
 ?,Menki
-?,Rasaff
+Pokedex 57,Rasaff
 ?,Fukano
 Feuer PKMN,Arkani
 ?,Quapsel
@@ -1095,7 +1095,7 @@ Riesige Gift-Qualle,Tentoxa
 ?,Nebulak
 ?,Alpollo
 Geist-PKMN,Gengar
-?,Onix
+Pokedex 95,Onix
 ?,Traumato
 ?,Hypno
 ?,Krabby
@@ -1179,7 +1179,7 @@ Maxim Format,storytime
 ?,mine
 ?,mining
 ?,pickaxe
-?,axt
+Item (mc),axt
 ?,werkbank
 ?,ofen
 ?,amboss
@@ -1398,7 +1398,7 @@ signature killjoy,turret
 ?,minions
 ?,waveclear
 ?,push
-?,roam
+Macht Matze nie,roam
 ?,roams
 ?,rotate
 ?,priority
@@ -1442,8 +1442,8 @@ ender (head mc),dragon
 ?,voidgrubs
 ?,voidgrub
 ?,Atakhan
-?,rose
-?,roses
+...mondy,rose
+War of the ... (game),roses
 ?,pedal
 ?,pedals
 ?,redbuff
@@ -1567,7 +1567,7 @@ Kratos für Atreus,vater
 ?,pakt
 ?,fluch
 ?,segen
-?,ritual
+... des Ruins (arena item),ritual
 ?,opfer
 ?,tempel
 ?,schrein
@@ -1588,7 +1588,7 @@ Schau-platz von Celeste,berg
 ?,meer
 ?,insel
 ?,inseln
-Spiel: ...romantik,dorf
+Marai/Fossbarrow/Uwendale (deut.),dorf
 ?,doerfer
 ?,grenze
 ?,grenzen
@@ -1702,7 +1702,7 @@ Agent (Valo),omen
 ?,yoru
 Valorants Zeri,neon
 ?,chamber
-?,fade
+Valorant Agent,fade
 ?,harbor
 ?,weapon
 ?,gun
@@ -1723,7 +1723,7 @@ Zielen (engl.),aim
 mc block,smoker
 ?,flashbang
 ?,utility
-?,cover
+Box in Shooter,cover
 ?,peak
 ?,heavy
 ?,movement
@@ -1753,7 +1753,7 @@ mc effect,poison
 ?,shard
 ?,sigil
 ?,orb
-?,nova
+... bomb (Destiny),nova
 ?,charge
 ?,cast
 ?,deploy
@@ -2291,7 +2291,7 @@ auch mc effect,speed
 ?,Hawkshot
 ?,Arise
 ?,Overdrive
-?,Sear
+Brand Ability,Sear
 ?,Pyroclasm
 ?,Hookshot
 ?,Miasma
@@ -2669,7 +2669,7 @@ Team mit erstem Kaisa Skin,ig
 ?,sidelane
 ?,splitten
 ?,forfeit
-?,opera
+Browser,opera
 ?,dog
 Rengars Spezies (engl.),cat
 ?,kutcher
@@ -2706,7 +2706,7 @@ missfortuen pistols,ave
 ?,merdada
 ?,kiramman
 ?,talis
-?,reveck
+Corin ... (Orianna Dad),reveck
 ?,corin
 ?,bolbok
 ?,cassandra
@@ -2756,7 +2756,7 @@ Animal Crossing tool,net
 ?,bishop
 ?,lauefer
 ?,rook
-?,aids
+Übergibt Malzahar,aids
 ?,cancer
 LoL Spiel-modus,aram
 valo map,abyss
@@ -2782,7 +2782,7 @@ Camilles Klingen (engl.),legs
 ?,Yunalai
 ?,Qiqi
 ?,Ohmlatl
-?,Inessa
+Qiyanas Schwes-ter,Inessa
 ?,Mara
 ?,nobility
 ?,Bayal
@@ -2932,7 +2932,7 @@ Bruder von Lux (rückw.),neraG
 ?,rimidalV
 ?,oilaG
 ?,togrU
-?,anoS
+Curtains up. I'm ready,anoS
 ?,niawS
 ?,xuL
 ?,cnalBeL
@@ -2965,7 +2965,7 @@ LoL champion (Rückwärts),rotkiV
 ?,inaujeS
 ?,sggiZ
 ?,sulituaN
-?,aroiF
+Precision and grace (rückw.),aroiF
 ?,uluL
 ?,miraceH
 ?,suraV
@@ -2978,7 +2978,7 @@ LoL champion (Rückwärts),rotkiV
 ?,ardnyS
 LoL-Spinne (rückw.),esilE
 ?,deZ
-?,imaN
+Feet are strange,imaN
 ?,hserhT
 ?,nniuQ
 ?,caZ
@@ -3026,7 +3026,7 @@ Chinesischer Gaming-Riese,tencent
 Bitte ... die Server-Regeln!,Lest
 ?,Scar
 ?,hoskel
-Kylo ...,ren
+Spitz-name der Baronin,ren
 ?,thieram
 ?,jules
 ?,huck
@@ -3182,7 +3182,7 @@ questions,answers
 ?,dhaka
 ?,luigi
 ?,chozo
-?,boar
+... stance (LoR - Frejord),boar
 ?,soil
 ?,gather
 ?,flat
@@ -3192,7 +3192,7 @@ Heavy ...,rain
 ?,hedgehog
 ?,westeros
 ?,tatsumaki
-?,hare
+Ist Aurora (engl.),hare
 ... Sword,long
 Modern-Warfare-Legende,soap
 ?,ravenclaw
@@ -3263,7 +3263,7 @@ Sea of Thieves Schiff,frigate
 ?,singapore
 ?,stitch
 Region Zekrom (engl.),unova
-?,rhino
+War-frame Char.,rhino
 ?,tarpon
 ?,rider
 ?,kabul
@@ -3333,7 +3333,7 @@ Gamer-Stuhl (engl.),seat
 ?,smelt
 ?,meat
 ?,pin
-?,turn
+Hat man abwechselt bei LoR,turn
 ?,loan
 ?,anchovy
 ?,brock
@@ -3617,7 +3617,7 @@ Waldtier mit eingebautem Dornenpanzer (engl.),porcupine
 ?,fugo
 ?,misa
 ?,draft
-Kopfschuss mit einer Kugel,tap
+Kopf-schuss mit einer Kugel,tap
 ?,lock
 Stadt Worlds Halb-finale,atlanta
 ?,stamp
@@ -3642,7 +3642,7 @@ Stadt Worlds Halb-finale,atlanta
 ?,georgetown
 ?,butter
 ?,drill
-?,rat
+Caedrel der ... King,rat
 ?,paris
 ?,okuyasu
 ?,cucumber
@@ -3724,7 +3724,7 @@ Waffe in Hollow Knight,nail
 ?,porco
 ?,weave
 ?,daenerys
-?,banana
+Wirft Soraka,banana
 ?,lamb
 ?,raccoon
 ?,vinegar
@@ -3924,9 +3924,6 @@ Animal-Crossing-Start (engl.),tent
 ?,triforce
 ?,pike
 ?,tall
-?,evangelion
-?,shad
-?,shinji
 ?,shinobu
 ?,connie
 ?,slip
@@ -3981,7 +3978,6 @@ Animal-Crossing-Start (engl.),tent
 Zauberer aus Harry Potter,snape
 ?,venus
 ?,watch
-?,mesa
 ?,hagrid
 ?,misato
 ?,bean
@@ -4032,7 +4028,7 @@ Schnitt-gut Ninjas (engl.),fruit
 Stardew-Valley-Fisch (engl.),sardine
 ?,father
 ?,strait
-?,sanemi
+... Shinazu-gawa,sanemi
 ?,bonefish
 ?,load
 ?,smash
@@ -4163,3 +4159,23 @@ Viegos Frau,Isolde
 ?,chatgpt
 ?,gemini
 ?,pro
+?,ami
+?,searing
+?,bellows
+?,forge
+?,elderwood
+?,space
+?,groove
+?,choochoo
+?,cinderbloom
+?,stormsurge
+?,horizon
+?,rabadons
+?,banshees
+?,mejais
+?,shoes
+?,Sorcerer
+?,penetration
+?,rod
+?,alternator
+?,tome
