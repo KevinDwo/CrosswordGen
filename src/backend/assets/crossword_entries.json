@@ -1,6 +1,6 @@
 [
   {
-    "question": "Währung um Champions zu kaufen (krzw.)",
+    "question": "Währung",
     "answer": "BE",
     "row": 7,
     "col": 6,
@@ -8,7 +8,7 @@
     "number": 28
   },
   {
-    "question": "Team mit erstem LeBlanc Skin",
+    "question": "Team mit LeBlanc Skin",
     "answer": "IG",
     "row": 8,
     "col": 6,
@@ -16,7 +16,7 @@
     "number": 33
   },
   {
-    "question": "Ein großes, zwei-beiniges und vogel-ähnliches PKMN",
+    "question": "Ein zwei-beiniges PKMN",
     "answer": "IBITAK",
     "row": 6,
     "col": 6,
@@ -24,7 +24,7 @@
     "number": 19
   },
   {
-    "question": "Gegenteil von Defense",
+    "question": "Gegen-teil von Defense",
     "answer": "ATTACK",
     "row": 11,
     "col": 1,
@@ -32,7 +32,7 @@
     "number": 39
   },
   {
-    "question": "Beliebter Bonus-Modus in Sonic Mania",
+    "question": "Bonus-Modus in Sonic Mania",
     "answer": "ENCORE",
     "row": 5,
     "col": 0,
@@ -64,7 +64,7 @@
     "number": 20
   },
   {
-    "question": "Ana Amari (Overwatch)",
+    "question": "Ana Amari (Over-watch)",
     "answer": "OMA",
     "row": 9,
     "col": 1,
@@ -120,7 +120,7 @@
     "number": 35
   },
   {
-    "question": "Fangbar in Stardew V. (engl.)",
+    "question": "Fangbar Stardew V. (engl.)",
     "answer": "EEL",
     "row": 9,
     "col": 8,
@@ -136,7 +136,7 @@
     "number": 24
   },
   {
-    "question": "Silberreiher (engl.)",
+    "question": "Silber-reiher (engl.)",
     "answer": "EGRET",
     "row": 7,
     "col": 2,
@@ -168,7 +168,7 @@
     "number": 13
   },
   {
-    "question": "Musste man vor dem WII spielen anlegen (engl.)",
+    "question": "Vorm Wii spielen anlegen! (engl.)",
     "answer": "STRAP",
     "row": 1,
     "col": 11,
@@ -184,7 +184,7 @@
     "number": 26
   },
   {
-    "question": "Chem-Baronin aus Zhaun",
+    "question": "Chem-Baronin",
     "answer": "RENNI",
     "row": 7,
     "col": 9,
@@ -192,7 +192,7 @@
     "number": 25
   },
   {
-    "question": "Machen looser in League (engl.)",
+    "question": "Machen Loser (engl.)",
     "answer": "FORFEIT",
     "row": 9,
     "col": 0,
@@ -232,7 +232,7 @@
     "number": 18
   },
   {
-    "question": "Was nimmt Matze nicht zu sich",
+    "question": "Kon-sumiert Matze nicht",
     "answer": "MEAT",
     "row": 10,
     "col": 1,
@@ -264,7 +264,7 @@
     "number": 11
   },
   {
-    "question": "Agnes Lieb-lings-ort",
+    "question": "Agnes Lieb-lingsort",
     "answer": "BETT",
     "row": 3,
     "col": 1,
@@ -280,7 +280,7 @@
     "number": 12
   },
   {
-    "question": "Unsere Köpfe Nachts bei Scrims",
+    "question": "Köpfe (Nachts) bei Scrims",
     "answer": "LEER",
     "row": 3,
     "col": 8,
