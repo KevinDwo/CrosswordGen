@@ -1,322 +1,338 @@
 [
   {
-    "question": "Währung",
-    "answer": "BE",
-    "row": 7,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 28
-  },
-  {
-    "question": "Team mit LeBlanc Skin",
-    "answer": "IG",
-    "row": 8,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 33
-  },
-  {
-    "question": "Ein zwei-beiniges PKMN",
-    "answer": "IBITAK",
-    "row": 6,
-    "col": 6,
-    "direction": "vertical",
-    "number": 19
-  },
-  {
-    "question": "Gegen-teil von Defense",
-    "answer": "ATTACK",
-    "row": 11,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 39
-  },
-  {
-    "question": "Bonus-Modus in Sonic Mania",
-    "answer": "ENCORE",
+    "question": "Hand-held",
+    "answer": "DS",
     "row": 5,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 17
-  },
-  {
-    "question": "Damit macht man Selfies",
-    "answer": "CAMERA",
-    "row": 0,
-    "col": 9,
-    "direction": "vertical",
-    "number": 8
-  },
-  {
-    "question": "Myth ... (Dota Team)",
-    "answer": "AVENUE",
-    "row": 10,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 38
-  },
-  {
-    "question": "Benutzt Kalista (engl.)",
-    "answer": "LEG",
-    "row": 6,
-    "col": 7,
-    "direction": "vertical",
-    "number": 20
-  },
-  {
-    "question": "Ana Amari (Over-watch)",
-    "answer": "OMA",
-    "row": 9,
-    "col": 1,
-    "direction": "vertical",
-    "number": 31
-  },
-  {
-    "question": "Ist Pixo",
-    "answer": "FAT",
-    "row": 9,
-    "col": 3,
-    "direction": "vertical",
-    "number": 32
-  },
-  {
-    "question": "Alte Spiele-konsole",
-    "answer": "NES",
-    "row": 4,
     "col": 5,
-    "direction": "vertical",
-    "number": 15
-  },
-  {
-    "question": "Esports Team",
-    "answer": "HLE",
-    "row": 1,
-    "col": 2,
-    "direction": "vertical",
-    "number": 3
-  },
-  {
-    "question": "Waffe CS:GO",
-    "answer": "AWP",
-    "row": 5,
-    "col": 9,
     "direction": "horizontal",
-    "number": 21
-  },
-  {
-    "question": "Esports Team",
-    "answer": "RNG",
-    "row": 7,
-    "col": 9,
-    "direction": "horizontal",
-    "number": 29
-  },
-  {
-    "question": "Machen Phil und ich",
-    "answer": "DUO",
-    "row": 9,
-    "col": 10,
-    "direction": "vertical",
-    "number": 35
-  },
-  {
-    "question": "Fangbar Stardew V. (engl.)",
-    "answer": "EEL",
-    "row": 9,
-    "col": 8,
-    "direction": "vertical",
-    "number": 34
-  },
-  {
-    "question": "LoL-Spinne (rückw.)",
-    "answer": "ESILE",
-    "row": 6,
-    "col": 4,
-    "direction": "horizontal",
-    "number": 24
-  },
-  {
-    "question": "Silber-reiher (engl.)",
-    "answer": "EGRET",
-    "row": 7,
-    "col": 2,
-    "direction": "vertical",
     "number": 23
   },
   {
-    "question": "alt",
-    "answer": "RETRO",
-    "row": 1,
-    "col": 3,
+    "question": "Stat (eng., kurzw.)",
+    "answer": "AS",
+    "row": 10,
+    "col": 11,
     "direction": "vertical",
-    "number": 4
+    "number": 38
   },
   {
-    "question": "CC-Fähigkeit",
-    "answer": "SNARE",
-    "row": 0,
-    "col": 6,
-    "direction": "vertical",
-    "number": 6
-  },
-  {
-    "question": "Blonder Mensch aus AOT",
-    "answer": "ERWIN",
+    "question": "Gab Rolle in SoloQ an (eng.)",
+    "answer": "ORDER",
     "row": 3,
-    "col": 10,
+    "col": 5,
     "direction": "vertical",
     "number": 13
   },
   {
-    "question": "Vorm Wii spielen anlegen! (engl.)",
-    "answer": "STRAP",
-    "row": 1,
-    "col": 11,
-    "direction": "vertical",
-    "number": 9
-  },
-  {
-    "question": "US Autor (John ...)",
-    "answer": "GREEN",
+    "question": "LEC Player",
+    "answer": "UPSET",
     "row": 7,
-    "col": 11,
+    "col": 6,
     "direction": "vertical",
     "number": 26
   },
   {
-    "question": "Chem-Baronin",
-    "answer": "RENNI",
-    "row": 7,
-    "col": 9,
-    "direction": "vertical",
-    "number": 25
-  },
-  {
-    "question": "Machen Loser (engl.)",
-    "answer": "FORFEIT",
+    "question": "Brewing ...",
+    "answer": "STAND",
     "row": 9,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 30
-  },
-  {
-    "question": "...packs",
-    "answer": "TEXTURE",
-    "row": 0,
-    "col": 4,
-    "direction": "vertical",
-    "number": 5
-  },
-  {
-    "question": "Arcade Automat (engl.)",
-    "answer": "CABINET",
-    "row": 1,
-    "col": 1,
-    "direction": "vertical",
-    "number": 2
-  },
-  {
-    "question": "Haben Lunari / Nagaka-bouros",
-    "answer": "SCHREIN",
-    "row": 1,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 1
-  },
-  {
-    "question": "Welt in LoL",
-    "answer": "RUNETERRA",
-    "row": 4,
-    "col": 3,
-    "direction": "horizontal",
-    "number": 18
-  },
-  {
-    "question": "Kon-sumiert Matze nicht",
-    "answer": "MEAT",
-    "row": 10,
-    "col": 1,
+    "col": 6,
     "direction": "horizontal",
     "number": 37
   },
   {
-    "question": "Aktuell stärkste Taktik",
-    "answer": "META",
-    "row": 8,
-    "col": 4,
-    "direction": "vertical",
-    "number": 27
-  },
-  {
-    "question": "Sus-picious / Rabbit",
-    "answer": "STEW",
-    "row": 7,
-    "col": 0,
-    "direction": "horizontal",
-    "number": 22
-  },
-  {
-    "question": "Pendent zu Steve",
-    "answer": "ALEX",
-    "row": 2,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 11
-  },
-  {
-    "question": "Agnes Lieb-lingsort",
-    "answer": "BETT",
-    "row": 3,
-    "col": 1,
-    "direction": "horizontal",
-    "number": 14
-  },
-  {
-    "question": "GODS Player",
-    "answer": "ADAM",
-    "row": 2,
-    "col": 6,
-    "direction": "horizontal",
-    "number": 12
-  },
-  {
-    "question": "Köpfe (Nachts) bei Scrims",
-    "answer": "LEER",
-    "row": 3,
-    "col": 8,
-    "direction": "horizontal",
-    "number": 16
-  },
-  {
-    "question": "Gareth ...",
-    "answer": "BALE",
+    "question": "Neon Genesis E. (char.)",
+    "answer": "ASUKA",
     "row": 1,
     "col": 8,
     "direction": "vertical",
     "number": 7
   },
   {
-    "question": "HP displays",
-    "answer": "BARS",
+    "question": "Effect Mc (eng.)",
+    "answer": "HASTE",
     "row": 1,
-    "col": 8,
+    "col": 0,
     "direction": "horizontal",
-    "number": 10
+    "number": 1
   },
   {
-    "question": "Biom in Minecraft",
-    "answer": "ENDE",
-    "row": 9,
+    "question": "Kung Fu Panda (char.)",
+    "answer": "CRANE",
+    "row": 6,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 25
+  },
+  {
+    "question": "Waffe / Gott",
+    "answer": "ODIN",
+    "row": 8,
+    "col": 10,
+    "direction": "vertical",
+    "number": 33
+  },
+  {
+    "question": "Mensch aus Piltover",
+    "answer": "SALO",
+    "row": 8,
     "col": 8,
+    "direction": "vertical",
+    "number": 32
+  },
+  {
+    "question": "Star Wars (char.)",
+    "answer": "LEIA",
+    "row": 10,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 40
+  },
+  {
+    "question": "Tor-mented ... (spell)",
+    "answer": "SOIL",
+    "row": 5,
+    "col": 11,
+    "direction": "vertical",
+    "number": 19
+  },
+  {
+    "question": "Waffe / Gott",
+    "answer": "ARES",
+    "row": 5,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 24
+  },
+  {
+    "question": "Testet Nagaka-bouros (eng.)",
+    "answer": "SOUL",
+    "row": 2,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 14
+  },
+  {
+    "question": "Ana-gramm für 'RUNE'",
+    "answer": "URNE",
+    "row": 3,
+    "col": 8,
+    "direction": "horizontal",
+    "number": 16
+  },
+  {
+    "question": "Schach-figur",
+    "answer": "ROOK",
+    "row": 4,
+    "col": 5,
+    "direction": "horizontal",
+    "number": 17
+  },
+  {
+    "question": "Hat die Riot API",
+    "answer": "TAGS",
+    "row": 1,
+    "col": 3,
+    "direction": "vertical",
+    "number": 4
+  },
+  {
+    "question": "Champ",
+    "answer": "ZERI",
+    "row": 0,
+    "col": 4,
+    "direction": "vertical",
+    "number": 5
+  },
+  {
+    "question": "Volibear",
+    "answer": "BEAR",
+    "row": 2,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 12
+  },
+  {
+    "question": "PKMN",
+    "answer": "ABRA",
+    "row": 1,
+    "col": 1,
+    "direction": "vertical",
+    "number": 2
+  },
+  {
+    "question": "Pro Player",
+    "answer": "CAPS",
+    "row": 4,
+    "col": 0,
+    "direction": "horizontal",
+    "number": 20
+  },
+  {
+    "question": "Talons W",
+    "answer": "RAKE",
+    "row": 11,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 41
+  },
+  {
+    "question": "Champ",
+    "answer": "SONA",
+    "row": 8,
+    "col": 2,
+    "direction": "vertical",
+    "number": 30
+  },
+  {
+    "question": "Ex Pro Player",
+    "answer": "SOAZ",
+    "row": 9,
+    "col": 1,
     "direction": "horizontal",
     "number": 36
   },
   {
-    "question": "Kevin's Stern-zeichen (engl.)",
-    "answer": "LION",
-    "row": 11,
-    "col": 8,
+    "question": "Zorro in jeder Stadt (eng.)",
+    "answer": "LOST",
+    "row": 8,
+    "col": 0,
     "direction": "horizontal",
-    "number": 40
+    "number": 29
+  },
+  {
+    "question": "Waffe",
+    "answer": "PISTOL",
+    "row": 8,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 35
+  },
+  {
+    "question": "Zyra / Anti Heal",
+    "answer": "THORNS",
+    "row": 11,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 42
+  },
+  {
+    "question": "Rek'Sai",
+    "answer": "TUNNEL",
+    "row": 1,
+    "col": 10,
+    "direction": "vertical",
+    "number": 9
+  },
+  {
+    "question": "Leben (eng.)",
+    "answer": "HEALTH",
+    "row": 1,
+    "col": 6,
+    "direction": "horizontal",
+    "number": 11
+  },
+  {
+    "question": "Anta-gonist MCU",
+    "answer": "THANOS",
+    "row": 0,
+    "col": 6,
+    "direction": "vertical",
+    "number": 6
+  },
+  {
+    "question": "Shurima / Frejord",
+    "answer": "REGION",
+    "row": 3,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 15
+  },
+  {
+    "question": "PKMN",
+    "answer": "SEEPER",
+    "row": 1,
+    "col": 2,
+    "direction": "vertical",
+    "number": 3
+  },
+  {
+    "question": "LCK Player",
+    "answer": "CLOSER",
+    "row": 6,
+    "col": 1,
+    "direction": "vertical",
+    "number": 21
+  },
+  {
+    "question": "Sonic Mania",
+    "answer": "ENCORE",
+    "row": 10,
+    "col": 1,
+    "direction": "horizontal",
+    "number": 39
+  },
+  {
+    "question": "Ende einer Rune",
+    "answer": "ATTACK",
+    "row": 6,
+    "col": 3,
+    "direction": "vertical",
+    "number": 22
+  },
+  {
+    "question": "... pull (eng.)",
+    "answer": "RUG",
+    "row": 7,
+    "col": 5,
+    "direction": "horizontal",
+    "number": 31
+  },
+  {
+    "question": "Tool: Versions-kontrolle",
+    "answer": "GIT",
+    "row": 7,
+    "col": 7,
+    "direction": "vertical",
+    "number": 27
+  },
+  {
+    "question": "Phils ... nicht Master",
+    "answer": "ELO",
+    "row": 6,
+    "col": 9,
+    "direction": "horizontal",
+    "number": 28
+  },
+  {
+    "question": "Pro Team",
+    "answer": "HLE",
+    "row": 1,
+    "col": 11,
+    "direction": "vertical",
+    "number": 10
+  },
+  {
+    "question": "Legends of Runterra",
+    "answer": "LOR",
+    "row": 1,
+    "col": 9,
+    "direction": "vertical",
+    "number": 8
+  },
+  {
+    "question": "Champ",
+    "answer": "ZOE",
+    "row": 9,
+    "col": 4,
+    "direction": "vertical",
+    "number": 34
+  },
+  {
+    "question": "Pixo",
+    "answer": "RENTNER",
+    "row": 5,
+    "col": 9,
+    "direction": "vertical",
+    "number": 18
   }
 ]

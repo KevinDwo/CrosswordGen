@@ -90,7 +90,7 @@ LoLs Fass-werfer,Gragas
 ?,Vladimir
 ?,Galio
 ?,Urgot
-?,Sona
+Champ,Sona
 ?,Swain
 ?,Lux
 ?,LeBlanc
@@ -165,7 +165,7 @@ Prähisto-rischer Champ,Gnar
 ?,Xayah
 ?,Kayn
 ?,Ornn
-?,Zoe
+Champ,Zoe
 ?,Pyke
 Cha-mäleon-Champ,Neeko
 ?,Sylas
@@ -183,7 +183,7 @@ Fist meet face,Sett
 ?,Gwen
 ?,Akshan
 LoL Champion,Vex
-?,Zeri
+Champ,Zeri
 ?,Nilah
 ?,Milio
 ?,Naafiri
@@ -193,7 +193,7 @@ LoL Champion,Smolder
 See with eyes un-clouded,Aurora
 LoL Champion,Ambessa
 LoL Champion,Mel
-Western GOAT,Caps
+Pro Player,Caps
 Startitem Hersteller t1 toplaner,Doran
 Larinae,Moewe
 Master..,Yi
@@ -397,7 +397,7 @@ Jemanden von 100 auf 0 bursten (Abk.),os
 ?,expansion
 ?,skins
 ?,cosmetics
-Bronze / Supreme,elo
+Phils ... nicht Master,elo
 ?,proplayer
 ?,endgame
 ?,metagame
@@ -470,7 +470,7 @@ Unreal oder Unity,engine
 ?,cooldown
 ?,aoe
 ?,status
-?,health
+Leben (eng.),health
 ?,map
 ?,questlog
 ?,dialog
@@ -626,7 +626,7 @@ Mehrstündige Gaming-Phase (engl.),session
 ?,upload
 ?,thumbnail
 ?,titelbild
-?,tags
+Hat die Riot API,tags
 ?,content
 ?,shorts
 ?,chat
@@ -737,7 +737,7 @@ feather,falling
 ?,power
 ?,punch
 Enchantment (MC),sharpness
-?,thorns
+Zyra / Anti Heal,thorns
 ?,cleaving
 ?,allay
 ?,armadillo
@@ -1065,7 +1065,7 @@ Feuer PKMN,Arkani
 ?,Quapsel
 ?,Quaputzi
 ?,Quappo
-?,Abra
+PKMN,Abra
 ?,Kadabra
 ?,Simsala
 ?,Machollo
@@ -1116,7 +1116,7 @@ Krabbys Entwick-lung,Kingler
 ?,Chaneira
 ?,Tangela
 ?,Kangama
-?,Seeper
+PKMN,Seeper
 ?,Seemon
 ?,Goldini
 ?,Golking
@@ -1279,7 +1279,7 @@ Item (mc),axt
 ?,baby
 ?,kind
 ?,teenager
-?,rentner
+Pixo,rentner
 ?,familie
 ?,adoption
 ?,geburt
@@ -1287,7 +1287,7 @@ Item (mc),axt
 Zustand von Isolde,geist
 ?,friedhof
 ?,trauer
-?,urne
+Ana-gramm für 'RUNE',urne
 ?,grabstein
 ?,hausbauen
 ?,garten
@@ -1510,7 +1510,7 @@ Job von Rell Spielern,engage
 ?,Vastayas
 ?,piltover
 ?,renni
-?,salo
+Mensch aus Piltover,salo
 ?,shoola
 ?,zaun
 ?,zaunite
@@ -1531,7 +1531,7 @@ auch mc effect (fire),aspect
 ?,magic
 ?,hextech
 ?,artefakt
-?,region
+Shurima / Frejord,region
 ?,konflikt
 ?,konflikte
 ?,krieg
@@ -1650,8 +1650,8 @@ mc mob,phantom
 valorant waffe + caitlyn titel,sheriff
 ?,stinger
 ?,spectre
-?,ares
-Waffe in Valo,odin
+Waffe / Gott,ares
+Waffe / Gott,odin
 ?,bulldog
 mc mob,guardian
 ?,marshal
@@ -1678,7 +1678,7 @@ Valorant Push,retake
 ?,eco
 ?,halfbuy
 ?,fullbuy
-?,pistol
+Waffe,pistol
 ?,overtime
 ?,surrend
 ?,remake
@@ -2044,7 +2044,7 @@ Anzahl Herzen (engl.),ten
 ?,zero
 ?,Rokrund
 ?,nashor
-?,soul
+Testet Nagaka-bouros (eng.),soul
 ?,isaac
 ?,Alex
 ?,Elliott
@@ -2088,13 +2088,13 @@ Batmans Sidekick,Robin
 ?,caedrel
 ?,Origen
 ?,Fnactic
-?,sOAZ
+Ex Pro Player,sOAZ
 ?,Expect
 ?,Bwipo
 GODS Player,Adam
 ?,Nisqy
 ?,Wunder
-?,Upset
+LEC Player,Upset
 ?,Noah
 ?,Hylissang
 ?,Yike
@@ -2194,7 +2194,7 @@ LPL Jungler,tian
 ?,blaber
 ?,fudge
 ?,inspir
-?,closer
+LCK Player,closer
 ?,jojo
 ?,emenz
 ?,hauntzer
@@ -2251,7 +2251,7 @@ Deutscher pro player (LoL),kaiser
 ?,ss
 ?,ln
 ?,mr
-?,as
+"Stat (eng., kurzw.)",as
 LoL-Stat (Abk.),ms
 ?,no
 ?,qq
@@ -2375,7 +2375,7 @@ Renek-tons R,Dominus
 ?,Valor
 ?,Overload
 ?,Flair
-Beliebter Bonus-Modus in Sonic Mania,Encore
+Sonic Mania,Encore
 ?,Haymaker
 ?,Backstab
 ?,Deceive
@@ -2441,7 +2441,7 @@ Minecraft Block,ice
 dragon,ender
 ?,poros
 ?,follower
-?,lor
+Legends of Runterra,lor
 ?,card
 Strategie Spiel-figur (engl.),unit
 ?,spell
@@ -2460,7 +2460,7 @@ LoR-Keyword,elusive
 ?,lurk
 ?,overwhelm
 ?,quick
-?,attack
+Ende einer Rune,attack
 ?,tough
 ?,ephermal
 ?,curse
@@ -2511,11 +2511,11 @@ press the attack,pta
 ?,Conqueror
 Presence of ,Mind
 Legend: ,Alacrity
-Legend: /mc effect,Haste
+Effect Mc (eng.),Haste
 Legend: ,Bloodline
 Coup de ,Grace
 ?,Down
-brewing (mc),Stand
+Brewing ...,Stand
 ?,Harvest
 Hail of ,Blades
 ?,Cheap
@@ -2659,7 +2659,7 @@ bodyguard of jarvan iii,tianna
 ?,fnc
 ?,koi
 ?,geng
-?,hle
+Pro Team,hle
 ?,cfo
 ?,flyquest
 ?,gam
@@ -2755,7 +2755,7 @@ Animal Crossing tool,net
 ?,bauer
 ?,bishop
 ?,lauefer
-?,rook
+Schach-figur,rook
 Übergibt Malzahar,aids
 ?,cancer
 LoL Spiel-modus,aram
@@ -2832,7 +2832,7 @@ LCK Top-laner,clear
 ?,mejias
 ?,steal
 ?,huge
-?,lost
+Zorro in jeder Stadt (eng.),lost
 mc block,observer
 ?,watchers
 ?,watcher
@@ -3176,14 +3176,14 @@ Frucht zum entfernen von CC,zitrone
 Münz-Sammler (Item),magnet
 ?,nebel
 questions,answers
-?,order
+Gab Rolle in SoloQ an (eng.),order
 ?,roof
 ?,kaworu
 ?,dhaka
 ?,luigi
 ?,chozo
 ... stance (LoR - Frejord),boar
-?,soil
+Tor-mented ... (spell),soil
 ?,gather
 ?,flat
 Heavy ...,rain
@@ -3352,7 +3352,7 @@ Hat man abwechselt bei LoR,turn
 ?,near
 ?,ottawa
 ?,gotham
-?,bear
+Volibear,bear
 ?,gendo
 ?,lake
 ?,duck
@@ -3387,7 +3387,7 @@ Whip ... (Eve),lash
 ?,warsaw
 ?,owl
 ?,loop
-?,crane
+Kung Fu Panda (char.),crane
 ?,peninsula
 ?,izumi
 ?,pinnacle
@@ -3412,7 +3412,7 @@ Whip ... (Eve),lash
 ?,square
 ?,heron
 ?,budapest
-?,thanos
+Anta-gonist MCU,thanos
 ?,pony
 ?,parakeet
 ?,sprat
@@ -3874,7 +3874,7 @@ Living ...-free in your head,rent
 ?,valentine
 ?,gryffindor
 ?,zouken
-?,tunnel
+Rek'Sai,tunnel
 ?,record
 ?,turkey
 ?,kokushibo
@@ -3900,7 +3900,7 @@ Kanto Top Vier Mitglied,bruno
 ?,dallas
 ?,wakanda
 ?,caracas
-?,asuka
+Neon Genesis E. (char.),asuka
 ?,squirtle
 Animal-Crossing-Start (engl.),tent
 ?,cheese
@@ -3999,7 +3999,7 @@ Zauberer aus Harry Potter,snape
 ?,tehran
 ?,inosuke
 ?,spoon
-?,rug
+... pull (eng.),rug
 ?,polnareff
 ?,hyena
 ?,arya
@@ -4059,7 +4059,7 @@ Löwe (engl.),lion
 ?,phone
 ?,avalanche
 ?,francisco
-?,leia
+Star Wars (char.),leia
 ?,condor
 ?,chopper
 ?,toucan
@@ -4188,7 +4188,7 @@ LoR,paths
 ?,sort
 ?,insertion
 ?,merge
-?,git
+Tool: Versions-kontrolle,git
 ?,github
 ?,linux
 ?,terminal
